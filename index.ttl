@@ -1,0 +1,575 @@
+@prefix reliedu: <https://w3id.org/reliedu/> .
+@prefix reliedu-didactics: <https://w3id.org/reliedu/didactics/> .
+@prefix reliedu-resourcetype: <https://w3id.org/reliedu/resourcetype/> .
+@prefix reliedu-competency: <https://w3id.org/reliedu/competency/> .
+@prefix reliedu-content: <https://w3id.org/reliedu/content/> .
+@prefix reliedu-method: <https://w3id.org/reliedu/method/> .
+@prefix reliedu-location: <https://w3id.org/reliedu/location/> .
+
+@prefix oeh: <http://w3id.org/openeduhub/vocabs/> .
+@prefix oeh-discipline: <http://w3id.org/openeduhub/vocabs/discipline/> .
+@prefix oeh-lrt: <http://w3id.org/openeduhub/vocabs/new_lrt/> .
+@prefix oeh-educ: <http://w3id.org/openeduhub/vocabs/educationalContext/> .
+@prefix oeh-role: <http://w3id.org/openeduhub/vocabs/intendedEndUserRole/> .
+@prefix oeh-aggr: <http://w3id.org/openeduhub/vocabs/aggregationLevel/> .
+
+@prefix kim-eduLevel: <https://w3id.org/kim/educationalLevel/> .
+@prefix kim-hcrt: <https://w3id.org/kim/hcrt/> .
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIOUS EDUCATION VOCABULARY v0.2 (AMB-COMPLIANT)
+# ====================================================================================================
+# Purpose: AMB-compliant metadata for religious education resources
+# Standards:
+#   - AMB (Allgemeines Metadatenprofil für Bildungsressourcen) v20231019
+#   - OpenEduHub Vocabularies (28 vocabularies)
+#   - KIM educationalLevel + HCRT
+#   - SKOS (Simple Knowledge Organization System)
+# Based on: Compendium "Religionspädagogische Materialentwicklung, Kuration und Publikation"
+# Author: Jörg Lohrer
+# Date: 2025-10-13
+# License: CC BY-SA 4.0
+# Namespace: https://w3id.org/reliedu/
+# ====================================================================================================
+
+<https://w3id.org/reliedu/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogisches Vokabular"@de, 
+              "Religious Education Vocabulary"@en ;
+    dct:description """Kontrolliertes Vokabular für die AMB-konforme Erschließung religionspädagogischer Bildungsressourcen. 
+    
+Dieses Vokabular erweitert die offiziellen Standards (AMB, OpenEduHub, KIM) um religionsdidaktische Spezifika und ermöglicht präzise Metadaten für religionspädagogische Materialien. Es ist vollständig kompatibel mit dem Allgemeinen Metadatenprofil für Bildungsressourcen (AMB) der DINI-AG-KIM.
+
+Kernbestandteile:
+- 13 religionsdidaktische Labels (Subjektorientierung, Korrelation, etc.)
+- Prozess- und inhaltsbezogene Kompetenzen
+- Fachspezifische Ressourcentypen und Lernorte
+- Vollständige SKOS-Mappings zu OpenEduHub und KIM
+
+Zielgruppe: Religionslehrkräfte, Bildungsanbieter, OER-Kuratoren, Metadaten-Spezialisten
+
+Verwendung:
+Nutzen Sie dieses Vokabular in Kombination mit AMB-konformen Metadatenschemata zur Erschließung religionspädagogischer Bildungsressourcen. Die Konzepte können als 'about'-Werte in JSON-LD Metadaten verwendet werden."""@de ;
+
+    dct:description """Controlled vocabulary for AMB-compliant indexing of religious education resources.
+
+This vocabulary extends official standards (AMB, OpenEduHub, KIM) with religious-didactic specifics and enables precise metadata for religious education materials. It is fully compatible with the General Metadata Profile for Educational Resources (AMB) of DINI-AG-KIM.
+
+Core components:
+- 13 religious-didactic labels (subject orientation, correlation, etc.)
+- Process and content-related competencies  
+- Subject-specific resource types and learning locations
+- Complete SKOS mappings to OpenEduHub and KIM
+
+Target audience: Religious education teachers, educational providers, OER curators, metadata specialists
+
+Usage:
+Use this vocabulary in combination with AMB-compliant metadata schemas for indexing religious education resources. The concepts can be used as 'about' values in JSON-LD metadata."""@en ;
+
+    dct:creator "Jörg Lohrer" ;
+    dct:contributor "DINI-AG-KIM Working Group" ;
+    dct:publisher "Religious Education Community" ;
+    dct:created "2024-01-01"^^xsd:date ;
+    dct:issued "2025-10-13"^^xsd:date ;
+    dct:modified "2025-10-13"^^xsd:date ;
+    
+    # SkoHub optimizations
+    owl:versionInfo "0.2" ;
+    skos:altLabel "reliedu"@en, "Religionspädagogik-Vokabular"@de ;
+    
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:rights "This work is licensed under Creative Commons Attribution-ShareAlike 4.0 International License."@en ;
+    
+    vann:preferredNamespacePrefix "reliedu" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/" ;
+    
+    dct:conformsTo <https://www.w3.org/TR/skos-primer/>,
+                   <https://dini-ag-kim.github.io/amb/latest/>,
+                   <http://w3id.org/openeduhub/vocabs/>,
+                   <https://w3id.org/kim/educationalLevel/> ;
+                   
+    # AMB-specific metadata
+    schema:version "0.2" ;
+    schema:datePublished "2025-10-13" ;
+    schema:inLanguage "de", "en" ;
+    schema:audience schema:EducationalAudience ;
+    
+    skos:note """This vocabulary is designed for use with the AMB (Allgemeines Metadatenprofil für Bildungsressourcen) metadata profile and provides religious education-specific extensions to standard educational vocabularies.
+
+For technical details see: https://github.com/YOUR-USERNAME/reliedu-vocabulary
+
+To create AMB-compliant metadata using this vocabulary, use the curation tool at: https://YOUR-USERNAME.github.io/reliedu-vocabulary/tools/religious-education-curation-tool-v02-amb.html"""@en ;
+
+    # Top-level concepts
+    skos:hasTopConcept reliedu-didactics: ,
+                      reliedu-resourcetype: ,
+                      reliedu-competency: ,
+                      reliedu-content: ,
+                      reliedu-method: ,
+                      reliedu-location: .
+
+# ====================================================================================================
+# 1. DIDACTIC LABELS (13 core concepts)
+# ====================================================================================================
+
+reliedu-didactics: a skos:Concept ;
+    skos:prefLabel "Didaktische Labels"@de, "Didactic Labels"@en ;
+    skos:definition "Religionsdidaktische Grundprinzipien und methodische Ansätze für die Gestaltung religionspädagogischer Bildungsprozesse"@de ;
+    skos:definition "Religious-didactic principles and methodological approaches for designing religious education processes"@en ;
+    skos:topConceptOf <https://w3id.org/reliedu/> ;
+    skos:narrower reliedu-didactics:subjektorientierung,
+                  reliedu-didactics:korrelation,
+                  reliedu-didactics:elementarisierung,
+                  reliedu-didactics:narration,
+                  reliedu-didactics:symbolisch,
+                  reliedu-didactics:performativ,
+                  reliedu-didactics:aesthetisch,
+                  reliedu-didactics:interreligioes,
+                  reliedu-didactics:biblisch,
+                  reliedu-didactics:systematisch,
+                  reliedu-didactics:kirchengeschichtlich,
+                  reliedu-didactics:ethisch,
+                  reliedu-didactics:apologetisch .
+
+# Subjektbezogene Didaktik
+reliedu-didactics:subjektorientierung a skos:Concept ;
+    skos:prefLabel "Subjektorientierung"@de, "Subject Orientation"@en ;
+    skos:altLabel "Schülerorientierung"@de, "Student-centered Approach"@en ;
+    skos:definition "Didaktischer Ansatz, der die individuellen Lernvoraussetzungen, Erfahrungen und Bedürfnisse der Lernenden in den Mittelpunkt stellt"@de ;
+    skos:definition "Didactic approach that centers on individual learning prerequisites, experiences and needs of learners"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:exactMatch oeh-discipline:520 ; # Religion
+    skos:note "Berücksichtigt biografische, entwicklungspsychologische und lebensweltliche Aspekte der Lernenden"@de .
+
+# Korrelative Didaktik  
+reliedu-didactics:korrelation a skos:Concept ;
+    skos:prefLabel "Korrelation"@de, "Correlation"@en ;
+    skos:altLabel "Korrelative Didaktik"@de, "Correlative Didactics"@en ;
+    skos:definition "Vermittlung zwischen christlichem Glauben und menschlicher Erfahrung durch wechselseitige Erschließung"@de ;
+    skos:definition "Mediation between Christian faith and human experience through mutual interpretation"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-didactics:subjektorientierung ;
+    skos:note "Klassischer Ansatz der Religionspädagogik nach Paul Tillich und Georg Hilger"@de .
+
+# Elementarisierung
+reliedu-didactics:elementarisierung a skos:Concept ;
+    skos:prefLabel "Elementarisierung"@de, "Elementarization"@en ;
+    skos:altLabel "Didaktische Reduktion"@de, "Didactic Reduction"@en ;
+    skos:definition "Methodisches Verfahren zur didaktischen Aufbereitung theologischer Inhalte für verschiedene Lernstufen"@de ;
+    skos:definition "Methodical process for didactic preparation of theological content for different learning levels"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:note "Umfasst elementare Strukturen, Erfahrungen, Wahrheiten und Zugänge (nach Schweitzer)"@de .
+
+# Narrative Didaktik
+reliedu-didactics:narration a skos:Concept ;
+    skos:prefLabel "Narration"@de, "Narrative Approach"@en ;
+    skos:altLabel "Erzählende Didaktik"@de, "Storytelling Didactics"@en ;
+    skos:definition "Didaktischer Ansatz, der biblische und persönliche Geschichten als zentrale Lernmedien nutzt"@de ;
+    skos:definition "Didactic approach using biblical and personal stories as central learning media"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-content:bibel ;
+    skos:note "Berücksichtigt die narrative Struktur des christlichen Glaubens und menschlicher Erfahrung"@de .
+
+# Symbolische Didaktik
+reliedu-didactics:symbolisch a skos:Concept ;
+    skos:prefLabel "Symbolische Didaktik"@de, "Symbolic Didactics"@en ;
+    skos:altLabel "Symboldidaktik"@de, "Symbol-based Learning"@en ;
+    skos:definition "Erschließung religiöser Inhalte über Symbole, Metaphern und symbolische Handlungen"@de ;
+    skos:definition "Accessing religious content through symbols, metaphors and symbolic actions"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-method:kreativ ;
+    skos:note "Nutzt die symbolische Dimension des Glaubens für Lernprozesse"@de .
+
+# Performative Didaktik
+reliedu-didactics:performativ a skos:Concept ;
+    skos:prefLabel "Performative Didaktik"@de, "Performative Didactics"@en ;
+    skos:altLabel "Handlungsorientierte Didaktik"@de, "Action-oriented Didactics"@en ;
+    skos:definition "Ganzheitlicher Ansatz, der kognitives, emotionales und handlungsbezogenes Lernen verbindet"@de ;
+    skos:definition "Holistic approach connecting cognitive, emotional and action-based learning"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-method:handlungsorientiert ;
+    skos:note "Betont die Einheit von Glauben, Leben und Handeln"@de .
+
+# Ästhetische Didaktik
+reliedu-didactics:aesthetisch a skos:Concept ;
+    skos:prefLabel "Ästhetische Didaktik"@de, "Aesthetic Didactics"@en ;
+    skos:altLabel "Kunstorientierte Didaktik"@de, "Arts-based Didactics"@en ;
+    skos:definition "Erschließung religiöser Inhalte durch ästhetische Erfahrungen und künstlerische Ausdrucksformen"@de ;
+    skos:definition "Accessing religious content through aesthetic experiences and artistic expressions"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-method:kreativ ;
+    skos:note "Nutzt Musik, bildende Kunst, Literatur und andere ästhetische Medien"@de .
+
+# Interreligiöse Didaktik
+reliedu-didactics:interreligioes a skos:Concept ;
+    skos:prefLabel "Interreligiöse Didaktik"@de, "Interreligious Didactics"@en ;
+    skos:altLabel "Multireligiöse Didaktik"@de, "Multi-religious Didactics"@en ;
+    skos:definition "Didaktischer Ansatz für das Lernen im Kontext religiöser Vielfalt und interreligiöser Begegnung"@de ;
+    skos:definition "Didactic approach for learning in contexts of religious diversity and interreligious encounter"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-content:religionen ;
+    skos:note "Fördert interreligiöse Kompetenz und respektvolle Begegnung"@de .
+
+# Biblische Didaktik
+reliedu-didactics:biblisch a skos:Concept ;
+    skos:prefLabel "Biblische Didaktik"@de, "Biblical Didactics"@en ;
+    skos:altLabel "Bibeldidaktik"@de, "Bible Didactics"@en ;
+    skos:definition "Methodische Erschließung biblischer Texte unter Berücksichtigung historisch-kritischer und didaktischer Aspekte"@de ;
+    skos:definition "Methodical interpretation of biblical texts considering historical-critical and didactic aspects"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-content:bibel ;
+    skos:note "Verbindet exegetische Kompetenz mit didaktischen Überlegungen"@de .
+
+# Systematische Didaktik
+reliedu-didactics:systematisch a skos:Concept ;
+    skos:prefLabel "Systematische Didaktik"@de, "Systematic Didactics"@en ;
+    skos:altLabel "Dogmatische Didaktik"@de, "Dogmatic Didactics"@en ;
+    skos:definition "Didaktische Erschließung systematisch-theologischer Inhalte und Glaubenslehre"@de ;
+    skos:definition "Didactic access to systematic-theological content and doctrine"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-content:glaube ;
+    skos:note "Behandelt Themen wie Gotteslehre, Christologie, Ekklesiologie"@de .
+
+# Kirchengeschichtliche Didaktik
+reliedu-didactics:kirchengeschichtlich a skos:Concept ;
+    skos:prefLabel "Kirchengeschichtliche Didaktik"@de, "Church Historical Didactics"@en ;
+    skos:altLabel "Historische Didaktik"@de, "Historical Didactics"@en ;
+    skos:definition "Didaktische Vermittlung kirchengeschichtlicher Inhalte und deren Relevanz für die Gegenwart"@de ;
+    skos:definition "Didactic mediation of church historical content and its relevance for the present"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-content:kirchengeschichte ;
+    skos:note "Verbindet historisches Lernen mit religiöser Bildung"@de .
+
+# Ethische Didaktik
+reliedu-didactics:ethisch a skos:Concept ;
+    skos:prefLabel "Ethische Didaktik"@de, "Ethical Didactics"@en ;
+    skos:altLabel "Moralische Bildung"@de, "Moral Education"@en ;
+    skos:definition "Didaktische Ansätze für die Entwicklung ethischer Urteilsfähigkeit auf religiöser Grundlage"@de ;
+    skos:definition "Didactic approaches for developing ethical judgment based on religious foundations"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-content:ethik ;
+    skos:note "Umfasst Werteerziehung, Gewissensbildung und ethische Entscheidungsfindung"@de .
+
+# Apologetische Didaktik
+reliedu-didactics:apologetisch a skos:Concept ;
+    skos:prefLabel "Apologetische Didaktik"@de, "Apologetic Didactics"@en ;
+    skos:altLabel "Religionsapologetik"@de, "Religious Apologetics"@en ;
+    skos:definition "Didaktische Ansätze zur rationalen Begründung und Verteidigung des christlichen Glaubens"@de ;
+    skos:definition "Didactic approaches for rational justification and defense of Christian faith"@en ;
+    skos:broader reliedu-didactics: ;
+    skos:related reliedu-content:glaube ;
+    skos:note "Thematisiert Glaubens-Wissen-Verhältnis und religiöse Plausibilität"@de .
+
+# ====================================================================================================
+# 2. RESOURCE TYPES (8 concepts)
+# ====================================================================================================
+
+reliedu-resourcetype: a skos:Concept ;
+    skos:prefLabel "Ressourcentypen"@de, "Resource Types"@en ;
+    skos:definition "Spezifische Typen von Bildungsressourcen im religionspädagogischen Kontext"@de ;
+    skos:definition "Specific types of educational resources in religious education context"@en ;
+    skos:topConceptOf <https://w3id.org/reliedu/> ;
+    skos:narrower reliedu-resourcetype:unterrichtseinheit,
+                  reliedu-resourcetype:gottesdienst,
+                  reliedu-resourcetype:andacht,
+                  reliedu-resourcetype:meditation,
+                  reliedu-resourcetype:exegese,
+                  reliedu-resourcetype:katechismus,
+                  reliedu-resourcetype:gebetbuch,
+                  reliedu-resourcetype:liederbuch .
+
+reliedu-resourcetype:unterrichtseinheit a skos:Concept ;
+    skos:prefLabel "Unterrichtseinheit"@de, "Teaching Unit"@en ;
+    skos:definition "Strukturierte Lehr-Lern-Einheit für den Religionsunterricht"@de ;
+    skos:definition "Structured teaching-learning unit for religious education"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:exactMatch oeh-lrt:36e68792-3a99-4c1d-b1c9-9212d67026ee . # Unterrichtsplanung
+
+reliedu-resourcetype:gottesdienst a skos:Concept ;
+    skos:prefLabel "Gottesdienst"@de, "Worship Service"@en ;
+    skos:definition "Liturgische Materialien und Anleitungen für Gottesdienste"@de ;
+    skos:definition "Liturgical materials and guidelines for worship services"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:related reliedu-location:kirche .
+
+reliedu-resourcetype:andacht a skos:Concept ;
+    skos:prefLabel "Andacht"@de, "Devotion"@en ;
+    skos:definition "Kurze geistliche Besinnung oder Morgenandacht"@de ;
+    skos:definition "Short spiritual reflection or morning devotion"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:related reliedu-method:spirituell .
+
+reliedu-resourcetype:meditation a skos:Concept ;
+    skos:prefLabel "Meditation"@de, "Meditation"@en ;
+    skos:definition "Anleitungen für meditative und kontemplative Übungen"@de ;
+    skos:definition "Instructions for meditative and contemplative exercises"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:related reliedu-method:spirituell .
+
+reliedu-resourcetype:exegese a skos:Concept ;
+    skos:prefLabel "Exegese"@de, "Exegesis"@en ;
+    skos:definition "Wissenschaftliche Auslegung biblischer Texte"@de ;
+    skos:definition "Scholarly interpretation of biblical texts"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:related reliedu-content:bibel .
+
+reliedu-resourcetype:katechismus a skos:Concept ;
+    skos:prefLabel "Katechismus"@de, "Catechism"@en ;
+    skos:definition "Systematische Darstellung der Glaubenslehre in Frage-Antwort-Form"@de ;
+    skos:definition "Systematic presentation of doctrine in question-answer format"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:related reliedu-content:glaube .
+
+reliedu-resourcetype:gebetbuch a skos:Concept ;
+    skos:prefLabel "Gebetbuch"@de, "Prayer Book"@en ;
+    skos:definition "Sammlung von Gebeten für verschiedene Anlässe"@de ;
+    skos:definition "Collection of prayers for various occasions"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:related reliedu-method:spirituell .
+
+reliedu-resourcetype:liederbuch a skos:Concept ;
+    skos:prefLabel "Liederbuch"@de, "Hymnal"@en ;
+    skos:definition "Sammlung religiöser Lieder und Gesänge"@de ;
+    skos:definition "Collection of religious songs and hymns"@en ;
+    skos:broader reliedu-resourcetype: ;
+    skos:related reliedu-method:kreativ .
+
+# ====================================================================================================
+# 3. COMPETENCIES (5 concepts)
+# ====================================================================================================
+
+reliedu-competency: a skos:Concept ;
+    skos:prefLabel "Kompetenzen"@de, "Competencies"@en ;
+    skos:definition "Religionspädagogische Kompetenzbereiche nach den Bildungsstandards"@de ;
+    skos:definition "Religious education competency areas according to educational standards"@en ;
+    skos:topConceptOf <https://w3id.org/reliedu/> ;
+    skos:narrower reliedu-competency:wahrnehmung,
+                  reliedu-competency:deutung,
+                  reliedu-competency:urteil,
+                  reliedu-competency:dialog,
+                  reliedu-competency:gestaltung .
+
+reliedu-competency:wahrnehmung a skos:Concept ;
+    skos:prefLabel "Wahrnehmungskompetenz"@de, "Perception Competency"@en ;
+    skos:definition "Fähigkeit zur differenzierten Wahrnehmung religiöser Phänomene in der Lebenswelt"@de ;
+    skos:definition "Ability to perceive religious phenomena in everyday life in a differentiated way"@en ;
+    skos:broader reliedu-competency: ;
+    skos:related reliedu-didactics:subjektorientierung .
+
+reliedu-competency:deutung a skos:Concept ;
+    skos:prefLabel "Deutungskompetenz"@de, "Interpretation Competency"@en ;
+    skos:definition "Fähigkeit zur sachgemäßen Interpretation religiöser Sprache, Symbole und Traditionen"@de ;
+    skos:definition "Ability to appropriately interpret religious language, symbols and traditions"@en ;
+    skos:broader reliedu-competency: ;
+    skos:related reliedu-didactics:symbolisch, reliedu-didactics:biblisch .
+
+reliedu-competency:urteil a skos:Concept ;
+    skos:prefLabel "Urteilskompetenz"@de, "Judgment Competency"@en ;
+    skos:definition "Fähigkeit zur begründeten Beurteilung religiöser und ethischer Fragen"@de ;
+    skos:definition "Ability to make reasoned judgments on religious and ethical questions"@en ;
+    skos:broader reliedu-competency: ;
+    skos:related reliedu-didactics:ethisch .
+
+reliedu-competency:dialog a skos:Concept ;
+    skos:prefLabel "Dialogkompetenz"@de, "Dialogue Competency"@en ;
+    skos:definition "Fähigkeit zur respektvollen Kommunikation über religiöse und weltanschauliche Fragen"@de ;
+    skos:definition "Ability to communicate respectfully about religious and worldview questions"@en ;
+    skos:broader reliedu-competency: ;
+    skos:related reliedu-didactics:interreligioes .
+
+reliedu-competency:gestaltung a skos:Concept ;
+    skos:prefLabel "Gestaltungskompetenz"@de, "Design Competency"@en ;
+    skos:definition "Fähigkeit zur kreativen Gestaltung religiöser Ausdrucksformen und Handlungsoptionen"@de ;
+    skos:definition "Ability to creatively design religious expressions and action options"@en ;
+    skos:broader reliedu-competency: ;
+    skos:related reliedu-didactics:performativ, reliedu-didactics:aesthetisch .
+
+# ====================================================================================================
+# 4. CONTENT AREAS (6 concepts)
+# ====================================================================================================
+
+reliedu-content: a skos:Concept ;
+    skos:prefLabel "Inhaltsbereiche"@de, "Content Areas"@en ;
+    skos:definition "Zentrale Themenbereiche des Religionsunterrichts"@de ;
+    skos:definition "Central thematic areas of religious education"@en ;
+    skos:topConceptOf <https://w3id.org/reliedu/> ;
+    skos:narrower reliedu-content:gott,
+                  reliedu-content:jesus-christus,
+                  reliedu-content:bibel,
+                  reliedu-content:kirche,
+                  reliedu-content:religionen,
+                  reliedu-content:ethik .
+
+reliedu-content:gott a skos:Concept ;
+    skos:prefLabel "Gott"@de, "God"@en ;
+    skos:definition "Gotteslehre, Gottesbilder und Gotteserfahrungen"@de ;
+    skos:definition "Doctrine of God, images of God and experiences of God"@en ;
+    skos:broader reliedu-content: ;
+    skos:related reliedu-didactics:systematisch .
+
+reliedu-content:jesus-christus a skos:Concept ;
+    skos:prefLabel "Jesus Christus"@de, "Jesus Christ"@en ;
+    skos:definition "Person und Werk Jesu Christi, Christologie"@de ;
+    skos:definition "Person and work of Jesus Christ, Christology"@en ;
+    skos:broader reliedu-content: ;
+    skos:related reliedu-content:bibel .
+
+reliedu-content:bibel a skos:Concept ;
+    skos:prefLabel "Bibel"@de, "Bible"@en ;
+    skos:definition "Biblische Texte, Auslegung und Bedeutung der Heiligen Schrift"@de ;
+    skos:definition "Biblical texts, interpretation and significance of Scripture"@en ;
+    skos:broader reliedu-content: ;
+    skos:related reliedu-didactics:biblisch .
+
+reliedu-content:kirche a skos:Concept ;
+    skos:prefLabel "Kirche"@de, "Church"@en ;
+    skos:definition "Ekklesiologie, Kirchengeschichte und kirchliches Leben"@de ;
+    skos:definition "Ecclesiology, church history and church life"@en ;
+    skos:broader reliedu-content: ;
+    skos:related reliedu-didactics:kirchengeschichtlich .
+
+reliedu-content:religionen a skos:Concept ;
+    skos:prefLabel "Religionen"@de, "Religions"@en ;
+    skos:definition "Weltreligionen, interreligiöser Dialog und religiöse Vielfalt"@de ;
+    skos:definition "World religions, interreligious dialogue and religious diversity"@en ;
+    skos:broader reliedu-content: ;
+    skos:related reliedu-didactics:interreligioes .
+
+reliedu-content:ethik a skos:Concept ;
+    skos:prefLabel "Ethik"@de, "Ethics"@en ;
+    skos:definition "Christliche Ethik, Moral und Wertevermittlung"@de ;
+    skos:definition "Christian ethics, morality and value transmission"@en ;
+    skos:broader reliedu-content: ;
+    skos:related reliedu-didactics:ethisch .
+
+# ====================================================================================================
+# 5. TEACHING METHODS (4 concepts)
+# ====================================================================================================
+
+reliedu-method: a skos:Concept ;
+    skos:prefLabel "Unterrichtsmethoden"@de, "Teaching Methods"@en ;
+    skos:definition "Methodische Ansätze für den Religionsunterricht"@de ;
+    skos:definition "Methodological approaches for religious education"@en ;
+    skos:topConceptOf <https://w3id.org/reliedu/> ;
+    skos:narrower reliedu-method:handlungsorientiert,
+                  reliedu-method:kreativ,
+                  reliedu-method:kooperativ,
+                  reliedu-method:spirituell .
+
+reliedu-method:handlungsorientiert a skos:Concept ;
+    skos:prefLabel "Handlungsorientiert"@de, "Action-oriented"@en ;
+    skos:definition "Lernmethoden, die praktisches Handeln und Erfahrung in den Mittelpunkt stellen"@de ;
+    skos:definition "Learning methods that focus on practical action and experience"@en ;
+    skos:broader reliedu-method: ;
+    skos:related reliedu-didactics:performativ .
+
+reliedu-method:kreativ a skos:Concept ;
+    skos:prefLabel "Kreativ"@de, "Creative"@en ;
+    skos:definition "Künstlerische und ästhetische Zugangsweisen zum religiösen Lernen"@de ;
+    skos:definition "Artistic and aesthetic approaches to religious learning"@en ;
+    skos:broader reliedu-method: ;
+    skos:related reliedu-didactics:aesthetisch .
+
+reliedu-method:kooperativ a skos:Concept ;
+    skos:prefLabel "Kooperativ"@de, "Cooperative"@en ;
+    skos:definition "Gemeinschaftliche und dialogische Lernformen"@de ;
+    skos:definition "Collaborative and dialogical forms of learning"@en ;
+    skos:broader reliedu-method: ;
+    skos:related reliedu-competency:dialog .
+
+reliedu-method:spirituell a skos:Concept ;
+    skos:prefLabel "Spirituell"@de, "Spiritual"@en ;
+    skos:definition "Meditative, kontemplative und gebetsorientierte Zugänge"@de ;
+    skos:definition "Meditative, contemplative and prayer-oriented approaches"@en ;
+    skos:broader reliedu-method: ;
+    skos:related reliedu-resourcetype:meditation .
+
+# ====================================================================================================
+# 6. LEARNING LOCATIONS (8 concepts)
+# ====================================================================================================
+
+reliedu-location: a skos:Concept ;
+    skos:prefLabel "Lernorte"@de, "Learning Locations"@en ;
+    skos:definition "Spezifische Orte für religionspädagogische Bildungsprozesse"@de ;
+    skos:definition "Specific locations for religious education processes"@en ;
+    skos:topConceptOf <https://w3id.org/reliedu/> ;
+    skos:narrower reliedu-location:klassenzimmer,
+                  reliedu-location:kirche,
+                  reliedu-location:gemeinde,
+                  reliedu-location:kloster,
+                  reliedu-location:friedhof,
+                  reliedu-location:museum,
+                  reliedu-location:natur,
+                  reliedu-location:digital .
+
+reliedu-location:klassenzimmer a skos:Concept ;
+    skos:prefLabel "Klassenzimmer"@de, "Classroom"@en ;
+    skos:definition "Traditioneller Unterrichtsraum in der Schule"@de ;
+    skos:definition "Traditional classroom in school"@en ;
+    skos:broader reliedu-location: .
+
+reliedu-location:kirche a skos:Concept ;
+    skos:prefLabel "Kirche"@de, "Church"@en ;
+    skos:definition "Kirchenraum als Lern- und Erfahrungsort"@de ;
+    skos:definition "Church space as learning and experience location"@en ;
+    skos:broader reliedu-location: ;
+    skos:related reliedu-content:kirche .
+
+reliedu-location:gemeinde a skos:Concept ;
+    skos:prefLabel "Gemeinde"@de, "Parish"@en ;
+    skos:definition "Kirchengemeinde als sozialer Lernraum"@de ;
+    skos:definition "Parish as social learning space"@en ;
+    skos:broader reliedu-location: ;
+    skos:related reliedu-content:kirche .
+
+reliedu-location:kloster a skos:Concept ;
+    skos:prefLabel "Kloster"@de, "Monastery"@en ;
+    skos:definition "Klösterliche Gemeinschaft als spiritueller Lernort"@de ;
+    skos:definition "Monastic community as spiritual learning location"@en ;
+    skos:broader reliedu-location: ;
+    skos:related reliedu-method:spirituell .
+
+reliedu-location:friedhof a skos:Concept ;
+    skos:prefLabel "Friedhof"@de, "Cemetery"@en ;
+    skos:definition "Friedhof als Ort der Auseinandersetzung mit Tod und Vergänglichkeit"@de ;
+    skos:definition "Cemetery as place for dealing with death and transience"@en ;
+    skos:broader reliedu-location: .
+
+reliedu-location:museum a skos:Concept ;
+    skos:prefLabel "Museum"@de, "Museum"@en ;
+    skos:definition "Religionsgeschichtliche und kulturhistorische Museen"@de ;
+    skos:definition "Religious and cultural history museums"@en ;
+    skos:broader reliedu-location: ;
+    skos:related reliedu-didactics:kirchengeschichtlich .
+
+reliedu-location:natur a skos:Concept ;
+    skos:prefLabel "Natur"@de, "Nature"@en ;
+    skos:definition "Natürliche Umgebung als Ort spiritueller Erfahrung"@de ;
+    skos:definition "Natural environment as place of spiritual experience"@en ;
+    skos:broader reliedu-location: ;
+    skos:related reliedu-content:gott .
+
+reliedu-location:digital a skos:Concept ;
+    skos:prefLabel "Digitaler Raum"@de, "Digital Space"@en ;
+    skos:definition "Virtuelle Lernumgebungen und Online-Plattformen"@de ;
+    skos:definition "Virtual learning environments and online platforms"@en ;
+    skos:broader reliedu-location: .
+
+# ====================================================================================================
+# MAPPINGS TO EXTERNAL VOCABULARIES
+# ====================================================================================================
+
+# Mapping zu OpenEduHub Discipline
+reliedu-didactics: skos:exactMatch oeh-discipline:520 . # Religion
+
+# Mapping zu KIM educationalLevel (wird in AMB verwendet)
+# Die educationalLevel werden in der AMB-Metadaten-Generierung verwendet
+
+# Mapping zu OpenEduHub new_lrt (Learning Resource Types)
+reliedu-resourcetype:unterrichtseinheit skos:exactMatch oeh-lrt:36e68792-3a99-4c1d-b1c9-9212d67026ee . # Unterrichtsplanung
