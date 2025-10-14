@@ -1,0 +1,77 @@
+@prefix reliedu: <https://w3id.org/reliedu/> .
+@prefix reliedu-method: <https://w3id.org/reliedu/method/> .
+@prefix oeh-lrt: <http://w3id.org/openeduhub/vocabs/new_lrt/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE UNTERRICHTSMETHODEN
+# ====================================================================================================
+# Verwendung in AMB: Kann in teaches oder als zusätzliches about verwendet werden
+# ====================================================================================================
+
+<https://w3id.org/reliedu/method/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Unterrichtsmethoden"@de, 
+              "Religious-Pedagogical Teaching Methods"@en ;
+    
+    dct:description """Spezifische Unterrichtsmethoden der Religionspädagogik.
+
+Diese Methoden sind charakteristisch für den Religionsunterricht und ergänzen allgemeine pädagogische Methoden."""@de ;
+    
+    dct:description """Specific teaching methods in religious education.
+
+These methods are characteristic of religious education and complement general pedagogical methods."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-13"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
+    dct:isPartOf reliedu: ;
+    
+    schema:version "0.3" ;
+    
+    vann:preferredNamespacePrefix "reliedu-method" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/method/" ;
+    
+    skos:hasTopConcept reliedu-method:bibelgespraech,
+                       reliedu-method:bibliolog,
+                       reliedu-method:godly-play,
+                       reliedu-method:kirchenraumfuehrung .
+
+
+# ====================================================================================================
+# UNTERRICHTSMETHODEN
+# ====================================================================================================
+
+reliedu-method:bibelgespraech a skos:Concept ;
+    skos:inScheme reliedu-method: ;
+    skos:topConceptOf reliedu-method: ;
+    skos:prefLabel "Bibelgespräch"@de, "Biblical Conversation"@en ;
+    skos:definition """Gemeinsames Erschließen biblischer Texte im Gespräch."""@de ;
+    skos:broadMatch oeh-lrt:477115fd-5042-4174-ac39-7c05f8a24766 . # Pädagogische Methode
+
+reliedu-method:bibliolog a skos:Concept ;
+    skos:inScheme reliedu-method: ;
+    skos:topConceptOf reliedu-method: ;
+    skos:prefLabel "Bibliolog"@de, "Bibliolog"@en ;
+    skos:definition """Methode, biblische Texte durch Rollenidentifikation zu erschließen."""@de ;
+    skos:broadMatch oeh-lrt:477115fd-5042-4174-ac39-7c05f8a24766 . # Pädagogische Methode
+
+reliedu-method:godly-play a skos:Concept ;
+    skos:inScheme reliedu-method: ;
+    skos:topConceptOf reliedu-method: ;
+    skos:prefLabel "Godly Play"@de, "Godly Play"@en ;
+    skos:altLabel "Gott im Spiel"@de ;
+    skos:definition """Montessori-inspirierte Methode religiöser Bildung."""@de ;
+    skos:broadMatch oeh-lrt:477115fd-5042-4174-ac39-7c05f8a24766 . # Pädagogische Methode
+
+reliedu-method:kirchenraumfuehrung a skos:Concept ;
+    skos:inScheme reliedu-method: ;
+    skos:topConceptOf reliedu-method: ;
+    skos:prefLabel "Kirchenraumführung"@de, "Church Tour"@en ;
+    skos:definition """Erschließung von Kirchenräumen durch geführte Erkundung."""@de ;
+    skos:broadMatch oeh-lrt:477115fd-5042-4174-ac39-7c05f8a24766 . # Pädagogische Methode
