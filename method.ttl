@@ -1,0 +1,134 @@
+@prefix reliedu-method: <https://w3id.org/reliedu/method/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE METHODEN - CONCEPT SCHEME
+# ====================================================================================================
+# Zweck: Spezifische Lehr- und Lernmethoden der Religionspädagogik
+# Verwendung in AMB: typicalLearningTime oder conditionsOfAccess
+# Erweiterung allgemeiner didaktischer Methoden um religionsspezifische Ansätze
+# ====================================================================================================
+
+<https://w3id.org/reliedu/method/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Methoden"@de, 
+              "Religious-Pedagogical Methods"@en ;
+    dct:description """Kontrolliertes Vokabular für religionsspezifische Lehr- und Lernmethoden.
+    
+Dieses ConceptScheme erfasst die besonderen methodischen Ansätze der Religionspädagogik, die sich von allgemeinen didaktischen Methoden unterscheiden. Es berücksichtigt die spirituelle, liturgische und gemeinschaftliche Dimension religiöser Bildungsprozesse.
+
+Die Methoden ermöglichen ganzheitliche Lernprozesse, die kognitive, emotionale und spirituelle Aspekte integrieren."""@de ;
+    
+    dct:description """Controlled vocabulary for religion-specific teaching and learning methods.
+
+This ConceptScheme captures the special methodological approaches of religious pedagogy that differ from general didactic methods. It considers the spiritual, liturgical and communal dimension of religious educational processes.
+
+The methods enable holistic learning processes that integrate cognitive, emotional and spiritual aspects."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-14"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:publisher "Religionspädagogisches Institut" ;
+    
+    schema:version "1.0" ;
+    
+    vann:preferredNamespacePrefix "reliedu-method" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/method/" ;
+    
+    skos:hasTopConcept reliedu-method:meditation,
+                       reliedu-method:gebet,
+                       reliedu-method:bibliolog,
+                       reliedu-method:kirchenpadagogik,
+                       reliedu-method:stilleubung,
+                       reliedu-method:rollenspiel,
+                       reliedu-method:kunstpadagogik,
+                       reliedu-method:musikpadagogik .
+
+
+# ====================================================================================================
+# RELIGIONSSPEZIFISCHE METHODEN
+# ====================================================================================================
+
+reliedu-method:meditation a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Meditation"@de, "Meditation"@en ;
+    skos:definition "Übung der Sammlung und spirituellen Vertiefung als Lernmethode."@de ;
+    skos:definition "Practice of concentration and spiritual deepening as a learning method."@en ;
+    skos:scopeNote "Umfasst kontemplative, imaginative und bewegte Meditationsformen."@de ;
+    skos:notation "MEDI" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-method:gebet a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Gebet als Methode"@de, "Prayer as Method"@en ;
+    skos:definition "Gebetsformen als didaktisches Element in religiösen Lernprozessen."@de ;
+    skos:definition "Prayer forms as didactic element in religious learning processes."@en ;
+    skos:scopeNote "Beinhaltet freies Gebet, liturgische Gebete und kreative Gebetsformen."@de ;
+    skos:notation "GEBE" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-method:bibliolog a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Bibliolog"@de, "Bibliolog"@en ;
+    skos:definition "Interaktive Methode der Bibelauslegung durch Rolleneinfühlung und Identifikation."@de ;
+    skos:definition "Interactive method of biblical interpretation through role empathy and identification."@en ;
+    skos:scopeNote "Partizipative Bibelauslegung in der Gruppe mit verteilten Rollen."@de ;
+    skos:notation "BIBL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-method:kirchenpadagogik a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Kirchenpädagogik"@de, "Church Pedagogy"@en ;
+    skos:definition "Ganzheitliche Erschließung des Kirchenraums als Lern- und Erfahrungsort."@de ;
+    skos:definition "Holistic exploration of church space as a place of learning and experience."@en ;
+    skos:scopeNote "Raumerkundung mit allen Sinnen, Architektur und Symbolik."@de ;
+    skos:notation "KIRC" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-method:stilleubung a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Stilleübung"@de, "Silence Exercise"@en ;
+    skos:definition "Methodische Einübung in Stille und Achtsamkeit als spirituelle Praxis."@de ;
+    skos:definition "Methodical practice in silence and mindfulness as spiritual practice."@en ;
+    skos:scopeNote "Atemübungen, Körperwahrnehmung und kontemplative Techniken."@de ;
+    skos:notation "STIL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-method:rollenspiel a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Religiöses Rollenspiel"@de, "Religious Role Play"@en ;
+    skos:definition "Szenische Darstellung religiöser Inhalte und ethischer Dilemmata."@de ;
+    skos:definition "Scenic representation of religious content and ethical dilemmas."@en ;
+    skos:scopeNote "Biblische Szenen, Heiligenlegenden und ethische Entscheidungssituationen."@de ;
+    skos:notation "ROLL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-method:kunstpadagogik a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Religiöse Kunstpädagogik"@de, "Religious Art Pedagogy"@en ;
+    skos:definition "Erschließung religiöser Inhalte durch künstlerisch-kreative Gestaltung."@de ;
+    skos:definition "Exploration of religious content through artistic-creative design."@en ;
+    skos:scopeNote "Malen, Gestalten, Ikonographie und kreative Bibelarbeit."@de ;
+    skos:notation "KUNS" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-method:musikpadagogik a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/method/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/method/> ;
+    skos:prefLabel "Religiöse Musikpädagogik"@de, "Religious Music Pedagogy"@en ;
+    skos:definition "Religiöse Bildung durch Singen, Musizieren und Musikhören."@de ;
+    skos:definition "Religious education through singing, making music and listening to music."@en ;
+    skos:scopeNote "Geistliche Lieder, Psalmen, Gospel und meditative Musik."@de ;
+    skos:notation "MUSI" ;
+    dct:created "2025-10-14"^^xsd:date .

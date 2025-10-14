@@ -1,0 +1,176 @@
+@prefix reliedu-didactics: <https://w3id.org/reliedu/didactics/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSDIDAKTISCHE LABELS - CONCEPT SCHEME
+# ====================================================================================================
+# Zweck: Religionsdidaktische Ansätze und Konzepte für AMB-konforme Metadaten
+# Verwendung in AMB: about-Feld (ergänzend zu discipline/520)
+# Pattern: about = [discipline/520, reliedu-didactics:subjektorientierung, ...]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/didactics/> a skos:ConceptScheme ;
+    dct:title "Religionsdidaktische Labels"@de, 
+              "Religious-Didactic Labels"@en ;
+    dct:description """Kontrolliertes Vokabular für religionsdidaktische Ansätze und Konzepte. 
+    
+Dieses ConceptScheme erfasst die 13 Kernkonzepte der Religionsdidaktik nach dem aktuellen wissenschaftlichen Diskurs. Es dient der präzisen Verschlagwortung religionspädagogischer Materialien und ist vollständig AMB-konform einsetzbar.
+
+Die Labels ermöglichen die methodisch-didaktische Erschließung über die reine Fachzuordnung hinaus und unterstützen so differenzierte Suchstrategien für religionspädagogische Ressourcen."""@de ;
+    
+    dct:description """Controlled vocabulary for religious-didactic approaches and concepts.
+
+This ConceptScheme captures the 13 core concepts of religious didactics according to current academic discourse. It serves for precise indexing of religious-pedagogical materials and is fully AMB-compliant.
+
+The labels enable methodical-didactic indexing beyond mere subject classification and thus support differentiated search strategies for religious-pedagogical resources."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-14"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:publisher "Religionspädagogisches Institut" ;
+    
+    schema:version "1.0" ;
+    
+    vann:preferredNamespacePrefix "reliedu-didactics" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/didactics/" ;
+    
+    skos:hasTopConcept reliedu-didactics:subjektorientierung,
+                       reliedu-didactics:korrelation,
+                       reliedu-didactics:elementarisierung,
+                       reliedu-didactics:symboldidaktik,
+                       reliedu-didactics:bibliodrama,
+                       reliedu-didactics:performativ,
+                       reliedu-didactics:konfigurativ,
+                       reliedu-didactics:mystagogisch,
+                       reliedu-didactics:interkulturell,
+                       reliedu-didactics:gender,
+                       reliedu-didactics:inklusiv,
+                       reliedu-didactics:medial,
+                       reliedu-didactics:digital .
+
+
+# ====================================================================================================
+# RELIGIONSDIDAKTISCHE KONZEPTE
+# ====================================================================================================
+
+reliedu-didactics:subjektorientierung a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Subjektorientierung"@de, "Student-Centered Approach"@en ;
+    skos:definition "Didaktischer Ansatz, der die individuellen Vorerfahrungen, Fragen und Lebenswelten der Lernenden in den Mittelpunkt stellt."@de ;
+    skos:definition "Didactic approach that focuses on individual prior experiences, questions and life worlds of learners."@en ;
+    skos:notation "SUBJ" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:korrelation a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Korrelationsdidaktik"@de, "Correlation Didactics"@en ;
+    skos:definition "Didaktischer Ansatz zur Verknüpfung von Lebenserfahrung und Glaubenstradition durch wechselseitige Erschließung."@de ;
+    skos:definition "Didactic approach linking life experience and faith tradition through mutual interpretation."@en ;
+    skos:notation "KORR" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:elementarisierung a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Elementarisierung"@de, "Elementarization"@en ;
+    skos:definition "Methode zur Reduktion komplexer theologischer Inhalte auf elementare Strukturen für den Bildungsprozess."@de ;
+    skos:definition "Method for reducing complex theological content to elementary structures for the educational process."@en ;
+    skos:notation "ELEM" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:symboldidaktik a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Symboldidaktik"@de, "Symbol Didactics"@en ;
+    skos:definition "Didaktischer Zugang über Symbole als Brücke zwischen Erfahrung und Glaubensaussagen."@de ;
+    skos:definition "Didactic approach using symbols as bridges between experience and faith statements."@en ;
+    skos:notation "SYMB" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:bibliodrama a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Bibliodrama"@de, "Bibliodrama"@en ;
+    skos:definition "Erfahrungsorientierte Methode der Bibelauslegung durch szenisches Spiel und Rollenwechsel."@de ;
+    skos:definition "Experience-oriented method of biblical interpretation through scenic play and role switching."@en ;
+    skos:notation "BIBL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:performativ a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Performative Religionsdidaktik"@de, "Performative Religious Didactics"@en ;
+    skos:definition "Didaktischer Ansatz, der religiöse Praxis und verkörpertes Lernen in den Mittelpunkt stellt."@de ;
+    skos:definition "Didactic approach focusing on religious practice and embodied learning."@en ;
+    skos:notation "PERF" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:konfigurativ a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Konfigurative Religionsdidaktik"@de, "Configurative Religious Didactics"@en ;
+    skos:definition "Didaktik der Darstellung religiöser Inhalte in ästhetischen und kreativen Konfigurationen."@de ;
+    skos:definition "Didactics of presenting religious content in aesthetic and creative configurations."@en ;
+    skos:notation "KONF" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:mystagogisch a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Mystagogische Didaktik"@de, "Mystagogical Didactics"@en ;
+    skos:definition "Didaktischer Ansatz der schrittweisen Einführung in religiöse Erfahrungen und Geheimnisse."@de ;
+    skos:definition "Didactic approach of gradual introduction to religious experiences and mysteries."@en ;
+    skos:notation "MYST" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:interkulturell a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Interkulturelle Religionsdidaktik"@de, "Intercultural Religious Didactics"@en ;
+    skos:definition "Didaktischer Ansatz zum Lernen zwischen verschiedenen religiösen und kulturellen Traditionen."@de ;
+    skos:definition "Didactic approach for learning between different religious and cultural traditions."@en ;
+    skos:notation "INTE" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:gender a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Gendersensible Religionsdidaktik"@de, "Gender-Sensitive Religious Didactics"@en ;
+    skos:definition "Didaktischer Ansatz, der Geschlechteraspekte in der Religionspädagogik reflektiert und berücksichtigt."@de ;
+    skos:definition "Didactic approach that reflects on and considers gender aspects in religious education."@en ;
+    skos:notation "GEND" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:inklusiv a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Inklusive Religionsdidaktik"@de, "Inclusive Religious Didactics"@en ;
+    skos:definition "Didaktischer Ansatz für gemeinsames religiöses Lernen trotz unterschiedlicher Voraussetzungen."@de ;
+    skos:definition "Didactic approach for shared religious learning despite different prerequisites."@en ;
+    skos:notation "INKL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:medial a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Mediale Religionsdidaktik"@de, "Media Religious Didactics"@en ;
+    skos:definition "Didaktischer Ansatz zur Integration verschiedener Medien in religiöse Lernprozesse."@de ;
+    skos:definition "Didactic approach for integrating various media into religious learning processes."@en ;
+    skos:notation "MEDI" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-didactics:digital a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/didactics/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/didactics/> ;
+    skos:prefLabel "Digitale Religionsdidaktik"@de, "Digital Religious Didactics"@en ;
+    skos:definition "Didaktischer Ansatz für digitale Medien und Online-Lernumgebungen in der Religionspädagogik."@de ;
+    skos:definition "Didactic approach for digital media and online learning environments in religious education."@en ;
+    skos:notation "DIGI" ;
+    dct:created "2025-10-14"^^xsd:date .

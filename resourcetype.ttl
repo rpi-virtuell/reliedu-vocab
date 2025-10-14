@@ -1,0 +1,116 @@
+@prefix reliedu-resourcetype: <https://w3id.org/reliedu/resourcetype/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE RESSOURCENTYPEN - CONCEPT SCHEME
+# ====================================================================================================
+# Zweck: Spezielle Ressourcentypen für religiöse Bildungsmaterialien
+# Verwendung in AMB: learningResourceType (erweitert new_lrt)
+# Pattern: learningResourceType = [new_lrt/..., reliedu-resourcetype:gottesdienstbaustein]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/resourcetype/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Ressourcentypen"@de, 
+              "Religious-Pedagogical Resource Types"@en ;
+    dct:description """Kontrolliertes Vokabular für religionsspezifische Lehr- und Lernressourcentypen.
+    
+Dieses ConceptScheme ergänzt die OpenEduHub-Ressourcentypen (new_lrt) um religionsspezifische Materialtypen, die in der allgemeinen Bildung nicht vorkommen. Es ermöglicht die präzise Klassifikation religionspädagogischer Materialien entsprechend ihrer liturgischen, katechetischen oder gemeindepädagogischen Funktion.
+
+Die Typen sind AMB-konform und können parallel zu new_lrt-Werten verwendet werden."""@de ;
+    
+    dct:description """Controlled vocabulary for religion-specific teaching and learning resource types.
+
+This ConceptScheme supplements the OpenEduHub resource types (new_lrt) with religion-specific material types that do not occur in general education. It enables precise classification of religious-pedagogical materials according to their liturgical, catechetical or parish educational function.
+
+The types are AMB-compliant and can be used in parallel with new_lrt values."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-14"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:publisher "Religionspädagogisches Institut" ;
+    
+    schema:version "1.0" ;
+    
+    vann:preferredNamespacePrefix "reliedu-resourcetype" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/resourcetype/" ;
+    
+    skos:hasTopConcept reliedu-resourcetype:gottesdienstbaustein,
+                       reliedu-resourcetype:andacht,
+                       reliedu-resourcetype:liturgie,
+                       reliedu-resourcetype:glaubenskurs,
+                       reliedu-resourcetype:exerzitium,
+                       reliedu-resourcetype:seelsorgehilfe,
+                       reliedu-resourcetype:gemeindepraxis .
+
+
+# ====================================================================================================
+# RELIGIONSSPEZIFISCHE RESSOURCENTYPEN
+# ====================================================================================================
+
+reliedu-resourcetype:gottesdienstbaustein a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/resourcetype/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/resourcetype/> ;
+    skos:prefLabel "Gottesdienstbaustein"@de, "Worship Service Element"@en ;
+    skos:definition "Teilkomponente einer Gottesdienstfeier (Gebet, Lesung, Predigt, Fürbitten, etc.)"@de ;
+    skos:definition "Partial component of a worship service (prayer, reading, sermon, intercessions, etc.)"@en ;
+    skos:notation "GODI" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-resourcetype:andacht a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/resourcetype/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/resourcetype/> ;
+    skos:prefLabel "Andacht"@de, "Devotion"@en ;
+    skos:definition "Kurze religiöse Feier oder spirituelle Besinnung für verschiedene Anlässe."@de ;
+    skos:definition "Short religious service or spiritual reflection for various occasions."@en ;
+    skos:notation "ANDA" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-resourcetype:liturgie a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/resourcetype/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/resourcetype/> ;
+    skos:prefLabel "Liturgisches Material"@de, "Liturgical Material"@en ;
+    skos:definition "Material für liturgische Feiern, Sakramente und kirchliche Handlungen."@de ;
+    skos:definition "Material for liturgical celebrations, sacraments and ecclesiastical actions."@en ;
+    skos:notation "LITU" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-resourcetype:glaubenskurs a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/resourcetype/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/resourcetype/> ;
+    skos:prefLabel "Glaubenskurs"@de, "Faith Course"@en ;
+    skos:definition "Strukturiertes Programm zur Glaubensvermittlung und spirituellen Bildung."@de ;
+    skos:definition "Structured program for faith transmission and spiritual education."@en ;
+    skos:notation "GLAU" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-resourcetype:exerzitium a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/resourcetype/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/resourcetype/> ;
+    skos:prefLabel "Exerzitium"@de, "Spiritual Exercise"@en ;
+    skos:definition "Anleitung für geistliche Übungen und spirituelle Praxis."@de ;
+    skos:definition "Instruction for spiritual exercises and spiritual practice."@en ;
+    skos:notation "EXER" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-resourcetype:seelsorgehilfe a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/resourcetype/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/resourcetype/> ;
+    skos:prefLabel "Seelsorgehilfe"@de, "Pastoral Care Aid"@en ;
+    skos:definition "Unterstützungsmaterial für seelsorgerliche Gespräche und Begleitung."@de ;
+    skos:definition "Support material for pastoral conversations and accompaniment."@en ;
+    skos:notation "SEEL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-resourcetype:gemeindepraxis a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/resourcetype/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/resourcetype/> ;
+    skos:prefLabel "Gemeindepraxis"@de, "Parish Practice"@en ;
+    skos:definition "Praktische Anleitung für Gemeindearbeit und kirchliche Aktivitäten."@de ;
+    skos:definition "Practical instruction for parish work and church activities."@en ;
+    skos:notation "GEME" ;
+    dct:created "2025-10-14"^^xsd:date .

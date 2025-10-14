@@ -1,0 +1,134 @@
+@prefix reliedu-content: <https://w3id.org/reliedu/content/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE INHALTSBEREICHE - CONCEPT SCHEME
+# ====================================================================================================
+# Zweck: Thematische Gliederung religionspädagogischer Inhalte
+# Verwendung in AMB: about-Feld (erweitert discipline)
+# Pattern: about = [discipline/520, reliedu-content:gotteslehre, ...]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/content/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Inhaltsbereiche"@de, 
+              "Religious-Pedagogical Content Areas"@en ;
+    dct:description """Kontrolliertes Vokabular für die thematische Erschließung religionspädagogischer Inhalte.
+    
+Dieses ConceptScheme strukturiert die zentralen Inhaltsbereiche der religiösen Bildung entsprechend aktueller Kerncurricula und Bildungsstandards. Es ermöglicht die systematische Verschlagwortung von Materialien nach theologischen und religionspädagogischen Themenschwerpunkten.
+
+Die Bereiche decken die klassischen Dimensionen religiöser Bildung ab: Gotteslehre, Christologie, Anthropologie, Ethik, Ekklesiologie und Eschatologie."""@de ;
+    
+    dct:description """Controlled vocabulary for thematic indexing of religious-pedagogical content.
+
+This ConceptScheme structures the central content areas of religious education according to current core curricula and educational standards. It enables systematic indexing of materials according to theological and religious-pedagogical focal points.
+
+The areas cover the classical dimensions of religious education: doctrine of God, Christology, anthropology, ethics, ecclesiology and eschatology."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-14"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:publisher "Religionspädagogisches Institut" ;
+    
+    schema:version "1.0" ;
+    
+    vann:preferredNamespacePrefix "reliedu-content" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/content/" ;
+    
+    skos:hasTopConcept reliedu-content:gotteslehre,
+                       reliedu-content:christologie,
+                       reliedu-content:anthropologie,
+                       reliedu-content:ethik,
+                       reliedu-content:ekklesiologie,
+                       reliedu-content:eschatologie,
+                       reliedu-content:religionen,
+                       reliedu-content:bibeldidaktik .
+
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE INHALTSBEREICHE
+# ====================================================================================================
+
+reliedu-content:gotteslehre a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Gotteslehre"@de, "Doctrine of God"@en ;
+    skos:definition "Theologische Reflexion über Gott, Gottesbilder und Gotteserfahrungen."@de ;
+    skos:definition "Theological reflection on God, images of God and experiences of God."@en ;
+    skos:scopeNote "Umfasst Theodizee, Trinität, Gottesvorstellungen und spirituelle Erfahrungen."@de ;
+    skos:notation "GOTT" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-content:christologie a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Christologie"@de, "Christology"@en ;
+    skos:definition "Lehre von der Person und dem Werk Jesu Christi."@de ;
+    skos:definition "Doctrine of the person and work of Jesus Christ."@en ;
+    skos:scopeNote "Beinhaltet Jesusbilder, Passion, Auferstehung und Nachfolge."@de ;
+    skos:notation "CHRI" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-content:anthropologie a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Theologische Anthropologie"@de, "Theological Anthropology"@en ;
+    skos:definition "Lehre vom Menschen aus theologischer Perspektive."@de ;
+    skos:definition "Doctrine of humanity from a theological perspective."@en ;
+    skos:scopeNote "Umfasst Menschenbild, Würde, Schuld, Vergebung und Berufung."@de ;
+    skos:notation "ANTH" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-content:ethik a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Religiöse Ethik"@de, "Religious Ethics"@en ;
+    skos:definition "Moraltheologische und ethische Reflexion auf Basis religiöser Traditionen."@de ;
+    skos:definition "Moral theological and ethical reflection based on religious traditions."@en ;
+    skos:scopeNote "Beinhaltet Sozialethik, Bioethik, Sexualethik und Wirtschaftsethik."@de ;
+    skos:notation "ETHI" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-content:ekklesiologie a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Ekklesiologie"@de, "Ecclesiology"@en ;
+    skos:definition "Lehre von der Kirche, ihrer Struktur und Mission."@de ;
+    skos:definition "Doctrine of the church, its structure and mission."@en ;
+    skos:scopeNote "Umfasst Kirchengeschichte, Sakramente, Amt und Ökumene."@de ;
+    skos:notation "EKKL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-content:eschatologie a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Eschatologie"@de, "Eschatology"@en ;
+    skos:definition "Lehre von den letzten Dingen und der Vollendung."@de ;
+    skos:definition "Doctrine of the last things and fulfillment."@en ;
+    skos:scopeNote "Beinhaltet Tod, Auferstehung, Gericht und Reich Gottes."@de ;
+    skos:notation "ESCH" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-content:religionen a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Weltreligionen und Konfessionen"@de, "World Religions and Denominations"@en ;
+    skos:definition "Vergleichende Religionswissenschaft und interkonfessioneller Dialog."@de ;
+    skos:definition "Comparative religious studies and interfaith dialogue."@en ;
+    skos:scopeNote "Umfasst Islam, Judentum, Hinduismus, Buddhismus und christliche Konfessionen."@de ;
+    skos:notation "RELI" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-content:bibeldidaktik a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/content/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/content/> ;
+    skos:prefLabel "Bibeldidaktik"@de, "Biblical Didactics"@en ;
+    skos:definition "Didaktische Erschließung biblischer Texte für den Bildungsprozess."@de ;
+    skos:definition "Didactic development of biblical texts for the educational process."@en ;
+    skos:scopeNote "Beinhaltet Hermeneutik, Exegese und altersgemäße Bibelauslegung."@de ;
+    skos:notation "BIBE" ;
+    dct:created "2025-10-14"^^xsd:date .

@@ -1,0 +1,139 @@
+@prefix reliedu-location: <https://w3id.org/reliedu/location/> .
+@prefix oeh-educ: <http://w3id.org/openeduhub/vocabs/educationalContext/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE LERNORTE - CONCEPT SCHEME
+# ====================================================================================================
+# Zweck: Religionsspezifische Bildungskontexte als Erweiterung von educationalContext
+# Verwendung in AMB: educationalContext (erweitert openeduhub educationalContext)
+# Pattern: educationalContext = [oeh-educ:..., reliedu-location:konfirmandenarbeit]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/location/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Lernorte"@de, 
+              "Religious-Pedagogical Learning Contexts"@en ;
+    dct:description """Kontrolliertes Vokabular für religionsspezifische Bildungskontexte und Lernorte.
+    
+Dieses ConceptScheme erweitert die OpenEduHub educationalContext-Werte um religionsspezifische Bildungskontexte, die im allgemeinen Bildungssystem nicht vorkommen. Es erfasst die Vielfalt religiöser Lern- und Bildungsorte von der Gemeindepädagogik bis zur Erwachsenenbildung.
+
+Die Kontexte ermöglichen die präzise Zuordnung von Materialien zu spezifischen religionspädagogischen Handlungsfeldern und Zielgruppen."""@de ;
+    
+    dct:description """Controlled vocabulary for religion-specific educational contexts and learning places.
+
+This ConceptScheme extends the OpenEduHub educationalContext values with religion-specific educational contexts that do not occur in the general education system. It captures the diversity of religious learning and educational places from parish education to adult education.
+
+The contexts enable precise assignment of materials to specific religious-pedagogical fields of action and target groups."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-14"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:publisher "Religionspädagogisches Institut" ;
+    
+    schema:version "1.0" ;
+    
+    vann:preferredNamespacePrefix "reliedu-location" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/location/" ;
+    
+    skos:hasTopConcept reliedu-location:konfirmandenarbeit,
+                       reliedu-location:firmvorbereitung,
+                       reliedu-location:erwachsenenbildung_gemeinde,
+                       reliedu-location:gottesdienst,
+                       reliedu-location:seelsorge,
+                       reliedu-location:pilgerweg,
+                       reliedu-location:kloster,
+                       reliedu-location:bibelkreis .
+
+
+# ====================================================================================================
+# RELIGIONSSPEZIFISCHE BILDUNGSKONTEXTE
+# ====================================================================================================
+
+reliedu-location:konfirmandenarbeit a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Konfirmandenarbeit"@de, "Confirmation Classes"@en ;
+    skos:definition "Evangelische Jugendarbeit zur Vorbereitung auf die Konfirmation."@de ;
+    skos:definition "Protestant youth work in preparation for confirmation."@en ;
+    skos:scopeNote "Typisch für Jugendliche 13-15 Jahre in evangelischen Gemeinden."@de ;
+    skos:notation "KONF" ;
+    skos:broadMatch <http://w3id.org/openeduhub/vocabs/educationalContext/sekundarstufe_1> ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-location:firmvorbereitung a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Firmvorbereitung"@de, "Confirmation Preparation (Catholic)"@en ;
+    skos:definition "Katholische Jugendarbeit zur Vorbereitung auf das Sakrament der Firmung."@de ;
+    skos:definition "Catholic youth work in preparation for the sacrament of confirmation."@en ;
+    skos:scopeNote "Typisch für Jugendliche 14-16 Jahre in katholischen Gemeinden."@de ;
+    skos:notation "FIRM" ;
+    skos:broadMatch <http://w3id.org/openeduhub/vocabs/educationalContext/sekundarstufe_1> ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-location:erwachsenenbildung_gemeinde a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Erwachsenenbildung in der Gemeinde"@de, "Adult Education in Parish"@en ;
+    skos:definition "Religiöse Bildungsangebote für Erwachsene im Kontext der Kirchengemeinde."@de ;
+    skos:definition "Religious educational offerings for adults in the context of the parish."@en ;
+    skos:scopeNote "Umfasst Bibelkreise, Glaubenskurse und spirituelle Angebote."@de ;
+    skos:notation "ERWA" ;
+    skos:broadMatch <http://w3id.org/openeduhub/vocabs/educationalContext/erwachsenenbildung> ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-location:gottesdienst a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Gottesdienst als Lernort"@de, "Worship as Learning Context"@en ;
+    skos:definition "Liturgische Feier als Ort religiöser Bildung und spiritueller Erfahrung."@de ;
+    skos:definition "Liturgical celebration as place of religious education and spiritual experience."@en ;
+    skos:scopeNote "Beinhaltet Familiengottesdienst, Schulgottesdienst und thematische Liturgien."@de ;
+    skos:notation "GOTT" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-location:seelsorge a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Seelsorge"@de, "Pastoral Care"@en ;
+    skos:definition "Individuelle und gruppenbezogene geistliche Begleitung und Beratung."@de ;
+    skos:definition "Individual and group-related spiritual accompaniment and counseling."@en ;
+    skos:scopeNote "Umfasst Krankenhausseelsorge, Gefängnisseelsorge und Lebensberatung."@de ;
+    skos:notation "SEEL" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-location:pilgerweg a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Pilgerweg"@de, "Pilgrimage Path"@en ;
+    skos:definition "Spirituelle Wanderung als Form religiöser Bildung und persönlicher Entwicklung."@de ;
+    skos:definition "Spiritual journey as form of religious education and personal development."@en ;
+    skos:scopeNote "Beinhaltet Jakobsweg, lokale Pilgerwege und spirituelle Wanderungen."@de ;
+    skos:notation "PILG" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-location:kloster a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Kloster als Lernort"@de, "Monastery as Learning Place"@en ;
+    skos:definition "Monastische Gemeinschaft als Ort spiritueller Bildung und religiöser Erfahrung."@de ;
+    skos:definition "Monastic community as place of spiritual education and religious experience."@en ;
+    skos:scopeNote "Umfasst Klosterbesuche, Exerzitien und spirituelle Kurse."@de ;
+    skos:notation "KLOS" ;
+    dct:created "2025-10-14"^^xsd:date .
+
+reliedu-location:bibelkreis a skos:Concept ;
+    skos:inScheme <https://w3id.org/reliedu/location/> ;
+    skos:topConceptOf <https://w3id.org/reliedu/location/> ;
+    skos:prefLabel "Bibelkreis"@de, "Bible Study Group"@en ;
+    skos:definition "Gruppenbezogene Bibelarbeit und theologische Reflexion in der Gemeinde."@de ;
+    skos:definition "Group-based Bible study and theological reflection in the parish."@en ;
+    skos:scopeNote "Regelmäßige Treffen zur gemeinsamen Bibellektüre und Diskussion."@de ;
+    skos:notation "BIBE" ;
+    skos:broadMatch <http://w3id.org/openeduhub/vocabs/educationalContext/erwachsenenbildung> ;
+    dct:created "2025-10-14"^^xsd:date .

@@ -1,104 +1,158 @@
-# Religionspädagogisches Vokabular (ReLiEdu Vocabulary)
+# Religionspädagogisches Vokabular (Rein Modulare Architektur)
 
-Kontrolliertes SKOS-Vokabular für die AMB-konforme Erschließung religionspädagogischer Bildungsressourcen.
+Sechs eigenständige SKOS-ConceptSchemes für religionspädagogische Bildungsressourcen - **keine Hauptdatei nötig!**
 
-## 📁 Repository-Struktur
+## 🎯 Modulare ConceptSchemes
 
-Dieses Repository hat **zwei Branches**:
+Jede TTL-Datei ist ein **vollständiges, eigenständiges ConceptScheme** mit eigenem Namespace:
 
-- **`main`** - Stabiler Branch mit der ursprünglichen `reliedu.ttl` (funktioniert mit SkoHub)
-- **`weiterentwicklung`** - Experimenteller Branch mit modularer Struktur (6 separate .ttl Dateien)
+| Datei | ConceptScheme URI | Beschreibung | AMB-Verwendung |
+|-------|------------------|-------------|----------------|
+| **didactics.ttl** | `https://w3id.org/reliedu/didactics/` | 13 religionsdidaktische Labels | `about` (zusätzlich zu discipline/520) |
+| **resourcetype.ttl** | `https://w3id.org/reliedu/resourcetype/` | 7 religionsspezifische Ressourcentypen | `learningResourceType` (erweitert new_lrt) |
+| **competency.ttl** | `https://w3id.org/reliedu/competency/` | 6 religionpädagogische Kompetenzbereiche | `teaches` (erweitert hcrt) |
+| **content.ttl** | `https://w3id.org/reliedu/content/` | 8 theologische Inhaltsbereiche | `about` (erweitert discipline) |
+| **method.ttl** | `https://w3id.org/reliedu/method/` | 8 religionsspezifische Methoden | `typicalLearningTime`, `conditionsOfAccess` |
+| **location.ttl** | `https://w3id.org/reliedu/location/` | 8 religionsspezifische Bildungskontexte | `educationalContext` (erweitert OpenEduHub) |
 
-## 🎯 Aktueller Zustand (main)
+## 🎯 OpenEduHub educationalContext Erweiterung
 
-Der `main` Branch enthält:
-- `reliedu.ttl` - Vollständiges religionspädagogisches Vokabular (funktionsfähig)
-- `colors.ttl` & `colors_with_hierarchy.ttl` - Beispiel-Vokabulare
-- SkoHub-kompatible Struktur
+Die `location.ttl` erweitert das [OpenEduHub educationalContext](https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/educationalContext/index.json) um religionsspezifische Bildungskontexte:
+
+### Bestehende OpenEduHub-Werte
+- `grundschule`, `sekundarstufe_1`, `sekundarstufe_2`, `erwachsenenbildung`, `hochschule`
+
+### Neue religionsspezifische Erweiterungen
+- `reliedu-location:konfirmandenarbeit` ↔ `sekundarstufe_1`
+- `reliedu-location:firmvorbereitung` ↔ `sekundarstufe_1` 
+- `reliedu-location:erwachsenenbildung_gemeinde` ↔ `erwachsenenbildung`
+- `reliedu-location:gottesdienst`, `reliedu-location:seelsorge`, `reliedu-location:pilgerweg`
+- `reliedu-location:kloster`, `reliedu-location:bibelkreis` ↔ `erwachsenenbildung`
+
+## 🔗 Standards & Compliance
+
+- **AMB** (Allgemeines Metadatenprofil für Bildungsressourcen) v20231019
+- **OpenEduHub** Vokabulare (28 Vokabulare) - erweitert um religionsspezifische Kontexte
+- **KIM** educationalLevel + HCRT
+- **SKOS** (Simple Knowledge Organization System)
+
+## 📋 AMB-Nutzungsbeispiel
+
+```json
+{
+  "@context": "https://w3id.org/kim/amb/context.jsonld",
+  "name": "Gleichnisse verstehen - Vom verlorenen Schaf",
+  "description": "Interaktive Lerneinheit zur Deutung biblischer Gleichnisse",
+  "about": [
+    "http://w3id.org/openeduhub/vocabs/discipline/520",
+    "https://w3id.org/reliedu/didactics/subjektorientierung",
+    "https://w3id.org/reliedu/content/bibeldidaktik"
+  ],
+  "learningResourceType": [
+    "http://w3id.org/openeduhub/vocabs/new_lrt/d8c3ef03-2e34-4331-a375-a1bb5827ed7d",
+    "https://w3id.org/reliedu/resourcetype/glaubenskurs"
+  ],
+  "educationalContext": [
+    "http://w3id.org/openeduhub/vocabs/educationalContext/sekundarstufe_1",
+    "https://w3id.org/reliedu/location/konfirmandenarbeit"
+  ],
+  "teaches": [
+    "https://w3id.org/kim/hcrt/e2c4de45-d326-4e1b-a8c1-b8d5f1234567",
+    "https://w3id.org/reliedu/competency/hermeneutische_kompetenz"
+  ]
+}
+```
+
+## 📝 Verfügbare Konzepte
+
+### 🎓 Religionsdidaktische Labels (didactics.ttl)
+1. **Subjektorientierung** - Fokus auf Lebenswelten der Lernenden
+2. **Korrelationsdidaktik** - Verknüpfung von Erfahrung und Tradition
+3. **Elementarisierung** - Reduktion auf elementare Strukturen
+4. **Symboldidaktik** - Symbole als Brücke zur Transzendenz
+5. **Bibliodrama** - Erfahrungsorientierte Bibelauslegung
+6. **Performative Religionsdidaktik** - Verkörpertes religiöses Lernen
+7. **Konfigurative Religionsdidaktik** - Ästhetische Darstellung
+8. **Mystagogische Didaktik** - Einführung in religiöse Geheimnisse
+9. **Interkulturelle Religionsdidaktik** - Lernen zwischen Traditionen
+10. **Gendersensible Religionsdidaktik** - Geschlechterreflexion
+11. **Inklusive Religionsdidaktik** - Gemeinsames Lernen trotz Unterschieden
+12. **Mediale Religionsdidaktik** - Integration verschiedener Medien
+13. **Digitale Religionsdidaktik** - Online-Lernumgebungen
+
+### 📚 Religionsspezifische Ressourcentypen (resourcetype.ttl)
+1. **Gottesdienstbaustein** - Teilkomponente liturgischer Feiern
+2. **Andacht** - Kurze religiöse Feier
+3. **Liturgisches Material** - Sakramente und kirchliche Handlungen
+4. **Glaubenskurs** - Strukturierte Glaubensvermittlung
+5. **Exerzitium** - Anleitung für geistliche Übungen
+6. **Seelsorgehilfe** - Unterstützung für pastorale Gespräche
+7. **Gemeindepraxis** - Anleitung für Gemeindearbeit
+
+### 🧠 Religionspädagogische Kompetenzen (competency.ttl)
+1. **Religiöse Sprachfähigkeit** - Angemessene Verwendung religiöser Sprache
+2. **Hermeneutische Kompetenz** - Sachgemäße Textinterpretation
+3. **Existentielle Kompetenz** - Reflexion der eigenen Lebenserfahrungen
+4. **Ethische Urteilsfähigkeit** - Begründete ethische Bewertung
+5. **Dialogfähigkeit** - Respektvoller Austausch über Weltanschauungen
+6. **Spirituelle Kompetenz** - Gestaltung spiritueller Erfahrungen
+
+### 📖 Religionspädagogische Inhaltsbereiche (content.ttl)
+1. **Gotteslehre** - Reflexion über Gott und Gotteserfahrungen
+2. **Christologie** - Lehre von Person und Werk Jesu Christi
+3. **Theologische Anthropologie** - Lehre vom Menschen aus theologischer Sicht
+4. **Religiöse Ethik** - Moraltheologische Reflexion
+5. **Ekklesiologie** - Lehre von der Kirche
+6. **Eschatologie** - Lehre von den letzten Dingen
+7. **Weltreligionen und Konfessionen** - Vergleichende Religionswissenschaft
+8. **Bibeldidaktik** - Didaktische Erschließung biblischer Texte
+
+### 🎭 Religionspädagogische Methoden (method.ttl)
+1. **Meditation** - Spirituelle Sammlung als Lernmethode
+2. **Gebet als Methode** - Gebetsformen im Lernprozess
+3. **Bibliolog** - Interaktive Bibelauslegung durch Rolleneinfühlung
+4. **Kirchenpädagogik** - Ganzheitliche Erschließung des Kirchenraums
+5. **Stilleübung** - Einübung in Achtsamkeit und Kontemplation
+6. **Religiöses Rollenspiel** - Szenische Darstellung religiöser Inhalte
+7. **Religiöse Kunstpädagogik** - Künstlerisch-kreative Gestaltung
+8. **Religiöse Musikpädagogik** - Religiöse Bildung durch Musik
+
+### 🏛️ Religionsspezifische Lernorte (location.ttl)
+1. **Konfirmandenarbeit** - Evangelische Jugendarbeit (13-15 Jahre)
+2. **Firmvorbereitung** - Katholische Jugendarbeit (14-16 Jahre)
+3. **Erwachsenenbildung in der Gemeinde** - Religiöse Bildung für Erwachsene
+4. **Gottesdienst als Lernort** - Liturgische Feier als Bildungskontext
+5. **Seelsorge** - Geistliche Begleitung und Beratung
+6. **Pilgerweg** - Spirituelle Wanderung als religiöse Bildung
+7. **Kloster als Lernort** - Monastische Gemeinschaft als Bildungsort
+8. **Bibelkreis** - Gruppenbezogene Bibelarbeit
+
+## 🚀 Vorteile der modularen Architektur
+
+- ✅ **Maximale Flexibilität** - Jedes ConceptScheme unabhängig nutzbar
+- ✅ **Einfache Wartung** - Updates nur in spezifischen Bereichen
+- ✅ **Klare Separation** - Jeder Bereich hat eigenen Namespace
+- ✅ **Bessere Performance** - Kleinere, fokussierte Dateien
+- ✅ **Team-freundlich** - Parallelarbeit an verschiedenen Bereichen möglich
+- ✅ **AMB-konform** - Vollständig kompatibel mit Metadatenprofil
+- ✅ **SkoHub-ready** - Automatische Verarbeitung aller .ttl-Dateien
 
 ## 🚀 SkoHub-Publikation
 
-## 🚀 SkoHub-Publikation
+SkoHub verarbeitet automatisch alle TTL-Dateien im Repository und erstellt für jedes ConceptScheme eine eigene Navigationsseite:
 
-Every time a change is made to a vocabulary a GitHub-workflow-action is triggered to publish the most recent vocabulary to the `gh-pages`-branch, which is used by GitHub pages.
-It spins up a Docker container made from [SkoHub Vocabs](https://github.com/hbz/skohub-vocabs).
+- `https://domain.de/didactics/` - Religionsdidaktische Labels
+- `https://domain.de/resourcetype/` - Religionsspezifische Ressourcentypen
+- `https://domain.de/competency/` - Religionspädagogische Kompetenzen
+- `https://domain.de/content/` - Religionspädagogische Inhaltsbereiche
+- `https://domain.de/method/` - Religionspädagogische Methoden
+- `https://domain.de/location/` - Religionsspezifische Lernorte
 
-## 💡 Vokabular-Details
-
-Das **Religionspädagogische Vokabular** umfasst:
-
-- **13 religionsdidaktische Labels** (Subjektorientierung, Korrelation, etc.)
-- **5 prozessbezogene Kompetenzen** (nach KMK-Standards)
-- **6 Inhaltsbereiche** (Gott, Jesus Christus, Bibel, etc.)
-- **Religionspädagogische Ressourcentypen** (Bibeltext, Glaubenszeugnis, etc.)
-- **Unterrichtsmethoden** (Bibelgespräch, Bibliolog, etc.)
-- **Religiöse Lernorte** (Kirchenraum, Friedhof, etc.)
-
-**Standards-konform:** AMB, OpenEduHub, KIM, SKOS
-
-## 🔧 Setup für eigene Nutzung
-
-If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps:
-
-1. Fork this repo. **Uncheck the box to only fork the main branch**.
-1. Go to "Actions" tab and if not already activated, activate GitHub Actions.
-1. Go to "Settings", navigate to the "Pages" setting and select `gh-pages` as the branch your site is being built from. 
-1. Go back to the main page of your repo and click the little gear icon in the top right of the "About" section. Check the box at "Use your GitHub Pages website".
-1. Add a commit to the main branch and your vocabulary will be automatically published (sometimes it takes a little to see the changes, remember to do some hard refreshing).
-
-Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-pages/issues)
+Jeder GitHub-Push triggert automatisch die Publikation über GitHub Actions.
 
 ## 📄 Lizenz & Autor
 
 - **Lizenz**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- **Autor**: Jörg Lohrer
-- **Version**: 0.2
-- **Namespace**: `https://w3id.org/reliedu/`
-
-## 🌿 Branch-Übersicht
-
-- **`main`** - Stabile Version mit `reliedu.ttl` (empfohlen)
-- **`weiterentwicklung`** - Experimentelle modulare Struktur
-
----
-
-## Custom Domain
-
-If you want to host your vocabularies under your GitHub pages domain (so no W3 perma-id or purl.org redirect), you have to provide that domain in the [`config.yaml`](./config.yaml).
-
-Example:
-
-Your GitHub Pages domain is: `https://skohub-io.github.io/skohub-pages/`
-Then provide `https://skohub-io.github.io/skohub-pages/` as `custom_domain` in your `config.yaml`.
-
-The base of your concept scheme could then be something like: `https://skohub-io.github.io/skohub-pages/colours/`
-
-Notice that this will apply to all your hosted vocabularies.
-
-## Troubleshooting
-
-### There is no `gh-pages` branch to select for GitHub Pages
-
-You probably only forked the main branch.
-You have two options:
-
-- Delete the repo and fork it again, but make sure to uncheck the box to only fork the main branch
-- Make sure the GitHub Action is activated ➡️ Go to "Actions" tab and activate it. After that commit changes to a vocabulary in the main branch. This should trigger the build and create a `gh-pages` branch.
-
-### I push changes, but they seem to have no effect. My vocabulary stays the same
-
-Maybe your GitHub Action is not activated yet.
-Go to the "Actions" tab and activate GitHub Actions for your repository.
-
-### During the build I get an error saying `The requested URL returned error: 403`
-
-You maybe need to update permissions like described here: https://github.com/peaceiris/actions-gh-pages/issues/744
-Go to `Settings` > `Actions` > `General` > `Workflow permissions` and toggle the Read and write permissions.
-
-## CHANGELOG
-
-09.02.2021:
-
-- In an earlier version, there was the .env variable `PATH_PREFIX` set to point to the repository the vocabulary is hosted at. To align with rest of code, this was changed to `BASEURL`.
-- The docker image now also support i18n
-
+- **Autor**: Jörg Lohrer, Religionspädagogisches Institut
+- **Version**: 1.0 (Modulare Architektur)
+- **Erstellt**: 14. Oktober 2025
