@@ -1,0 +1,94 @@
+@prefix reliedu: <https://w3id.org/reliedu/> .
+@prefix reliedu-competency: <https://w3id.org/reliedu/competency/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE KOMPETENZEN
+# ====================================================================================================
+# Verwendung in AMB: teaches-Feld
+# Pattern: teaches = [{id: reliedu-competency:deutung, prefLabel: {de: "Deutungskompetenz"}}]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/competency/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Kompetenzen"@de, 
+              "Religious-Pedagogical Competencies"@en ;
+    
+    dct:description """Prozessbezogene Kompetenzen, die durch religionspädagogische Bildungsressourcen gefördert werden.
+
+Diese 5 Kernkompetenzen basieren auf den KMK-Bildungsstandards für den Religionsunterricht und sind kompatibel mit dem AMB-Standard."""@de ;
+    
+    dct:description """Process-related competencies that are promoted through religious-pedagogical educational resources.
+
+These 5 core competencies are based on the KMK educational standards for religious education and are compatible with the AMB standard."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-13"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
+    dct:isPartOf reliedu: ;
+    
+    schema:version "0.3" ;
+    
+    vann:preferredNamespacePrefix "reliedu-competency" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/competency/" ;
+    
+    skos:hasTopConcept reliedu-competency:wahrnehmung,
+                       reliedu-competency:deutung,
+                       reliedu-competency:urteil,
+                       reliedu-competency:dialog,
+                       reliedu-competency:gestaltung .
+
+
+# ====================================================================================================
+# PROZESSBEZOGENE KOMPETENZEN (nach KMK-Bildungsstandards)
+# ====================================================================================================
+
+reliedu-competency:wahrnehmung a skos:Concept ;
+    skos:inScheme reliedu-competency: ;
+    skos:topConceptOf reliedu-competency: ;
+    skos:prefLabel "Wahrnehmungs- und Darstellungskompetenz"@de, 
+                   "Perception and Presentation Competence"@en ;
+    skos:altLabel "Wahrnehmen und Darstellen"@de ;
+    skos:definition """Fähigkeit, religiöse Phänomene in Kultur und Lebenswelt wahrzunehmen und zu beschreiben."""@de ;
+    skos:scopeNote "KMK-Bildungsstandards Evangelische Religion / Katholische Religion"@de .
+
+reliedu-competency:deutung a skos:Concept ;
+    skos:inScheme reliedu-competency: ;
+    skos:topConceptOf reliedu-competency: ;
+    skos:prefLabel "Deutungskompetenz"@de, 
+                   "Interpretation Competence"@en ;
+    skos:altLabel "Deuten"@de, "Interpreting"@en ;
+    skos:definition """Fähigkeit, religiöse Sprache und Symbole zu verstehen und theologisch zu reflektieren."""@de ;
+    skos:scopeNote "KMK-Bildungsstandards: Religiöse Sprache und Symbole verstehen und deuten"@de .
+
+reliedu-competency:urteil a skos:Concept ;
+    skos:inScheme reliedu-competency: ;
+    skos:topConceptOf reliedu-competency: ;
+    skos:prefLabel "Urteilskompetenz"@de, 
+                   "Judgment Competence"@en ;
+    skos:altLabel "Urteilen"@de, "Judging"@en ;
+    skos:definition """Fähigkeit, religiöse Fragen und Überzeugungen zu reflektieren und einen eigenen Standpunkt zu entwickeln."""@de ;
+    skos:scopeNote "KMK-Bildungsstandards: Ethisch urteilen und Position beziehen"@de .
+
+reliedu-competency:dialog a skos:Concept ;
+    skos:inScheme reliedu-competency: ;
+    skos:topConceptOf reliedu-competency: ;
+    skos:prefLabel "Dialogkompetenz"@de, 
+                   "Dialogue Competence"@en ;
+    skos:altLabel "Kommunizieren"@de, "Communicating"@en ;
+    skos:definition """Fähigkeit, respektvoll über Religion zu kommunizieren und mit Andersdenkenden im Gespräch zu sein."""@de ;
+    skos:scopeNote "KMK-Bildungsstandards: Dialog- und Kommunikationsfähigkeit"@de .
+
+reliedu-competency:gestaltung a skos:Concept ;
+    skos:inScheme reliedu-competency: ;
+    skos:topConceptOf reliedu-competency: ;
+    skos:prefLabel "Gestaltungskompetenz"@de, 
+                   "Design Competence"@en ;
+    skos:altLabel "Gestalten"@de, "Designing"@en ;
+    skos:definition """Fähigkeit, religiöse Ausdrucksformen zu gestalten und an religiöser Praxis teilzunehmen."""@de ;
+    skos:scopeNote "KMK-Bildungsstandards: Religiöse Ausdrucksformen gestalten und handelnd einbringen"@de .
