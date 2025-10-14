@@ -1,0 +1,103 @@
+@prefix reliedu: <https://w3id.org/reliedu/> .
+@prefix reliedu-content: <https://w3id.org/reliedu/content/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE INHALTSBEREICHE
+# ====================================================================================================
+# Verwendung in AMB: teaches-Feld (zusätzlich oder alternativ zu prozessbezogenen Kompetenzen)
+# Pattern: teaches = [{id: reliedu-content:jesus-christus, prefLabel: {de: "Jesus Christus"}}]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/content/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Inhaltsbereiche"@de, 
+              "Religious-Pedagogical Content Areas"@en ;
+    
+    dct:description """Zentrale Themenfelder des Religionsunterrichts nach Bildungsstandards und Lehrplänen.
+
+Diese 6 Inhaltsbereiche strukturieren die theologischen und religionspädagogischen Kernthemen und sind kompatibel mit dem AMB-Standard."""@de ;
+    
+    dct:description """Central thematic fields of religious education according to educational standards and curricula.
+
+These 6 content areas structure the theological and religious-pedagogical core themes and are compatible with the AMB standard."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-13"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
+    dct:isPartOf reliedu: ;
+    
+    schema:version "0.3" ;
+    
+    vann:preferredNamespacePrefix "reliedu-content" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/content/" ;
+    
+    skos:hasTopConcept reliedu-content:mensch-welt,
+                       reliedu-content:bibel,
+                       reliedu-content:gott,
+                       reliedu-content:jesus-christus,
+                       reliedu-content:kirche,
+                       reliedu-content:religionen .
+
+
+# ====================================================================================================
+# INHALTSBEREICHE
+# ====================================================================================================
+
+reliedu-content:mensch-welt a skos:Concept ;
+    skos:inScheme reliedu-content: ;
+    skos:topConceptOf reliedu-content: ;
+    skos:prefLabel "Mensch und Welt"@de, 
+                   "Human and World"@en ;
+    skos:altLabel "Anthropologie"@de, "Anthropology"@en,
+                  "Schöpfung"@de, "Creation"@en ;
+    skos:definition """Fragen nach dem Menschen, seiner Bestimmung und Beziehung zur Welt. Themen: Menschenbild, Schöpfung, Theodizee, Sinn des Lebens."""@de .
+
+reliedu-content:bibel a skos:Concept ;
+    skos:inScheme reliedu-content: ;
+    skos:topConceptOf reliedu-content: ;
+    skos:prefLabel "Bibel"@de, 
+                   "Bible"@en ;
+    skos:altLabel "Heilige Schrift"@de, "Holy Scripture"@en ;
+    skos:definition """Die Bibel als Grundlage christlichen Glaubens. Themen: Aufbau der Bibel, biblische Geschichten, Hermeneutik."""@de .
+
+reliedu-content:gott a skos:Concept ;
+    skos:inScheme reliedu-content: ;
+    skos:topConceptOf reliedu-content: ;
+    skos:prefLabel "Gott"@de, 
+                   "God"@en ;
+    skos:altLabel "Gottesbild"@de, "Image of God"@en,
+                  "Trinität"@de, "Trinity"@en ;
+    skos:definition """Fragen nach Gott und seinem Wesen. Themen: Gottesbilder, Trinität, Theodizee, Gottesbeweise."""@de .
+
+reliedu-content:jesus-christus a skos:Concept ;
+    skos:inScheme reliedu-content: ;
+    skos:topConceptOf reliedu-content: ;
+    skos:prefLabel "Jesus Christus"@de, 
+                   "Jesus Christ"@en ;
+    skos:altLabel "Christologie"@de, "Christology"@en,
+                  "Nachfolge"@de, "Discipleship"@en ;
+    skos:definition """Leben, Wirken und Bedeutung Jesu Christi. Themen: Leben Jesu, Passion, Auferstehung, Christologie, Nachfolge."""@de .
+
+reliedu-content:kirche a skos:Concept ;
+    skos:inScheme reliedu-content: ;
+    skos:topConceptOf reliedu-content: ;
+    skos:prefLabel "Kirche und Kirchen"@de, 
+                   "Church and Churches"@en ;
+    skos:altLabel "Ekklesiologie"@de, "Ecclesiology"@en,
+                  "Ökumene"@de, "Ecumenism"@en ;
+    skos:definition """Kirche als Gemeinschaft der Glaubenden. Themen: Kirchengeschichte, Ekklesiologie, Ökumene, Konfessionen."""@de .
+
+reliedu-content:religionen a skos:Concept ;
+    skos:inScheme reliedu-content: ;
+    skos:topConceptOf reliedu-content: ;
+    skos:prefLabel "Religionen und Weltanschauungen"@de, 
+                   "Religions and Worldviews"@en ;
+    skos:altLabel "Weltreligionen"@de, "World Religions"@en,
+                  "Interreligiosität"@de, "Interreligiosity"@en ;
+    skos:definition """Begegnung mit anderen Religionen und Weltanschauungen. Themen: Judentum, Islam, Buddhismus, Hinduismus, Säkularität."""@de .
