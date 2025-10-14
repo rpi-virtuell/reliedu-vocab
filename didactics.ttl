@@ -1,0 +1,309 @@
+@prefix reliedu: <https://w3id.org/reliedu/> .
+@prefix reliedu-didactics: <https://w3id.org/reliedu/didactics/> .
+@prefix oeh-discipline: <http://w3id.org/openeduhub/vocabs/discipline/> .
+@prefix oeh-lrt: <http://w3id.org/openeduhub/vocabs/new_lrt/> .
+@prefix oeh-educ: <http://w3id.org/openeduhub/vocabs/educationalContext/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSDIDAKTISCHE LABELS
+# ====================================================================================================
+# Verwendung in AMB: about-Feld (zusätzlich zu discipline/520)
+# Pattern: about = [discipline/520, reliedu-didactics:subjektorientierung, ...]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/didactics/> a skos:ConceptScheme ;
+    dct:title "Religionsdidaktische Zugänge"@de, 
+              "Religious-Didactic Approaches"@en ;
+    
+    dct:description """Spezifische didaktische Prinzipien und Zugänge der Religionspädagogik, die das Material prägen. 
+    
+Diese 13 Labels kennzeichnen die didaktische Ausrichtung religionspädagogischer Bildungsressourcen und sind kompatibel mit dem AMB-Standard."""@de ;
+    
+    dct:description """Specific didactic principles and approaches in religious education that characterize the material.
+
+These 13 labels identify the didactic orientation of religious-pedagogical educational resources and are compatible with the AMB standard."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-13"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
+    dct:isPartOf reliedu: ;
+    
+    schema:version "0.3" ;
+    
+    vann:preferredNamespacePrefix "reliedu-didactics" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/didactics/" ;
+    
+    skos:hasTopConcept reliedu-didactics:subjektorientierung,
+                       reliedu-didactics:korrelation,
+                       reliedu-didactics:elementarisierung,
+                       reliedu-didactics:performativ,
+                       reliedu-didactics:theologisieren,
+                       reliedu-didactics:interreligioes,
+                       reliedu-didactics:biblisch,
+                       reliedu-didactics:symbol,
+                       reliedu-didactics:kirchenraum,
+                       reliedu-didactics:aesthetisch,
+                       reliedu-didactics:inklusiv,
+                       reliedu-didactics:oekumenisch,
+                       reliedu-didactics:digital .
+
+
+# ====================================================================================================
+# 1. SUBJEKTORIENTIERUNG
+# ====================================================================================================
+
+reliedu-didactics:subjektorientierung a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Subjektorientierung"@de, 
+                   "Student-Centered Approach"@en ;
+    skos:altLabel "Subjektive Didaktik"@de,
+                  "Learner-Centered"@en ;
+    skos:definition """Didaktischer Ansatz, der die individuellen religiösen Erfahrungen, Vorstellungen und Lebenswelten der Lernenden in den Mittelpunkt stellt. Das Material knüpft an subjektive Fragen und Erfahrungen der Schüler*innen an und nimmt ihre religiösen Konstruktionen ernst."""@de ;
+    skos:scopeNote "Kompendium 4_didaktische_metadaten.md: Lernende als aktive Konstrukteure ihres religiösen Wissens"@de ;
+    skos:related reliedu-didactics:korrelation,
+                 reliedu-didactics:konstruktivistisch ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 2. KORRELATIONSDIDAKTIK
+# ====================================================================================================
+
+reliedu-didactics:korrelation a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Korrelationsdidaktik"@de, 
+                   "Correlation Didactics"@en ;
+    skos:altLabel "Korrelation von Glaube und Leben"@de,
+                  "Correlation of Faith and Life"@en ;
+    skos:definition """Didaktisches Prinzip der wechselseitigen Erschließung von Glaubenstradition und Lebenserfahrung. Das Material verbindet theologische Inhalte systematisch mit der Lebenswirklichkeit der Lernenden und ermöglicht Dialog zwischen beiden Dimensionen."""@de ;
+    skos:scopeNote "Nach Paul Tillich und Georg Hilger: Wechselbeziehung zwischen christlicher Tradition und menschlicher Existenzerfahrung"@de ;
+    skos:related reliedu-didactics:subjektorientierung,
+                 reliedu-didactics:elementarisierung ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 3. ELEMENTARISIERUNG
+# ====================================================================================================
+
+reliedu-didactics:elementarisierung a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Elementarisierung"@de, 
+                   "Elementarization"@en ;
+    skos:altLabel "Elementare Strukturen"@de ;
+    skos:definition """Methode zur didaktischen Reduktion theologischer Inhalte auf ihre elementaren Strukturen, Wahrheiten, Erfahrungen und Zugänge. Das Material reduziert Komplexität auf Kernaussagen ohne zu simplifizieren."""@de ;
+    skos:scopeNote "Nach Karl Ernst Nipkow: Vier Dimensionen - Elementare Strukturen (Sachstruktur), Elementare Wahrheiten (Bedeutsamkeit), Elementare Erfahrungen (Subjektbezug), Elementare Zugänge (Methodik)"@de ;
+    skos:related reliedu-didactics:korrelation ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 4. PERFORMATIVER RELIGIONSUNTERRICHT
+# ====================================================================================================
+
+reliedu-didactics:performativ a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Performativer Religionsunterricht"@de, 
+                   "Performative Religious Education"@en ;
+    skos:altLabel "Performatives Lernen"@de,
+                  "Learning by Doing"@en ;
+    skos:definition """Lernen durch aktives Handeln und Erleben religiöser Praxis. Das Material ermöglicht praktisches Tun wie Beten, Singen, rituelle Handlungen und religiöse Vollzüge als Erschließungswege."""@de ;
+    skos:scopeNote "Nach Bernhard Dressler und Thomas Klie: Religion wird durch Vollzug erschlossen, nicht nur kognitiv"@de ;
+    skos:related reliedu-didactics:aesthetisch ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 5. THEOLOGISIEREN MIT KINDERN
+# ====================================================================================================
+
+reliedu-didactics:theologisieren a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Theologisieren mit Kindern"@de, 
+                   "Doing Theology with Children"@en ;
+    skos:altLabel "Kindertheologie"@de,
+                  "Children's Theology"@en ;
+    skos:definition """Kinder und Jugendliche als eigenständige theologische Gesprächspartner. Das Material ermöglicht, dass Lernende eigene theologische Fragen entwickeln und bearbeiten, statt nur vorgegebene Antworten zu übernehmen."""@de ;
+    skos:scopeNote "Nach Anton Bucher und Petra Freudenberger-Lötz: Kinder denken theologisch eigenständig und kompetent"@de ;
+    skos:related reliedu-didactics:subjektorientierung ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 6. INTERRELIGIÖSES LERNEN
+# ====================================================================================================
+
+reliedu-didactics:interreligioes a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Interreligiöses Lernen"@de, 
+                   "Interreligious Learning"@en ;
+    skos:altLabel "Interreligiöser Dialog"@de,
+                  "Interfaith Dialogue"@en,
+                  "Religiöse Vielfalt"@de,
+                  "Religious Diversity"@en ;
+    skos:definition """Förderung des Verständnisses für andere Religionen und Weltanschauungen. Das Material thematisiert religiöse Vielfalt, ermöglicht Begegnung mit anderen Religionen und fördert Dialog auf Augenhöhe."""@de ;
+    skos:related reliedu-didactics:pluralitaetsfaehig,
+                 reliedu-didactics:perspektivuebernahme ;
+    skos:relatedMatch oeh-discipline:520,
+                      oeh-discipline:340 . # Interkulturelle Bildung
+
+
+# ====================================================================================================
+# 7. BIBLISCHE DIDAKTIK
+# ====================================================================================================
+
+reliedu-didactics:biblisch a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Biblische Didaktik"@de, 
+                   "Biblical Didactics"@en ;
+    skos:altLabel "Biblisches Lernen"@de,
+                  "Biblical Learning"@en ;
+    skos:definition """Umgang mit biblischen Texten als zentrale Quellen christlicher Tradition. Das Material ermöglicht historisch-kritische und existenzielle Erschließung der Bibel."""@de ;
+    skos:scopeNote "Kompendium: Biblische Texte als Primärquellen, nicht nur als Unterrichtsmaterial"@de ;
+    skos:broadMatch oeh-lrt:ab5b99ea-551c-42f3-995b-e4b5f469ad7e . # Primärmaterial
+
+
+# ====================================================================================================
+# 8. SYMBOLDIDAKTIK
+# ====================================================================================================
+
+reliedu-didactics:symbol a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Symboldidaktik"@de, 
+                   "Symbol Didactics"@en ;
+    skos:altLabel "Religiöse Symbole"@de,
+                  "Religious Symbols"@en ;
+    skos:definition """Erschließung religiöser Symbole und ihrer mehrdeutigen Bedeutungsebenen. Das Material arbeitet mit religiösen Symbolen wie Kreuz, Wasser, Licht, Brot, Wein."""@de ;
+    skos:related reliedu-didactics:aesthetisch ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 9. KIRCHENRAUMPÄDAGOGIK
+# ====================================================================================================
+
+reliedu-didactics:kirchenraum a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Kirchenraumpädagogik"@de, 
+                   "Church Pedagogy"@en ;
+    skos:altLabel "Kirchenraumerschließung"@de ;
+    skos:definition """Kirchenräume als Lernorte religiöser Bildung. Das Material ermöglicht multisensorische Erschließung von Kirchenräumen mit Architektur, Kunst, Liturgie."""@de ;
+    skos:related reliedu-didactics:aesthetisch ;
+    skos:relatedMatch oeh-educ:informelles_lernen .
+
+
+# ====================================================================================================
+# 10. ÄSTHETISCHES LERNEN
+# ====================================================================================================
+
+reliedu-didactics:aesthetisch a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Ästhetisches Lernen"@de, 
+                   "Aesthetic Learning"@en ;
+    skos:altLabel "Sinnliche Zugänge"@de,
+                  "Sensory Approaches"@en ;
+    skos:definition """Zugang zu religiösen Inhalten über Wahrnehmung, Gestaltung und künstlerischen Ausdruck. Das Material nutzt Kunst, Musik, Literatur, Körperarbeit."""@de ;
+    skos:related reliedu-didactics:symbol,
+                 reliedu-didactics:performativ ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 11. INKLUSIVE RELIGIONSPÄDAGOGIK
+# ====================================================================================================
+
+reliedu-didactics:inklusiv a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Inklusive Religionspädagogik"@de, 
+                   "Inclusive Religious Education"@en ;
+    skos:altLabel "Inklusionsdidaktik"@de,
+                  "Inclusive Didactics"@en ;
+    skos:definition """Alle Lernenden mit ihren unterschiedlichen Voraussetzungen mitnehmen. Das Material berücksichtigt Heterogenität und Diversität (Behinderung, Herkunft, Religion, etc.)."""@de ;
+    skos:related reliedu-didactics:diversitaetssensibel ;
+    skos:relatedMatch oeh-educ:foerderschule .
+
+
+# ====================================================================================================
+# 12. KONFESSIONELLE KOOPERATION
+# ====================================================================================================
+
+reliedu-didactics:oekumenisch a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Konfessionelle Kooperation"@de, 
+                   "Denominational Cooperation"@en ;
+    skos:altLabel "Ökumenisches Lernen"@de,
+                  "Ecumenical Learning"@en ;
+    skos:definition """Evangelisch-katholische Zusammenarbeit im Religionsunterricht. Das Material ist konfessionssensibel und für konfessionell-kooperativen RU geeignet."""@de ;
+    skos:related reliedu-didactics:interreligioes ;
+    skos:relatedMatch oeh-discipline:520 .
+
+
+# ====================================================================================================
+# 13. DIGITALE RELIGIONSDIDAKTIK
+# ====================================================================================================
+
+reliedu-didactics:digital a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:topConceptOf reliedu-didactics: ;
+    skos:prefLabel "Digitale Religionsdidaktik"@de, 
+                   "Digital Religious Education"@en ;
+    skos:altLabel "Digitales Lernen"@de,
+                  "Digital Learning"@en ;
+    skos:definition """Sinnvoller Einsatz digitaler Medien im Religionsunterricht. Das Material nutzt digitale Tools nicht als Selbstzweck, sondern zur Erschließung religiöser Inhalte."""@de ;
+    skos:relatedMatch oeh-educ:fernunterricht .
+
+
+# ====================================================================================================
+# WEITERE DIDAKTISCHE KONZEPTE
+# ====================================================================================================
+
+reliedu-didactics:pluralitaetsfaehig a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:prefLabel "Pluralitätsfähigkeit"@de, 
+                   "Plurality Competence"@en ;
+    skos:definition """Fähigkeit, mit religiöser und weltanschaulicher Vielfalt konstruktiv umzugehen."""@de ;
+    skos:related reliedu-didactics:interreligioes,
+                 reliedu-didactics:perspektivuebernahme .
+
+reliedu-didactics:perspektivuebernahme a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:prefLabel "Perspektivübernahme"@de, 
+                   "Perspective Taking"@en ;
+    skos:definition """Fähigkeit, sich in andere religiöse und kulturelle Perspektiven hineinzuversetzen."""@de ;
+    skos:related reliedu-didactics:interreligioes,
+                 reliedu-didactics:pluralitaetsfaehig .
+
+reliedu-didactics:konstruktivistisch a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:prefLabel "Konstruktivistisches Lernen"@de, 
+                   "Constructivist Learning"@en ;
+    skos:definition """Lernende konstruieren religiöses Wissen aktiv durch Erfahrung und Reflexion."""@de ;
+    skos:related reliedu-didactics:subjektorientierung .
+
+reliedu-didactics:diversitaetssensibel a skos:Concept ;
+    skos:inScheme reliedu-didactics: ;
+    skos:prefLabel "Diversitätssensibles Lernen"@de, 
+                   "Diversity-Sensitive Learning"@en ;
+    skos:altLabel "Gendersensible Religionspädagogik"@de,
+                  "Gender-Sensitive Religious Education"@en ;
+    skos:definition """Berücksichtigung von Geschlechter- und Diversitätsperspektiven. Das Material vermeidet Stereotype und fördert Geschlechtergerechtigkeit."""@de ;
+    skos:related reliedu-didactics:inklusiv .
