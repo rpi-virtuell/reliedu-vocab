@@ -1,0 +1,105 @@
+@prefix reliedu: <https://w3id.org/reliedu/> .
+@prefix reliedu-resourcetype: <https://w3id.org/reliedu/resourcetype/> .
+@prefix oeh-lrt: <http://w3id.org/openeduhub/vocabs/new_lrt/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE RESSOURCENTYPEN
+# ====================================================================================================
+# Verwendung in AMB: learningResourceType-Feld (zusätzlich zu OpenEduHub new_lrt)
+# Pattern: learningResourceType = [oeh-lrt:uuid, reliedu-resourcetype:bibeltext]
+# ====================================================================================================
+
+<https://w3id.org/reliedu/resourcetype/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Ressourcentypen"@de, 
+              "Religious-Pedagogical Resource Types"@en ;
+    
+    dct:description """Spezifische Medien- und Materialtypen der Religionspädagogik, die über allgemeine Bildungsressourcen hinausgehen.
+
+Alle Ressourcentypen haben broadMatch zu den entsprechenden OpenEduHub new_lrt URIs und sind kompatibel mit dem AMB-Standard."""@de ;
+    
+    dct:description """Specific media and material types in religious education that go beyond general educational resources.
+
+All resource types have broadMatch to corresponding OpenEduHub new_lrt URIs and are compatible with the AMB standard."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-13"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
+    dct:isPartOf reliedu: ;
+    
+    schema:version "0.3" ;
+    
+    vann:preferredNamespacePrefix "reliedu-resourcetype" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/resourcetype/" ;
+    
+    skos:hasTopConcept reliedu-resourcetype:bibeltext,
+                       reliedu-resourcetype:glaubenszeugnis,
+                       reliedu-resourcetype:kirchliches-dokument,
+                       reliedu-resourcetype:gebet,
+                       reliedu-resourcetype:gottesdienstmaterial,
+                       reliedu-resourcetype:bodenbild,
+                       reliedu-resourcetype:stilleübung .
+
+
+# ====================================================================================================
+# RESSOURCENTYPEN
+# ====================================================================================================
+
+reliedu-resourcetype:bibeltext a skos:Concept ;
+    skos:inScheme reliedu-resourcetype: ;
+    skos:topConceptOf reliedu-resourcetype: ;
+    skos:prefLabel "Bibeltext"@de, "Biblical Text"@en ;
+    skos:altLabel "Perikope"@de, "Pericope"@en ;
+    skos:definition """Textauszüge oder Perikopen aus der Bibel (AT/NT)."""@de ;
+    skos:broadMatch oeh-lrt:ab5b99ea-551c-42f3-995b-e4b5f469ad7e . # Primärmaterial
+
+reliedu-resourcetype:glaubenszeugnis a skos:Concept ;
+    skos:inScheme reliedu-resourcetype: ;
+    skos:topConceptOf reliedu-resourcetype: ;
+    skos:prefLabel "Glaubenszeugnis"@de, "Faith Testimony"@en ;
+    skos:definition """Persönliche Zeugnisse von Glaubenserfahrungen."""@de ;
+    skos:broadMatch oeh-lrt:ab5b99ea-551c-42f3-995b-e4b5f469ad7e . # Primärmaterial
+
+reliedu-resourcetype:kirchliches-dokument a skos:Concept ;
+    skos:inScheme reliedu-resourcetype: ;
+    skos:topConceptOf reliedu-resourcetype: ;
+    skos:prefLabel "Kirchliches Dokument"@de, "Church Document"@en ;
+    skos:altLabel "Verlautbarung"@de, "Official Statement"@en ;
+    skos:definition """Offizielle Dokumente von Kirchen (Enzykliken, Denkschriften, etc.)."""@de ;
+    skos:broadMatch oeh-lrt:776652a6-de35-4d2f-817e-6130dd2fa248 . # Handbuch, Dokumentation
+
+reliedu-resourcetype:gebet a skos:Concept ;
+    skos:inScheme reliedu-resourcetype: ;
+    skos:topConceptOf reliedu-resourcetype: ;
+    skos:prefLabel "Gebet"@de, "Prayer"@en ;
+    skos:definition """Gebete für verschiedene Anlässe."""@de ;
+    skos:broadMatch oeh-lrt:5dc0b5de-4c75-43aa-8366-fb6d7e3a7553 . # Sprach- und Lernaudio (bei Audio)
+
+reliedu-resourcetype:gottesdienstmaterial a skos:Concept ;
+    skos:inScheme reliedu-resourcetype: ;
+    skos:topConceptOf reliedu-resourcetype: ;
+    skos:prefLabel "Gottesdienstmaterial"@de, "Worship Material"@en ;
+    skos:altLabel "Liturgie"@de, "Liturgy"@en ;
+    skos:definition """Materialien für Gottesdienste und liturgische Feiern."""@de ;
+    skos:broadMatch oeh-lrt:0cef3ce9-e106-47ae-836a-48f9ed04384e . # Dokumente und textbasierte Inhalte
+
+reliedu-resourcetype:bodenbild a skos:Concept ;
+    skos:inScheme reliedu-resourcetype: ;
+    skos:topConceptOf reliedu-resourcetype: ;
+    skos:prefLabel "Bodenbild"@de, "Floor Picture"@en ;
+    skos:definition """Anleitung für religionspädagogische Bodenbilder."""@de ;
+    skos:broadMatch oeh-lrt:b0495f44-b05d-4bde-9dc5-34d7b5234d76 . # Lernspiel
+
+reliedu-resourcetype:stilleübung a skos:Concept ;
+    skos:inScheme reliedu-resourcetype: ;
+    skos:topConceptOf reliedu-resourcetype: ;
+    skos:prefLabel "Stilleübung"@de, "Meditation Exercise"@en ;
+    skos:altLabel "Meditation"@de, "Meditation"@en ;
+    skos:definition """Übungen zur Stille, Meditation, Achtsamkeit."""@de ;
+    skos:broadMatch oeh-lrt:477115fd-5042-4174-ac39-7c05f8a24766 . # Pädagogische Methode
