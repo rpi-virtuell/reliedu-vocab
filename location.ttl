@@ -1,0 +1,108 @@
+@prefix reliedu: <https://w3id.org/reliedu/> .
+@prefix reliedu-location: <https://w3id.org/reliedu/location/> .
+@prefix oeh-educ: <http://w3id.org/openeduhub/vocabs/educationalContext/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+# ====================================================================================================
+# RELIGIONSPÄDAGOGISCHE LERNORTE
+# ====================================================================================================
+# Verwendung in AMB: Kann in description erwähnt werden oder als Zusatzfeld
+# ====================================================================================================
+
+<https://w3id.org/reliedu/location/> a skos:ConceptScheme ;
+    dct:title "Religionspädagogische Lernorte"@de, 
+              "Religious-Pedagogical Learning Locations"@en ;
+    
+    dct:description """Spezifische Orte außerschulischen religiösen Lernens.
+
+Diese Lernorte ermöglichen authentische religiöse Erfahrungen und erweitern den Religionsunterricht über das Klassenzimmer hinaus."""@de ;
+    
+    dct:description """Specific locations for extracurricular religious learning.
+
+These learning locations enable authentic religious experiences and extend religious education beyond the classroom."""@en ;
+    
+    dct:creator "Jörg Lohrer" ;
+    dct:created "2025-10-13"^^xsd:date ;
+    dct:modified "2025-10-14"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    
+    dct:isPartOf reliedu: ;
+    
+    schema:version "0.3" ;
+    
+    vann:preferredNamespacePrefix "reliedu-location" ;
+    vann:preferredNamespaceUri "https://w3id.org/reliedu/location/" ;
+    
+    skos:hasTopConcept reliedu-location:kirchenraum,
+                       reliedu-location:friedhof,
+                       reliedu-location:synagoge,
+                       reliedu-location:moschee,
+                       reliedu-location:kloster,
+                       reliedu-location:museum,
+                       reliedu-location:natur,
+                       reliedu-location:virtuell .
+
+
+# ====================================================================================================
+# LERNORTE
+# ====================================================================================================
+
+reliedu-location:kirchenraum a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Kirchenraum"@de, "Church Building"@en ;
+    skos:definition """Kirchenräume als Lernorte für Kirchenraumpädagogik."""@de ;
+    skos:broadMatch oeh-educ:informelles_lernen .
+
+reliedu-location:friedhof a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Friedhof"@de, "Cemetery"@en ;
+    skos:definition """Friedhöfe als Orte der Auseinandersetzung mit Tod und Trauer."""@de ;
+    skos:broadMatch oeh-educ:informelles_lernen .
+
+reliedu-location:synagoge a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Synagoge"@de, "Synagogue"@en ;
+    skos:definition """Synagogen als Lernorte interreligiöser Begegnung."""@de ;
+    skos:broadMatch oeh-educ:informelles_lernen .
+
+reliedu-location:moschee a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Moschee"@de, "Mosque"@en ;
+    skos:definition """Moscheen als Lernorte interreligiöser Begegnung."""@de ;
+    skos:broadMatch oeh-educ:informelles_lernen .
+
+reliedu-location:kloster a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Kloster"@de, "Monastery"@en ;
+    skos:definition """Klöster als Orte spiritueller Erfahrung."""@de ;
+    skos:broadMatch oeh-educ:informelles_lernen .
+
+reliedu-location:museum a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Religiöses Museum"@de, "Religious Museum"@en ;
+    skos:altLabel "Bibelmuseum"@de, "Bible Museum"@en ;
+    skos:definition """Religiöse Museen als Lernorte."""@de ;
+    skos:broadMatch oeh-educ:informelles_lernen .
+
+reliedu-location:natur a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Natur/Schöpfung"@de, "Nature/Creation"@en ;
+    skos:definition """Natur als Lernort für Schöpfungstheologie."""@de .
+
+reliedu-location:virtuell a skos:Concept ;
+    skos:inScheme reliedu-location: ;
+    skos:topConceptOf reliedu-location: ;
+    skos:prefLabel "Virtueller Raum"@de, "Virtual Space"@en ;
+    skos:definition """Digitale und virtuelle Lernumgebungen."""@de ;
+    skos:broadMatch oeh-educ:fernunterricht .
