@@ -1,30 +1,12 @@
 @prefix reliedu: <https://w3id.org/reliedu/> .
-@prefix reliedu-didactics: <https://w3id.org/reliedu/didactics/> .
-@prefix reliedu-resourcetype: <https://w3id.org/reliedu/resourcetype/> .
-@prefix reliedu-competency: <https://w3id.org/reliedu/competency/> .
-@prefix reliedu-content: <https://w3id.org/reliedu/content/> .
-@prefix reliedu-method: <https://w3id.org/reliedu/method/> .
-@prefix reliedu-location: <https://w3id.org/reliedu/location/> .
-
-@prefix oeh: <http://w3id.org/openeduhub/vocabs/> .
-@prefix oeh-discipline: <http://w3id.org/openeduhub/vocabs/discipline/> .
-@prefix oeh-lrt: <http://w3id.org/openeduhub/vocabs/new_lrt/> .
-@prefix oeh-educ: <http://w3id.org/openeduhub/vocabs/educationalContext/> .
-@prefix oeh-role: <http://w3id.org/openeduhub/vocabs/intendedEndUserRole/> .
-@prefix oeh-aggr: <http://w3id.org/openeduhub/vocabs/aggregationLevel/> .
-
-@prefix kim-eduLevel: <https://w3id.org/kim/educationalLevel/> .
-@prefix kim-hcrt: <https://w3id.org/kim/hcrt/> .
-
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 # ====================================================================================================
-# RELIGIOUS EDUCATION VOCABULARY v0.2 (AMB-COMPLIANT)
+# RELIGIONSPÄDAGOGISCHES VOKABULAR - ÜBERSICHT
 # ====================================================================================================
 # Purpose: AMB-compliant metadata for religious education resources
 # Standards:
