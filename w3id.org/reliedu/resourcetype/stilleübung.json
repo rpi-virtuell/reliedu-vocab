@@ -2,19 +2,26 @@
   "id": "https://w3id.org/reliedu/resourcetype/stilleübung",
   "type": "Concept",
   "prefLabel": {
-    "de": "Stilleübung",
-    "en": "Meditation Exercise"
+    "en": "Meditation Exercise",
+    "de": "Stilleübung"
   },
   "altLabel": {
-    "de": [
+    "en": [
       "Meditation"
     ],
-    "en": [
+    "de": [
       "Meditation"
     ]
   },
   "definition": {
     "de": "Übungen zur Stille, Meditation, Achtsamkeit."
+  },
+  "broader": {
+    "id": "https://w3id.org/reliedu/resourcetype/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Resource Types",
+      "de": "Religionspädagogische Ressourcentypen"
+    }
   },
   "broadMatch": [
     {
@@ -23,25 +30,16 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/resourcetype/",
-      "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

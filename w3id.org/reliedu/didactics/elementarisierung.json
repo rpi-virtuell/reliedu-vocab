@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/didactics/elementarisierung",
   "type": "Concept",
   "prefLabel": {
-    "de": "Elementarisierung",
-    "en": "Elementarization"
+    "en": "Elementarization",
+    "de": "Elementarisierung"
   },
   "altLabel": {
     "de": [
@@ -21,16 +21,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/korrelation",
       "prefLabel": {
-        "de": "Korrelationsdidaktik",
-        "en": "Correlation Didactics"
+        "en": "Correlation Didactics",
+        "de": "Korrelationsdidaktik"
       }
     }
   ],
@@ -43,8 +43,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/korrelation",
   "type": "Concept",
   "prefLabel": {
-    "de": "Korrelationsdidaktik",
-    "en": "Correlation Didactics"
+    "en": "Correlation Didactics",
+    "de": "Korrelationsdidaktik"
   },
   "altLabel": {
-    "de": [
-      "Korrelation von Glaube und Leben"
-    ],
     "en": [
       "Correlation of Faith and Life"
+    ],
+    "de": [
+      "Korrelation von Glaube und Leben"
     ]
   },
   "definition": {
@@ -24,23 +24,23 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/subjektorientierung",
       "prefLabel": {
-        "de": "Subjektorientierung",
-        "en": "Student-Centered Approach"
+        "en": "Student-Centered Approach",
+        "de": "Subjektorientierung"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/elementarisierung",
       "prefLabel": {
-        "de": "Elementarisierung",
-        "en": "Elementarization"
+        "en": "Elementarization",
+        "de": "Elementarisierung"
       }
     }
   ],
@@ -53,8 +53,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

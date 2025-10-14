@@ -2,11 +2,18 @@
   "id": "https://w3id.org/reliedu/resourcetype/glaubenszeugnis",
   "type": "Concept",
   "prefLabel": {
-    "de": "Glaubenszeugnis",
-    "en": "Faith Testimony"
+    "en": "Faith Testimony",
+    "de": "Glaubenszeugnis"
   },
   "definition": {
     "de": "Persönliche Zeugnisse von Glaubenserfahrungen."
+  },
+  "broader": {
+    "id": "https://w3id.org/reliedu/resourcetype/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Resource Types",
+      "de": "Religionspädagogische Ressourcentypen"
+    }
   },
   "broadMatch": [
     {
@@ -15,25 +22,16 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/resourcetype/",
-      "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

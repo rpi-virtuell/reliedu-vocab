@@ -2,38 +2,40 @@
   "id": "https://w3id.org/reliedu/method/bibelgespraech",
   "type": "Concept",
   "prefLabel": {
-    "de": "Bibelgespräch",
-    "en": "Biblical Conversation"
+    "en": "Biblical Conversation",
+    "de": "Bibelgespräch"
   },
   "definition": {
     "de": "Gemeinsames Erschließen biblischer Texte im Gespräch."
   },
-  "broadMatch": [
+  "broader": {
+    "id": "https://w3id.org/reliedu/method/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Methods",
+      "de": "Religionspädagogische Methoden"
+    }
+  },
+  "related": [
     {
-      "id": "http://w3id.org/openeduhub/vocabs/new_lrt/477115fd-5042-4174-ac39-7c05f8a24766"
+      "id": "https://w3id.org/reliedu/didactics/biblisch",
+      "prefLabel": {
+        "en": "Biblical Didactics",
+        "de": "Biblische Didaktik"
+      }
     }
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/method/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Unterrichtsmethoden",
-        "en": "Religious-Pedagogical Teaching Methods"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/method/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/method/",
-      "title": {
-        "de": "Religionspädagogische Unterrichtsmethoden",
-        "en": "Religious-Pedagogical Teaching Methods"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

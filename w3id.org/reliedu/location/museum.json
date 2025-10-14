@@ -2,19 +2,26 @@
   "id": "https://w3id.org/reliedu/location/museum",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religiöses Museum",
-    "en": "Religious Museum"
+    "en": "Religious Museum",
+    "de": "Religiöses Museum"
   },
   "altLabel": {
-    "de": [
-      "Bibelmuseum"
-    ],
     "en": [
       "Bible Museum"
+    ],
+    "de": [
+      "Bibelmuseum"
     ]
   },
   "definition": {
     "de": "Religiöse Museen als Lernorte."
+  },
+  "broader": {
+    "id": "https://w3id.org/reliedu/location/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Learning Locations",
+      "de": "Religionspädagogische Lernorte"
+    }
   },
   "broadMatch": [
     {
@@ -23,25 +30,16 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/location/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Locations"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/location/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/location/",
-      "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Locations"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

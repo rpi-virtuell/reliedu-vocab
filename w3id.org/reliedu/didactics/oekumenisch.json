@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/oekumenisch",
   "type": "Concept",
   "prefLabel": {
-    "de": "Konfessionelle Kooperation",
-    "en": "Denominational Cooperation"
+    "en": "Denominational Cooperation",
+    "de": "Konfessionelle Kooperation"
   },
   "altLabel": {
-    "de": [
-      "Ökumenisches Lernen"
-    ],
     "en": [
       "Ecumenical Learning"
+    ],
+    "de": [
+      "Ökumenisches Lernen"
     ]
   },
   "definition": {
@@ -19,23 +19,23 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/interreligioes",
       "prefLabel": {
-        "de": "Interreligiöses Lernen",
-        "en": "Interreligious Learning"
+        "en": "Interreligious Learning",
+        "de": "Interreligiöses Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/kirche",
       "prefLabel": {
-        "de": "Kirche und Kirchen",
-        "en": "Church and Churches"
+        "en": "Church and Churches",
+        "de": "Kirche und Kirchen"
       }
     }
   ],
@@ -48,8 +48,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

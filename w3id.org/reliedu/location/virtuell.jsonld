@@ -2,12 +2,28 @@
   "id": "https://w3id.org/reliedu/location/virtuell",
   "type": "Concept",
   "prefLabel": {
-    "de": "Virtueller Raum",
-    "en": "Virtual Space"
+    "en": "Virtual Space",
+    "de": "Virtueller Raum"
   },
   "definition": {
     "de": "Digitale und virtuelle Lernumgebungen."
   },
+  "broader": {
+    "id": "https://w3id.org/reliedu/location/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Learning Locations",
+      "de": "Religionspädagogische Lernorte"
+    }
+  },
+  "related": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/digital",
+      "prefLabel": {
+        "en": "Digital Religious Education",
+        "de": "Digitale Religionsdidaktik"
+      }
+    }
+  ],
   "broadMatch": [
     {
       "id": "http://w3id.org/openeduhub/vocabs/educationalContext/fernunterricht"
@@ -15,25 +31,16 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/location/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Locations"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/location/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/location/",
-      "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Locations"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

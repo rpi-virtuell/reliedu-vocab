@@ -2,11 +2,18 @@
   "id": "https://w3id.org/reliedu/resourcetype/gebet",
   "type": "Concept",
   "prefLabel": {
-    "de": "Gebet",
-    "en": "Prayer"
+    "en": "Prayer",
+    "de": "Gebet"
   },
   "definition": {
     "de": "Gebete für verschiedene Anlässe."
+  },
+  "broader": {
+    "id": "https://w3id.org/reliedu/resourcetype/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Resource Types",
+      "de": "Religionspädagogische Ressourcentypen"
+    }
   },
   "broadMatch": [
     {
@@ -15,25 +22,16 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/resourcetype/",
-      "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

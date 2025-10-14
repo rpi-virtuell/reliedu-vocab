@@ -2,17 +2,17 @@
   "id": "https://w3id.org/reliedu/content/gott",
   "type": "Concept",
   "prefLabel": {
-    "de": "Gott",
-    "en": "God"
+    "en": "God",
+    "de": "Gott"
   },
   "altLabel": {
-    "de": [
-      "Gottesbild",
-      "Trinität"
-    ],
     "en": [
       "Image of God",
       "Trinity"
+    ],
+    "de": [
+      "Gottesbild",
+      "Trinität"
     ]
   },
   "definition": {
@@ -21,16 +21,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/content/",
     "prefLabel": {
-      "de": "Inhaltsbereiche",
-      "en": "Content Areas"
+      "en": "Content Areas",
+      "de": "Inhaltsbereiche"
     }
   },
   "inScheme": [
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

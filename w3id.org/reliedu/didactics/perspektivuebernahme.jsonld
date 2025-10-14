@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/didactics/perspektivuebernahme",
   "type": "Concept",
   "prefLabel": {
-    "de": "Perspektivübernahme",
-    "en": "Perspective Taking"
+    "en": "Perspective Taking",
+    "de": "Perspektivübernahme"
   },
   "definition": {
     "de": "Fähigkeit, sich in andere religiöse und kulturelle Perspektiven hineinzuversetzen."
@@ -11,23 +11,23 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/interreligioes",
       "prefLabel": {
-        "de": "Interreligiöses Lernen",
-        "en": "Interreligious Learning"
+        "en": "Interreligious Learning",
+        "de": "Interreligiöses Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/pluralitaetsfaehig",
       "prefLabel": {
-        "de": "Pluralitätsfähigkeit",
-        "en": "Plurality Competence"
+        "en": "Plurality Competence",
+        "de": "Pluralitätsfähigkeit"
       }
     }
   ],
@@ -35,8 +35,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

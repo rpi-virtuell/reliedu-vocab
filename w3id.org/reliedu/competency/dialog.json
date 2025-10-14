@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/competency/dialog",
   "type": "Concept",
   "prefLabel": {
-    "de": "Dialogkompetenz",
-    "en": "Dialogue Competence"
+    "en": "Dialogue Competence",
+    "de": "Dialogkompetenz"
   },
   "altLabel": {
-    "de": [
-      "Kommunizieren"
-    ],
     "en": [
       "Communicating"
+    ],
+    "de": [
+      "Kommunizieren"
     ]
   },
   "definition": {
@@ -24,16 +24,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/competency/",
     "prefLabel": {
-      "de": "Religionspädagogische Kompetenzen",
-      "en": "Religious-Pedagogical Competencies"
+      "en": "Religious-Pedagogical Competencies",
+      "de": "Religionspädagogische Kompetenzen"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/interreligioes",
       "prefLabel": {
-        "de": "Interreligiöses Lernen",
-        "en": "Interreligious Learning"
+        "en": "Interreligious Learning",
+        "de": "Interreligiöses Lernen"
       }
     }
   ],
@@ -41,8 +41,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

@@ -2,131 +2,131 @@
   "id": "https://w3id.org/reliedu/didactics/",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religionsdidaktische Zugänge",
-    "en": "Religious-Didactic Approaches"
+    "en": "Religious-Didactic Approaches",
+    "de": "Religionsdidaktische Zugänge"
   },
   "definition": {
-    "de": "Spezifische didaktische Prinzipien und Zugänge der Religionspädagogik, \ndie das Material prägen. Diese 13 Labels kennzeichnen die didaktische Ausrichtung \nreligionspädagogischer Bildungsressourcen.",
-    "en": "Specific didactic principles and approaches in religious education \nthat characterize the material. These 13 labels identify the didactic orientation \nof religious-pedagogical educational resources."
+    "en": "Specific didactic principles and approaches in religious education \nthat characterize the material. These 13 labels identify the didactic orientation \nof religious-pedagogical educational resources.",
+    "de": "Spezifische didaktische Prinzipien und Zugänge der Religionspädagogik, \ndie das Material prägen. Diese 13 Labels kennzeichnen die didaktische Ausrichtung \nreligionspädagogischer Bildungsressourcen."
   },
   "narrower": [
     {
       "id": "https://w3id.org/reliedu/didactics/subjektorientierung",
       "prefLabel": {
-        "de": "Subjektorientierung",
-        "en": "Student-Centered Approach"
+        "en": "Student-Centered Approach",
+        "de": "Subjektorientierung"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/korrelation",
       "prefLabel": {
-        "de": "Korrelationsdidaktik",
-        "en": "Correlation Didactics"
+        "en": "Correlation Didactics",
+        "de": "Korrelationsdidaktik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/konstruktivistisch",
       "prefLabel": {
-        "de": "Konstruktivistisches Lernen",
-        "en": "Constructivist Learning"
+        "en": "Constructivist Learning",
+        "de": "Konstruktivistisches Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/elementarisierung",
       "prefLabel": {
-        "de": "Elementarisierung",
-        "en": "Elementarization"
+        "en": "Elementarization",
+        "de": "Elementarisierung"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/performativ",
       "prefLabel": {
-        "de": "Performativer Religionsunterricht",
-        "en": "Performative Religious Education"
+        "en": "Performative Religious Education",
+        "de": "Performativer Religionsunterricht"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/aesthetisch",
       "prefLabel": {
-        "de": "Ästhetisches Lernen",
-        "en": "Aesthetic Learning"
+        "en": "Aesthetic Learning",
+        "de": "Ästhetisches Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/theologisieren",
       "prefLabel": {
-        "de": "Theologisieren mit Kindern",
-        "en": "Doing Theology with Children"
+        "en": "Doing Theology with Children",
+        "de": "Theologisieren mit Kindern"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/interreligioes",
       "prefLabel": {
-        "de": "Interreligiöses Lernen",
-        "en": "Interreligious Learning"
+        "en": "Interreligious Learning",
+        "de": "Interreligiöses Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/pluralitaetsfaehig",
       "prefLabel": {
-        "de": "Pluralitätsfähigkeit",
-        "en": "Plurality Competence"
+        "en": "Plurality Competence",
+        "de": "Pluralitätsfähigkeit"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/perspektivuebernahme",
       "prefLabel": {
-        "de": "Perspektivübernahme",
-        "en": "Perspective Taking"
+        "en": "Perspective Taking",
+        "de": "Perspektivübernahme"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/biblisch",
       "prefLabel": {
-        "de": "Biblische Didaktik",
-        "en": "Biblical Didactics"
+        "en": "Biblical Didactics",
+        "de": "Biblische Didaktik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/symbol",
       "prefLabel": {
-        "de": "Symboldidaktik",
-        "en": "Symbol Didactics"
+        "en": "Symbol Didactics",
+        "de": "Symboldidaktik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/kirchenraum",
       "prefLabel": {
-        "de": "Kirchenraumpädagogik",
-        "en": "Church Pedagogy"
+        "en": "Church Pedagogy",
+        "de": "Kirchenraumpädagogik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/inklusiv",
       "prefLabel": {
-        "de": "Inklusive Religionspädagogik",
-        "en": "Inclusive Religious Education"
+        "en": "Inclusive Religious Education",
+        "de": "Inklusive Religionspädagogik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/diversitaetssensibel",
       "prefLabel": {
-        "de": "Diversitätssensibles Lernen",
-        "en": "Diversity-Sensitive Learning"
+        "en": "Diversity-Sensitive Learning",
+        "de": "Diversitätssensibles Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/oekumenisch",
       "prefLabel": {
-        "de": "Konfessionelle Kooperation",
-        "en": "Denominational Cooperation"
+        "en": "Denominational Cooperation",
+        "de": "Konfessionelle Kooperation"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/digital",
       "prefLabel": {
-        "de": "Digitale Religionsdidaktik",
-        "en": "Digital Religious Education"
+        "en": "Digital Religious Education",
+        "de": "Digitale Religionsdidaktik"
       }
     }
   ],
@@ -144,8 +144,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
@@ -158,8 +158,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

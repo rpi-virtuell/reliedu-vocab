@@ -2,17 +2,17 @@
   "id": "https://w3id.org/reliedu/didactics/interreligioes",
   "type": "Concept",
   "prefLabel": {
-    "de": "Interreligiöses Lernen",
-    "en": "Interreligious Learning"
+    "en": "Interreligious Learning",
+    "de": "Interreligiöses Lernen"
   },
   "altLabel": {
-    "de": [
-      "Interreligiöser Dialog",
-      "Religiöse Vielfalt"
-    ],
     "en": [
       "Interfaith Dialogue",
       "Religious Diversity"
+    ],
+    "de": [
+      "Interreligiöser Dialog",
+      "Religiöse Vielfalt"
     ]
   },
   "definition": {
@@ -21,58 +21,58 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/pluralitaetsfaehig",
       "prefLabel": {
-        "de": "Pluralitätsfähigkeit",
-        "en": "Plurality Competence"
+        "en": "Plurality Competence",
+        "de": "Pluralitätsfähigkeit"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/perspektivuebernahme",
       "prefLabel": {
-        "de": "Perspektivübernahme",
-        "en": "Perspective Taking"
+        "en": "Perspective Taking",
+        "de": "Perspektivübernahme"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/religionen",
       "prefLabel": {
-        "de": "Religionen und Weltanschauungen",
-        "en": "Religions and Worldviews"
+        "en": "Religions and Worldviews",
+        "de": "Religionen und Weltanschauungen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/oekumenisch",
       "prefLabel": {
-        "de": "Konfessionelle Kooperation",
-        "en": "Denominational Cooperation"
+        "en": "Denominational Cooperation",
+        "de": "Konfessionelle Kooperation"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/dialog",
       "prefLabel": {
-        "de": "Dialogkompetenz",
-        "en": "Dialogue Competence"
+        "en": "Dialogue Competence",
+        "de": "Dialogkompetenz"
       }
     },
     {
       "id": "https://w3id.org/reliedu/location/synagoge",
       "prefLabel": {
-        "de": "Synagoge",
-        "en": "Synagogue"
+        "en": "Synagogue",
+        "de": "Synagoge"
       }
     },
     {
       "id": "https://w3id.org/reliedu/location/moschee",
       "prefLabel": {
-        "de": "Moschee",
-        "en": "Mosque"
+        "en": "Mosque",
+        "de": "Moschee"
       }
     }
   ],
@@ -93,8 +93,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

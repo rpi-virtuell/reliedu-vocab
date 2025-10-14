@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/biblisch",
   "type": "Concept",
   "prefLabel": {
-    "de": "Biblische Didaktik",
-    "en": "Biblical Didactics"
+    "en": "Biblical Didactics",
+    "de": "Biblische Didaktik"
   },
   "altLabel": {
-    "de": [
-      "Biblisches Lernen"
-    ],
     "en": [
       "Biblical Learning"
+    ],
+    "de": [
+      "Biblisches Lernen"
     ]
   },
   "definition": {
@@ -24,37 +24,37 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/resourcetype/bibeltext",
       "prefLabel": {
-        "de": "Bibeltext",
-        "en": "Biblical Text"
+        "en": "Biblical Text",
+        "de": "Bibeltext"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/bibel",
       "prefLabel": {
-        "de": "Bibel",
-        "en": "Bible"
+        "en": "Bible",
+        "de": "Bibel"
       }
     },
     {
       "id": "https://w3id.org/reliedu/method/bibelgespraech",
       "prefLabel": {
-        "de": "Bibelgespräch",
-        "en": "Biblical Conversation"
+        "en": "Biblical Conversation",
+        "de": "Bibelgespräch"
       }
     },
     {
       "id": "https://w3id.org/reliedu/method/bibliolog",
       "prefLabel": {
-        "de": "Bibliolog",
-        "en": "Bibliolog"
+        "en": "Bibliolog",
+        "de": "Bibliolog"
       }
     }
   ],
@@ -67,8 +67,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

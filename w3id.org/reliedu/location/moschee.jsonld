@@ -2,12 +2,28 @@
   "id": "https://w3id.org/reliedu/location/moschee",
   "type": "Concept",
   "prefLabel": {
-    "de": "Moschee",
-    "en": "Mosque"
+    "en": "Mosque",
+    "de": "Moschee"
   },
   "definition": {
     "de": "Moscheen als Lernorte interreligiöser Begegnung."
   },
+  "broader": {
+    "id": "https://w3id.org/reliedu/location/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Learning Locations",
+      "de": "Religionspädagogische Lernorte"
+    }
+  },
+  "related": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/interreligioes",
+      "prefLabel": {
+        "en": "Interreligious Learning",
+        "de": "Interreligiöses Lernen"
+      }
+    }
+  ],
   "broadMatch": [
     {
       "id": "http://w3id.org/openeduhub/vocabs/educationalContext/informelles_lernen"
@@ -15,25 +31,16 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/location/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Locations"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/location/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/location/",
-      "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Locations"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

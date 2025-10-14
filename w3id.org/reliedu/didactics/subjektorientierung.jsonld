@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/subjektorientierung",
   "type": "Concept",
   "prefLabel": {
-    "de": "Subjektorientierung",
-    "en": "Student-Centered Approach"
+    "en": "Student-Centered Approach",
+    "de": "Subjektorientierung"
   },
   "altLabel": {
-    "de": [
-      "Subjektive Didaktik"
-    ],
     "en": [
       "Learner-Centered"
+    ],
+    "de": [
+      "Subjektive Didaktik"
     ]
   },
   "definition": {
@@ -24,30 +24,30 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/korrelation",
       "prefLabel": {
-        "de": "Korrelationsdidaktik",
-        "en": "Correlation Didactics"
+        "en": "Correlation Didactics",
+        "de": "Korrelationsdidaktik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/konstruktivistisch",
       "prefLabel": {
-        "de": "Konstruktivistisches Lernen",
-        "en": "Constructivist Learning"
+        "en": "Constructivist Learning",
+        "de": "Konstruktivistisches Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/theologisieren",
       "prefLabel": {
-        "de": "Theologisieren mit Kindern",
-        "en": "Doing Theology with Children"
+        "en": "Doing Theology with Children",
+        "de": "Theologisieren mit Kindern"
       }
     }
   ],
@@ -60,8 +60,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

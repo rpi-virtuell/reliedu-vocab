@@ -2,17 +2,17 @@
   "id": "https://w3id.org/reliedu/content/kirche",
   "type": "Concept",
   "prefLabel": {
-    "de": "Kirche und Kirchen",
-    "en": "Church and Churches"
+    "en": "Church and Churches",
+    "de": "Kirche und Kirchen"
   },
   "altLabel": {
-    "de": [
-      "Ekklesiologie",
-      "Ökumene"
-    ],
     "en": [
       "Ecclesiology",
       "Ecumenism"
+    ],
+    "de": [
+      "Ekklesiologie",
+      "Ökumene"
     ]
   },
   "definition": {
@@ -21,16 +21,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/content/",
     "prefLabel": {
-      "de": "Inhaltsbereiche",
-      "en": "Content Areas"
+      "en": "Content Areas",
+      "de": "Inhaltsbereiche"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/oekumenisch",
       "prefLabel": {
-        "de": "Konfessionelle Kooperation",
-        "en": "Denominational Cooperation"
+        "en": "Denominational Cooperation",
+        "de": "Konfessionelle Kooperation"
       }
     }
   ],
@@ -38,8 +38,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

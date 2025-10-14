@@ -1,1 +1,218 @@
-{"id":"https://w3id.org/reliedu/method/","type":"ConceptScheme","title":{"de":"Religionspädagogische Unterrichtsmethoden","en":"Religious-Pedagogical Teaching Methods"},"description":{"de":"Spezifische Unterrichtsmethoden der Religionspädagogik.\n\nDiese Methoden sind charakteristisch für den Religionsunterricht und ergänzen allgemeine pädagogische Methoden.","en":"Specific teaching methods in religious education.\n\nThese methods are characteristic of religious education and complement general pedagogical methods."},"license":{"id":"https://creativecommons.org/licenses/by-sa/4.0/"},"preferredNamespaceUri":"https://w3id.org/reliedu/method/","preferredNamespacePrefix":"reliedu-method","hasTopConcept":[{"id":"https://w3id.org/reliedu/method/bibelgespraech","prefLabel":{"de":"Bibelgespräch","en":"Biblical Conversation"},"definition":{"de":"Gemeinsames Erschließen biblischer Texte im Gespräch."}},{"id":"https://w3id.org/reliedu/method/bibliolog","prefLabel":{"de":"Bibliolog","en":"Bibliolog"},"definition":{"de":"Methode, biblische Texte durch Rollenidentifikation zu erschließen."}},{"id":"https://w3id.org/reliedu/method/godly-play","prefLabel":{"de":"Godly Play","en":"Godly Play"},"altLabel":{"de":["Gott im Spiel"]},"definition":{"de":"Montessori-inspirierte Methode religiöser Bildung."}},{"id":"https://w3id.org/reliedu/method/kirchenraumfuehrung","prefLabel":{"de":"Kirchenraumführung","en":"Church Tour"},"definition":{"de":"Erschließung von Kirchenräumen durch geführte Erkundung."}}],"@context":{"@version":1.1,"id":"@id","type":"@type","@vocab":"http://www.w3.org/2004/02/skos/core#","xsd":"http://www.w3.org/2001/XMLSchema#","dct":"http://purl.org/dc/terms/","dc":"http://purl.org/dc/elements/1.1/","schema":"https://schema.org/","vann":"http://purl.org/vocab/vann/","ldp":"http://www.w3.org/ns/ldp#","owl":"http://www.w3.org/2002/07/owl#","title":{"@id":"dct:title","@container":"@language"},"dc:title":{"@id":"dc:title","@container":"@language"},"dc:description":{"@id":"dc:description","@container":"@language"},"description":{"@id":"dct:description","@container":"@language"},"license":{"@id":"dct:license","@container":"@language"},"issued":{"@id":"dct:issued","@type":"xsd:date"},"created":{"@id":"dct:created","@type":"xsd:date"},"modified":{"@id":"dct:modified","@type":"xsd:date"},"creator":"dct:creator","publisher":"dct:publisher","preferredNamespacePrefix":"vann:preferredNamespacePrefix","preferredNamespaceUri":"vann:preferredNamespaceUri","isBasedOn":"schema:isBasedOn","source":"dct:source","prefLabel":{"@container":"@language"},"altLabel":{"@container":["@language","@set"]},"hiddenLabel":{"@container":["@language","@set"]},"definition":{"@container":"@language"},"note":{"@container":["@language","@set"]},"changeNote":{"@container":["@language","@set"]},"editorialNote":{"@container":["@language","@set"]},"historyNote":{"@container":["@language","@set"]},"scopeNote":{"@container":["@language","@set"]},"notation":{"@container":"@set"},"example":{"@container":"@language"},"narrower":{"@container":"@set"},"related":{"@container":"@set"},"relatedMatch":{"@container":"@set"},"narrowerTransitive":{"@container":"@set"},"broaderTransitive":{"@container":"@set"},"broadMatch":{"@container":"@set"},"narrowMatch":{"@container":"@set"},"closeMatch":{"@container":"@set"},"exactMatch":{"@container":"@set"},"hasTopConcept":{"@container":"@set"},"inScheme":{"@container":"@set"},"topConceptOf":{"@container":"@set"},"deprecated":{"@id":"owl:deprecated","@type":"xsd:boolean"},"isReplacedBy":{"@id":"dct:isReplacedBy","@container":"@set"}}}
+{
+  "id": "https://w3id.org/reliedu/method/",
+  "type": "Concept",
+  "prefLabel": {
+    "en": "Religious-Pedagogical Methods",
+    "de": "Religionspädagogische Methoden"
+  },
+  "definition": {
+    "de": "Spezifische Unterrichtsmethoden der Religionspädagogik."
+  },
+  "narrower": [
+    {
+      "id": "https://w3id.org/reliedu/method/bibelgespraech",
+      "prefLabel": {
+        "en": "Biblical Conversation",
+        "de": "Bibelgespräch"
+      }
+    },
+    {
+      "id": "https://w3id.org/reliedu/method/bibliolog",
+      "prefLabel": {
+        "en": "Bibliolog",
+        "de": "Bibliolog"
+      }
+    },
+    {
+      "id": "https://w3id.org/reliedu/method/godly-play",
+      "prefLabel": {
+        "en": "Godly Play",
+        "de": "Godly Play"
+      }
+    },
+    {
+      "id": "https://w3id.org/reliedu/method/kirchenraumfuehrung",
+      "prefLabel": {
+        "en": "Church Tour",
+        "de": "Kirchenraumführung"
+      }
+    }
+  ],
+  "broadMatch": [
+    {
+      "id": "http://w3id.org/openeduhub/vocabs/new_lrt/477115fd-5042-4174-ac39-7c05f8a24766"
+    }
+  ],
+  "inScheme": [
+    {
+      "id": "https://w3id.org/reliedu/",
+      "title": {
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
+      }
+    }
+  ],
+  "inSchemeAll": [
+    {
+      "id": "https://w3id.org/reliedu/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/",
+      "title": {
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
+      }
+    }
+  ],
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "@vocab": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dct": "http://purl.org/dc/terms/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "schema": "https://schema.org/",
+    "vann": "http://purl.org/vocab/vann/",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "title": {
+      "@id": "dct:title",
+      "@container": "@language"
+    },
+    "dc:title": {
+      "@id": "dc:title",
+      "@container": "@language"
+    },
+    "dc:description": {
+      "@id": "dc:description",
+      "@container": "@language"
+    },
+    "description": {
+      "@id": "dct:description",
+      "@container": "@language"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@container": "@language"
+    },
+    "issued": {
+      "@id": "dct:issued",
+      "@type": "xsd:date"
+    },
+    "created": {
+      "@id": "dct:created",
+      "@type": "xsd:date"
+    },
+    "modified": {
+      "@id": "dct:modified",
+      "@type": "xsd:date"
+    },
+    "creator": "dct:creator",
+    "publisher": "dct:publisher",
+    "preferredNamespacePrefix": "vann:preferredNamespacePrefix",
+    "preferredNamespaceUri": "vann:preferredNamespaceUri",
+    "isBasedOn": "schema:isBasedOn",
+    "source": "dct:source",
+    "prefLabel": {
+      "@container": "@language"
+    },
+    "altLabel": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "hiddenLabel": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "definition": {
+      "@container": "@language"
+    },
+    "note": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "changeNote": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "editorialNote": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "historyNote": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "scopeNote": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "notation": {
+      "@container": "@set"
+    },
+    "example": {
+      "@container": "@language"
+    },
+    "narrower": {
+      "@container": "@set"
+    },
+    "related": {
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@container": "@set"
+    },
+    "narrowerTransitive": {
+      "@container": "@set"
+    },
+    "broaderTransitive": {
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@container": "@set"
+    },
+    "narrowMatch": {
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@container": "@set"
+    },
+    "hasTopConcept": {
+      "@container": "@set"
+    },
+    "inScheme": {
+      "@container": "@set"
+    },
+    "topConceptOf": {
+      "@container": "@set"
+    },
+    "deprecated": {
+      "@id": "owl:deprecated",
+      "@type": "xsd:boolean"
+    },
+    "isReplacedBy": {
+      "@id": "dct:isReplacedBy",
+      "@container": "@set"
+    }
+  }
+}

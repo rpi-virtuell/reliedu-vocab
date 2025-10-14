@@ -2,17 +2,17 @@
   "id": "https://w3id.org/reliedu/content/mensch-welt",
   "type": "Concept",
   "prefLabel": {
-    "de": "Mensch und Welt",
-    "en": "Human and World"
+    "en": "Human and World",
+    "de": "Mensch und Welt"
   },
   "altLabel": {
-    "de": [
-      "Anthropologie",
-      "Schöpfung"
-    ],
     "en": [
       "Anthropology",
       "Creation"
+    ],
+    "de": [
+      "Anthropologie",
+      "Schöpfung"
     ]
   },
   "definition": {
@@ -21,16 +21,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/content/",
     "prefLabel": {
-      "de": "Inhaltsbereiche",
-      "en": "Content Areas"
+      "en": "Content Areas",
+      "de": "Inhaltsbereiche"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/location/natur",
       "prefLabel": {
-        "de": "Natur/Schöpfung",
-        "en": "Nature/Creation"
+        "en": "Nature/Creation",
+        "de": "Natur/Schöpfung"
       }
     }
   ],
@@ -38,8 +38,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

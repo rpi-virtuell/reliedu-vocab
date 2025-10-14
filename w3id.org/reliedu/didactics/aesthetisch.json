@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/aesthetisch",
   "type": "Concept",
   "prefLabel": {
-    "de": "Ästhetisches Lernen",
-    "en": "Aesthetic Learning"
+    "en": "Aesthetic Learning",
+    "de": "Ästhetisches Lernen"
   },
   "altLabel": {
-    "de": [
-      "Sinnliche Zugänge"
-    ],
     "en": [
       "Sensory Approaches"
+    ],
+    "de": [
+      "Sinnliche Zugänge"
     ]
   },
   "definition": {
@@ -19,37 +19,37 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/performativ",
       "prefLabel": {
-        "de": "Performativer Religionsunterricht",
-        "en": "Performative Religious Education"
+        "en": "Performative Religious Education",
+        "de": "Performativer Religionsunterricht"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/symbol",
       "prefLabel": {
-        "de": "Symboldidaktik",
-        "en": "Symbol Didactics"
+        "en": "Symbol Didactics",
+        "de": "Symboldidaktik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/kirchenraum",
       "prefLabel": {
-        "de": "Kirchenraumpädagogik",
-        "en": "Church Pedagogy"
+        "en": "Church Pedagogy",
+        "de": "Kirchenraumpädagogik"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/gestaltung",
       "prefLabel": {
-        "de": "Gestaltungskompetenz",
-        "en": "Design Competence"
+        "en": "Design Competence",
+        "de": "Gestaltungskompetenz"
       }
     }
   ],
@@ -62,8 +62,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

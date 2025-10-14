@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/didactics/kirchenraum",
   "type": "Concept",
   "prefLabel": {
-    "de": "Kirchenraumpädagogik",
-    "en": "Church Pedagogy"
+    "en": "Church Pedagogy",
+    "de": "Kirchenraumpädagogik"
   },
   "altLabel": {
     "de": [
@@ -16,30 +16,30 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/aesthetisch",
       "prefLabel": {
-        "de": "Ästhetisches Lernen",
-        "en": "Aesthetic Learning"
+        "en": "Aesthetic Learning",
+        "de": "Ästhetisches Lernen"
       }
     },
     {
       "id": "https://w3id.org/reliedu/location/kirchenraum",
       "prefLabel": {
-        "de": "Kirchenraum",
-        "en": "Church Building"
+        "en": "Church Building",
+        "de": "Kirchenraum"
       }
     },
     {
       "id": "https://w3id.org/reliedu/method/kirchenraumfuehrung",
       "prefLabel": {
-        "de": "Kirchenraumführung",
-        "en": "Church Tour"
+        "en": "Church Tour",
+        "de": "Kirchenraumführung"
       }
     }
   ],
@@ -52,8 +52,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

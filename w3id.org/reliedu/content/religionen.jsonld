@@ -2,17 +2,17 @@
   "id": "https://w3id.org/reliedu/content/religionen",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religionen und Weltanschauungen",
-    "en": "Religions and Worldviews"
+    "en": "Religions and Worldviews",
+    "de": "Religionen und Weltanschauungen"
   },
   "altLabel": {
-    "de": [
-      "Weltreligionen",
-      "Interreligiosität"
-    ],
     "en": [
       "World Religions",
       "Interreligiosity"
+    ],
+    "de": [
+      "Weltreligionen",
+      "Interreligiosität"
     ]
   },
   "definition": {
@@ -21,16 +21,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/content/",
     "prefLabel": {
-      "de": "Inhaltsbereiche",
-      "en": "Content Areas"
+      "en": "Content Areas",
+      "de": "Inhaltsbereiche"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/interreligioes",
       "prefLabel": {
-        "de": "Interreligiöses Lernen",
-        "en": "Interreligious Learning"
+        "en": "Interreligious Learning",
+        "de": "Interreligiöses Lernen"
       }
     }
   ],
@@ -38,8 +38,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

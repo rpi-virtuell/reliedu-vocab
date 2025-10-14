@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/competency/deutung",
   "type": "Concept",
   "prefLabel": {
-    "de": "Deutungskompetenz",
-    "en": "Interpretation Competence"
+    "en": "Interpretation Competence",
+    "de": "Deutungskompetenz"
   },
   "altLabel": {
-    "de": [
-      "Deuten"
-    ],
     "en": [
       "Interpreting"
+    ],
+    "de": [
+      "Deuten"
     ]
   },
   "definition": {
@@ -24,16 +24,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/competency/",
     "prefLabel": {
-      "de": "Religionspädagogische Kompetenzen",
-      "en": "Religious-Pedagogical Competencies"
+      "en": "Religious-Pedagogical Competencies",
+      "de": "Religionspädagogische Kompetenzen"
     }
   },
   "inScheme": [
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

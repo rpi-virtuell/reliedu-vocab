@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/competency/wahrnehmung",
   "type": "Concept",
   "prefLabel": {
-    "de": "Wahrnehmungs- und Darstellungskompetenz",
-    "en": "Perception and Presentation Competence"
+    "en": "Perception and Presentation Competence",
+    "de": "Wahrnehmungs- und Darstellungskompetenz"
   },
   "altLabel": {
     "de": [
@@ -21,16 +21,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/competency/",
     "prefLabel": {
-      "de": "Religionspädagogische Kompetenzen",
-      "en": "Religious-Pedagogical Competencies"
+      "en": "Religious-Pedagogical Competencies",
+      "de": "Religionspädagogische Kompetenzen"
     }
   },
   "inScheme": [
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

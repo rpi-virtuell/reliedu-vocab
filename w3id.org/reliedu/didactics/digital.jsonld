@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/digital",
   "type": "Concept",
   "prefLabel": {
-    "de": "Digitale Religionsdidaktik",
-    "en": "Digital Religious Education"
+    "en": "Digital Religious Education",
+    "de": "Digitale Religionsdidaktik"
   },
   "altLabel": {
-    "de": [
-      "Digitales Lernen"
-    ],
     "en": [
       "Digital Learning"
+    ],
+    "de": [
+      "Digitales Lernen"
     ]
   },
   "definition": {
@@ -19,16 +19,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "de": "Religionsdidaktische Zugänge",
-      "en": "Religious-Didactic Approaches"
+      "en": "Religious-Didactic Approaches",
+      "de": "Religionsdidaktische Zugänge"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/location/virtuell",
       "prefLabel": {
-        "de": "Virtueller Raum",
-        "en": "Virtual Space"
+        "en": "Virtual Space",
+        "de": "Virtueller Raum"
       }
     }
   ],
@@ -46,8 +46,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

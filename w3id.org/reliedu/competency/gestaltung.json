@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/competency/gestaltung",
   "type": "Concept",
   "prefLabel": {
-    "de": "Gestaltungskompetenz",
-    "en": "Design Competence"
+    "en": "Design Competence",
+    "de": "Gestaltungskompetenz"
   },
   "altLabel": {
-    "de": [
-      "Gestalten"
-    ],
     "en": [
       "Designing"
+    ],
+    "de": [
+      "Gestalten"
     ]
   },
   "definition": {
@@ -24,23 +24,23 @@
   "broader": {
     "id": "https://w3id.org/reliedu/competency/",
     "prefLabel": {
-      "de": "Religionspädagogische Kompetenzen",
-      "en": "Religious-Pedagogical Competencies"
+      "en": "Religious-Pedagogical Competencies",
+      "de": "Religionspädagogische Kompetenzen"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/performativ",
       "prefLabel": {
-        "de": "Performativer Religionsunterricht",
-        "en": "Performative Religious Education"
+        "en": "Performative Religious Education",
+        "de": "Performativer Religionsunterricht"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/aesthetisch",
       "prefLabel": {
-        "de": "Ästhetisches Lernen",
-        "en": "Aesthetic Learning"
+        "en": "Aesthetic Learning",
+        "de": "Ästhetisches Lernen"
       }
     }
   ],
@@ -48,8 +48,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],

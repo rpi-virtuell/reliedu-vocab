@@ -2,20 +2,43 @@
   "id": "https://w3id.org/reliedu/resourcetype/bibeltext",
   "type": "Concept",
   "prefLabel": {
-    "de": "Bibeltext",
-    "en": "Biblical Text"
+    "en": "Biblical Text",
+    "de": "Bibeltext"
   },
   "altLabel": {
-    "de": [
-      "Perikope"
-    ],
     "en": [
       "Pericope"
+    ],
+    "de": [
+      "Perikope"
     ]
   },
   "definition": {
     "de": "Textauszüge oder Perikopen aus der Bibel (AT/NT)."
   },
+  "broader": {
+    "id": "https://w3id.org/reliedu/resourcetype/",
+    "prefLabel": {
+      "en": "Religious-Pedagogical Resource Types",
+      "de": "Religionspädagogische Ressourcentypen"
+    }
+  },
+  "related": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/biblisch",
+      "prefLabel": {
+        "en": "Biblical Didactics",
+        "de": "Biblische Didaktik"
+      }
+    },
+    {
+      "id": "https://w3id.org/reliedu/content/bibel",
+      "prefLabel": {
+        "en": "Bible",
+        "de": "Bibel"
+      }
+    }
+  ],
   "broadMatch": [
     {
       "id": "http://w3id.org/openeduhub/vocabs/new_lrt/ab5b99ea-551c-42f3-995b-e4b5f469ad7e"
@@ -23,25 +46,16 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/",
+      "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/resourcetype/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/resourcetype/",
-      "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
-      }
+      "id": "https://w3id.org/reliedu/"
     }
   ],
   "@context": {

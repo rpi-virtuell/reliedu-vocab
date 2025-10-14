@@ -2,17 +2,17 @@
   "id": "https://w3id.org/reliedu/content/jesus-christus",
   "type": "Concept",
   "prefLabel": {
-    "de": "Jesus Christus",
-    "en": "Jesus Christ"
+    "en": "Jesus Christ",
+    "de": "Jesus Christus"
   },
   "altLabel": {
-    "de": [
-      "Christologie",
-      "Nachfolge"
-    ],
     "en": [
       "Christology",
       "Discipleship"
+    ],
+    "de": [
+      "Christologie",
+      "Nachfolge"
     ]
   },
   "definition": {
@@ -21,16 +21,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/content/",
     "prefLabel": {
-      "de": "Inhaltsbereiche",
-      "en": "Content Areas"
+      "en": "Content Areas",
+      "de": "Inhaltsbereiche"
     }
   },
   "inScheme": [
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "de": "Religionspädagogisches Vokabular",
-        "en": "Religious Education Vocabulary"
+        "en": "Religious Education Vocabulary",
+        "de": "Religionspädagogisches Vokabular"
       }
     }
   ],
