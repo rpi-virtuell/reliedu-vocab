@@ -10,8 +10,9 @@ searchableAttributes:
   - "hiddenLabel"
   - "example"
   - "definition"
+  - "scopeNote"
 ui:
-  title: "SkoHub Vocabs" # Title is mandatory
+  title: "Religionspädagogisches Vokabular" # Title is mandatory
   logo: "skohub-signet-color.svg" # Path
   colors:
     skoHubWhite: "rgb(255, 255, 255)"
