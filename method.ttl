@@ -29,8 +29,7 @@ These methods are characteristic of religious education and complement general p
     dct:created "2025-10-13"^^xsd:date ;
     dct:modified "2025-10-14"^^xsd:date ;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-    
-    dct:isPartOf reliedu: ;
+    dct:publisher "Religionspädagogisches Institut" ;
     
     schema:version "0.3" ;
     
