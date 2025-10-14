@@ -1,32 +1,43 @@
 # Religionspädagogisches Vokabular (ReLiEdu Vocabulary)
 
-Kontrolliertes, modulares SKOS-Vokabular für die AMB-konforme Erschließung religionspädagogischer Bildungsressourcen.
+Kontrolliertes, SKOS-Vokabular für die AMB-konforme Erschließung religionspädagogischer Bildungsressourcen.
 
 ```
 reliedu-vocab/
-├── index.ttl                    # Übersicht über alle Vokabulare
-├── didactics.ttl                # 13 religionsdidaktische Labels
-├── resourcetype.ttl             # 7 spezifische Ressourcentypen
-├── competency.ttl               # 5 prozessbezogene Kompetenzen
-├── content.ttl                  # 6 Inhaltsbereiche
-├── method.ttl                   # 4 Unterrichtsmethoden
-└── location.ttl                 # 8 Lernorte
+├── index.ttl                    # 🎯 HAUPTDATEI für SkoHub (vollständig, monolithisch)
+├── didactics.ttl                # 13 religionsdidaktische Labels (optional/modular)
+├── resourcetype.ttl             # 7 spezifische Ressourcentypen (optional/modular)
+├── competency.ttl               # 5 prozessbezogene Kompetenzen (optional/modular)
+├── content.ttl                  # 6 Inhaltsbereiche (optional/modular)
+├── method.ttl                   # 4 Unterrichtsmethoden (optional/modular)
+└── location.ttl                 # 8 Lernorte (optional/modular)
 ```
 
-## 📚 Übersicht
+## 📚 Struktur
 
-Dieses Vokabular besteht aus **6 eigenständigen ConceptSchemes**, die verschiedene Aspekte der Religionspädagogik abdecken:
+**`index.ttl`** ist die **Hauptdatei** mit dem vollständigen Vokabular in einem ConceptScheme. Sie wird von SkoHub für die Publikation verwendet.
 
-| Datei | ConceptScheme | Beschreibung | Konzepte |
-|-------|---------------|--------------|----------|
-| **`didactics.ttl`** | [Religionsdidaktische Zugänge](https://w3id.org/reliedu/didactics/) | 13 didaktische Labels (Subjektorientierung, Korrelation, etc.) | 17 |
-| **`resourcetype.ttl`** | [Ressourcentypen](https://w3id.org/reliedu/resourcetype/) | Spezifische religionspädagogische Materialtypen | 7 |
-| **`competency.ttl`** | [Kompetenzen](https://w3id.org/reliedu/competency/) | Prozessbezogene Kompetenzen nach KMK-Standards | 5 |
-| **`content.ttl`** | [Inhaltsbereiche](https://w3id.org/reliedu/content/) | Themenfelder des Religionsunterrichts | 6 |
-| **`method.ttl`** | [Unterrichtsmethoden](https://w3id.org/reliedu/method/) | Religionspädagogische Methoden | 4 |
-| **`location.ttl`** | [Lernorte](https://w3id.org/reliedu/location/) | Außerschulische religiöse Lernorte | 8 |
+Die **modularen Dateien** (didactics.ttl, resourcetype.ttl, etc.) sind **eigenständige ConceptSchemes** für flexible Nutzung in anderen Kontexten. Sie enthalten dieselben Konzepte wie index.ttl, aber aufgeteilt nach Themenbereich.
 
-Die Datei **`index.ttl`** dient als Übersicht und verlinkt alle Teilvokabulare.
+### Warum zwei Versionen?
+
+- **SkoHub** benötigt ein vollständiges, monolithisches ConceptScheme pro Datei → `index.ttl`
+- **Modulare Nutzung** ermöglicht separate Updates und flexible Integration → einzelne .ttl Dateien
+
+## 📊 Vokabular-Übersicht
+
+Das Vokabular umfasst **6 Themenbereiche** mit insgesamt **47 Konzepten**:
+
+| Bereich | Datei | Beschreibung | Konzepte |
+|---------|-------|--------------|----------|
+| **Didaktische Zugänge** | `didactics.ttl` | 13 religionsdidaktische Labels | 17 |
+| **Ressourcentypen** | `resourcetype.ttl` | Spezifische Materialtypen | 7 |
+| **Kompetenzen** | `competency.ttl` | Prozessbezogene Kompetenzen (KMK) | 5 |
+| **Inhaltsbereiche** | `content.ttl` | Themenfelder des RU | 6 |
+| **Unterrichtsmethoden** | `method.ttl` | Religionspädagogische Methoden | 4 |
+| **Lernorte** | `location.ttl` | Außerschulische Lernorte | 8 |
+
+Alle Konzepte sind in der **`index.ttl`** zusammengefasst.
 
 ## 🎯 Verwendung
 
@@ -77,12 +88,21 @@ Beispiel für die Verwendung in AMB-konformen Metadaten:
 
 ## 🏗️ Architektur
 
-### Vorteile der modularen Struktur
+### Monolithische Hauptdatei (index.ttl)
 
-- **Unabhängige Aktualisierung**: Jedes Vokabular kann separat versioniert und aktualisiert werden
-- **Bessere Wartbarkeit**: Kleinere, fokussierte Dateien sind einfacher zu pflegen
-- **Flexible Nutzung**: Anwender können nur die benötigten Vokabulare einbinden
-- **Klare Verantwortlichkeiten**: Jedes ConceptScheme hat einen klar definierten Zweck
+Die `index.ttl` enthält das **gesamte Vokabular** in einem einzigen ConceptScheme. Dies ist notwendig für:
+- ✅ **SkoHub-Publikation** (erfordert vollständige ConceptSchemes)
+- ✅ **Einfache Integration** (eine Datei enthält alles)
+- ✅ **SKOS-Validierung** (alle Beziehungen sind auflösbar)
+
+### Modulare Einzeldateien
+
+Die modularen Dateien bieten:
+- 📦 **Thematische Trennung** (leichtere Navigation)
+- 🔄 **Flexible Updates** (einzelne Bereiche aktualisieren)
+- 🎯 **Selektive Nutzung** (nur benötigte Teile einbinden)
+
+**Empfehlung:** Für die meisten Anwendungsfälle ist die `index.ttl` ausreichend.
 
 ### SKOS Mappings
 
