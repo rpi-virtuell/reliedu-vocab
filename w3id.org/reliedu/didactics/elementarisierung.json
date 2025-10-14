@@ -2,55 +2,37 @@
   "id": "https://w3id.org/reliedu/didactics/elementarisierung",
   "type": "Concept",
   "prefLabel": {
-    "en": "Elementarization",
-    "de": "Elementarisierung"
-  },
-  "altLabel": {
-    "de": [
-      "Elementare Strukturen"
-    ]
+    "de": "Elementarisierung",
+    "en": "Elementarization"
   },
   "definition": {
-    "de": "Methode zur didaktischen Reduktion theologischer Inhalte auf ihre \nelementaren Strukturen, Wahrheiten, Erfahrungen und Zugänge. Das Material reduziert \nKomplexität auf Kernaussagen ohne zu simplifizieren."
+    "de": "Methode zur Reduktion komplexer theologischer Inhalte auf elementare Strukturen für den Bildungsprozess.",
+    "en": "Method for reducing complex theological content to elementary structures for the educational process."
   },
-  "scopeNote": {
-    "de": [
-      "Nach Karl Ernst Nipkow: Vier Dimensionen - Elementare Strukturen (Sachstruktur), Elementare Wahrheiten (Bedeutsamkeit), Elementare Erfahrungen (Subjektbezug), Elementare Zugänge (Methodik)"
-    ]
-  },
-  "broader": {
-    "id": "https://w3id.org/reliedu/didactics/",
-    "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
-    }
-  },
-  "related": [
-    {
-      "id": "https://w3id.org/reliedu/didactics/korrelation",
-      "prefLabel": {
-        "en": "Correlation Didactics",
-        "de": "Korrelationsdidaktik"
-      }
-    }
-  ],
-  "relatedMatch": [
-    {
-      "id": "http://w3id.org/openeduhub/vocabs/discipline/520"
-    }
+  "notation": [
+    "ELEM"
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/didactics/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

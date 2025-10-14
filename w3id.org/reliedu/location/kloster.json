@@ -2,36 +2,42 @@
   "id": "https://w3id.org/reliedu/location/kloster",
   "type": "Concept",
   "prefLabel": {
-    "en": "Monastery",
-    "de": "Kloster"
+    "de": "Kloster als Lernort",
+    "en": "Monastery as Learning Place"
   },
   "definition": {
-    "de": "Klöster als Orte spiritueller Erfahrung."
+    "de": "Monastische Gemeinschaft als Ort spiritueller Bildung und religiöser Erfahrung.",
+    "en": "Monastic community as place of spiritual education and religious experience."
   },
-  "broader": {
-    "id": "https://w3id.org/reliedu/location/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Learning Locations",
-      "de": "Religionspädagogische Lernorte"
-    }
+  "scopeNote": {
+    "de": [
+      "Umfasst Klosterbesuche, Exerzitien und spirituelle Kurse."
+    ]
   },
-  "broadMatch": [
-    {
-      "id": "http://w3id.org/openeduhub/vocabs/educationalContext/informelles_lernen"
-    }
+  "notation": [
+    "KLOS"
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/location/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/location/",
+      "title": {
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
+      }
     }
   ],
   "@context": {

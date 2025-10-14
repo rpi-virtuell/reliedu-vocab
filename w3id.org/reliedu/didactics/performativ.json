@@ -2,65 +2,37 @@
   "id": "https://w3id.org/reliedu/didactics/performativ",
   "type": "Concept",
   "prefLabel": {
-    "en": "Performative Religious Education",
-    "de": "Performativer Religionsunterricht"
-  },
-  "altLabel": {
-    "en": [
-      "Learning by Doing"
-    ],
-    "de": [
-      "Performatives Lernen"
-    ]
+    "de": "Performative Religionsdidaktik",
+    "en": "Performative Religious Didactics"
   },
   "definition": {
-    "de": "Lernen durch aktives Handeln und Erleben religiöser Praxis. \nDas Material ermöglicht praktisches Tun wie Beten, Singen, rituelle Handlungen und \nreligiöse Vollzüge als Erschließungswege."
+    "de": "Didaktischer Ansatz, der religiöse Praxis und verkörpertes Lernen in den Mittelpunkt stellt.",
+    "en": "Didactic approach focusing on religious practice and embodied learning."
   },
-  "scopeNote": {
-    "de": [
-      "Nach Bernhard Dressler und Thomas Klie: Religion wird durch Vollzug erschlossen, nicht nur kognitiv"
-    ]
-  },
-  "broader": {
-    "id": "https://w3id.org/reliedu/didactics/",
-    "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
-    }
-  },
-  "related": [
-    {
-      "id": "https://w3id.org/reliedu/didactics/aesthetisch",
-      "prefLabel": {
-        "en": "Aesthetic Learning",
-        "de": "Ästhetisches Lernen"
-      }
-    },
-    {
-      "id": "https://w3id.org/reliedu/competency/gestaltung",
-      "prefLabel": {
-        "en": "Design Competence",
-        "de": "Gestaltungskompetenz"
-      }
-    }
-  ],
-  "relatedMatch": [
-    {
-      "id": "http://w3id.org/openeduhub/vocabs/discipline/520"
-    }
+  "notation": [
+    "PERF"
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/didactics/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

@@ -2,53 +2,37 @@
   "id": "https://w3id.org/reliedu/didactics/inklusiv",
   "type": "Concept",
   "prefLabel": {
-    "en": "Inclusive Religious Education",
-    "de": "Inklusive Religionspädagogik"
-  },
-  "altLabel": {
-    "en": [
-      "Inclusive Didactics"
-    ],
-    "de": [
-      "Inklusionsdidaktik"
-    ]
+    "de": "Inklusive Religionsdidaktik",
+    "en": "Inclusive Religious Didactics"
   },
   "definition": {
-    "de": "Alle Lernenden mit ihren unterschiedlichen Voraussetzungen mitnehmen. \nDas Material berücksichtigt Heterogenität und Diversität (Behinderung, Herkunft, Religion, etc.)."
+    "de": "Didaktischer Ansatz für gemeinsames religiöses Lernen trotz unterschiedlicher Voraussetzungen.",
+    "en": "Didactic approach for shared religious learning despite different prerequisites."
   },
-  "broader": {
-    "id": "https://w3id.org/reliedu/didactics/",
-    "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
-    }
-  },
-  "related": [
-    {
-      "id": "https://w3id.org/reliedu/didactics/diversitaetssensibel",
-      "prefLabel": {
-        "en": "Diversity-Sensitive Learning",
-        "de": "Diversitätssensibles Lernen"
-      }
-    }
-  ],
-  "relatedMatch": [
-    {
-      "id": "http://w3id.org/openeduhub/vocabs/educationalContext/foerderschule"
-    }
+  "notation": [
+    "INKL"
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/didactics/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

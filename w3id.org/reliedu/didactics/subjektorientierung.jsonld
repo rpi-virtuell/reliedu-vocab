@@ -2,72 +2,37 @@
   "id": "https://w3id.org/reliedu/didactics/subjektorientierung",
   "type": "Concept",
   "prefLabel": {
-    "en": "Student-Centered Approach",
-    "de": "Subjektorientierung"
-  },
-  "altLabel": {
-    "en": [
-      "Learner-Centered"
-    ],
-    "de": [
-      "Subjektive Didaktik"
-    ]
+    "de": "Subjektorientierung",
+    "en": "Student-Centered Approach"
   },
   "definition": {
-    "de": "Didaktischer Ansatz, der die individuellen religiösen Erfahrungen, \nVorstellungen und Lebenswelten der Lernenden in den Mittelpunkt stellt. Das Material \nknüpft an subjektive Fragen und Erfahrungen der Schüler*innen an und nimmt ihre \nreligiösen Konstruktionen ernst."
+    "de": "Didaktischer Ansatz, der die individuellen Vorerfahrungen, Fragen und Lebenswelten der Lernenden in den Mittelpunkt stellt.",
+    "en": "Didactic approach that focuses on individual prior experiences, questions and life worlds of learners."
   },
-  "scopeNote": {
-    "de": [
-      "Kompendium 4_didaktische_metadaten.md: Lernende als aktive Konstrukteure ihres religiösen Wissens"
-    ]
-  },
-  "broader": {
-    "id": "https://w3id.org/reliedu/didactics/",
-    "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
-    }
-  },
-  "related": [
-    {
-      "id": "https://w3id.org/reliedu/didactics/korrelation",
-      "prefLabel": {
-        "en": "Correlation Didactics",
-        "de": "Korrelationsdidaktik"
-      }
-    },
-    {
-      "id": "https://w3id.org/reliedu/didactics/konstruktivistisch",
-      "prefLabel": {
-        "en": "Constructivist Learning",
-        "de": "Konstruktivistisches Lernen"
-      }
-    },
-    {
-      "id": "https://w3id.org/reliedu/didactics/theologisieren",
-      "prefLabel": {
-        "en": "Doing Theology with Children",
-        "de": "Theologisieren mit Kindern"
-      }
-    }
-  ],
-  "relatedMatch": [
-    {
-      "id": "http://w3id.org/openeduhub/vocabs/discipline/520"
-    }
+  "notation": [
+    "SUBJ"
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/didactics/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

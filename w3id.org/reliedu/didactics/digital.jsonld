@@ -2,58 +2,37 @@
   "id": "https://w3id.org/reliedu/didactics/digital",
   "type": "Concept",
   "prefLabel": {
-    "en": "Digital Religious Education",
-    "de": "Digitale Religionsdidaktik"
-  },
-  "altLabel": {
-    "en": [
-      "Digital Learning"
-    ],
-    "de": [
-      "Digitales Lernen"
-    ]
+    "de": "Digitale Religionsdidaktik",
+    "en": "Digital Religious Didactics"
   },
   "definition": {
-    "de": "Sinnvoller Einsatz digitaler Medien im Religionsunterricht. \nDas Material nutzt digitale Tools nicht als Selbstzweck, sondern zur Erschließung \nreligiöser Inhalte."
+    "de": "Didaktischer Ansatz für digitale Medien und Online-Lernumgebungen in der Religionspädagogik.",
+    "en": "Didactic approach for digital media and online learning environments in religious education."
   },
-  "broader": {
-    "id": "https://w3id.org/reliedu/didactics/",
-    "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
-    }
-  },
-  "related": [
-    {
-      "id": "https://w3id.org/reliedu/location/virtuell",
-      "prefLabel": {
-        "en": "Virtual Space",
-        "de": "Virtueller Raum"
-      }
-    }
-  ],
-  "relatedMatch": [
-    {
-      "id": "http://w3id.org/openeduhub/vocabs/educationalContext/fernunterricht"
-    }
-  ],
-  "broadMatch": [
-    {
-      "id": "https://w3id.org/reliedu/location/virtuell"
-    }
+  "notation": [
+    "DIGI"
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/didactics/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {
