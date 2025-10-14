@@ -2,18 +2,11 @@
   "id": "https://w3id.org/reliedu/location/kloster",
   "type": "Concept",
   "prefLabel": {
-    "en": "Monastery",
-    "de": "Kloster"
+    "de": "Kloster",
+    "en": "Monastery"
   },
   "definition": {
     "de": "Klöster als Orte spiritueller Erfahrung."
-  },
-  "broader": {
-    "id": "https://w3id.org/reliedu/location/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Learning Locations",
-      "de": "Religionspädagogische Lernorte"
-    }
   },
   "broadMatch": [
     {
@@ -22,16 +15,25 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Locations"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/location/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/location/",
+      "title": {
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Locations"
+      }
     }
   ],
   "@context": {

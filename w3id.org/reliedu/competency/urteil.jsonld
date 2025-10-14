@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/competency/urteil",
   "type": "Concept",
   "prefLabel": {
-    "en": "Judgment Competence",
-    "de": "Urteilskompetenz"
+    "de": "Urteilskompetenz",
+    "en": "Judgment Competence"
   },
   "altLabel": {
-    "en": [
-      "Judging"
-    ],
     "de": [
       "Urteilen"
+    ],
+    "en": [
+      "Judging"
     ]
   },
   "definition": {
@@ -24,16 +24,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/competency/",
     "prefLabel": {
-      "en": "Religious-Pedagogical Competencies",
-      "de": "Religionspädagogische Kompetenzen"
+      "de": "Religionspädagogische Kompetenzen",
+      "en": "Religious-Pedagogical Competencies"
     }
   },
   "inScheme": [
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

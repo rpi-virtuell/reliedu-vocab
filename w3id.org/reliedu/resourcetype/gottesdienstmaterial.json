@@ -2,26 +2,19 @@
   "id": "https://w3id.org/reliedu/resourcetype/gottesdienstmaterial",
   "type": "Concept",
   "prefLabel": {
-    "en": "Worship Material",
-    "de": "Gottesdienstmaterial"
+    "de": "Gottesdienstmaterial",
+    "en": "Worship Material"
   },
   "altLabel": {
-    "en": [
-      "Liturgy"
-    ],
     "de": [
       "Liturgie"
+    ],
+    "en": [
+      "Liturgy"
     ]
   },
   "definition": {
     "de": "Materialien für Gottesdienste und liturgische Feiern."
-  },
-  "broader": {
-    "id": "https://w3id.org/reliedu/resourcetype/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Resource Types",
-      "de": "Religionspädagogische Ressourcentypen"
-    }
   },
   "broadMatch": [
     {
@@ -30,16 +23,25 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/resourcetype/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/resourcetype/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/resourcetype/",
+      "title": {
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
+      }
     }
   ],
   "@context": {

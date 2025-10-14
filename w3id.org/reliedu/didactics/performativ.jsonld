@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/performativ",
   "type": "Concept",
   "prefLabel": {
-    "en": "Performative Religious Education",
-    "de": "Performativer Religionsunterricht"
+    "de": "Performativer Religionsunterricht",
+    "en": "Performative Religious Education"
   },
   "altLabel": {
-    "en": [
-      "Learning by Doing"
-    ],
     "de": [
       "Performatives Lernen"
+    ],
+    "en": [
+      "Learning by Doing"
     ]
   },
   "definition": {
@@ -24,23 +24,23 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
+      "de": "Religionsdidaktische Zugänge",
+      "en": "Religious-Didactic Approaches"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/aesthetisch",
       "prefLabel": {
-        "en": "Aesthetic Learning",
-        "de": "Ästhetisches Lernen"
+        "de": "Ästhetisches Lernen",
+        "en": "Aesthetic Learning"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/gestaltung",
       "prefLabel": {
-        "en": "Design Competence",
-        "de": "Gestaltungskompetenz"
+        "de": "Gestaltungskompetenz",
+        "en": "Design Competence"
       }
     }
   ],
@@ -53,8 +53,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

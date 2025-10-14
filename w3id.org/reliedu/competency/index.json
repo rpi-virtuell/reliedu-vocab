@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/competency/",
   "type": "Concept",
   "prefLabel": {
-    "en": "Religious-Pedagogical Competencies",
-    "de": "Religionspädagogische Kompetenzen"
+    "de": "Religionspädagogische Kompetenzen",
+    "en": "Religious-Pedagogical Competencies"
   },
   "definition": {
     "de": "Prozess- und inhaltsbezogene Kompetenzen, die durch \nreligionspädagogische Bildungsressourcen gefördert werden."
@@ -12,36 +12,36 @@
     {
       "id": "https://w3id.org/reliedu/competency/wahrnehmung",
       "prefLabel": {
-        "en": "Perception and Presentation Competence",
-        "de": "Wahrnehmungs- und Darstellungskompetenz"
+        "de": "Wahrnehmungs- und Darstellungskompetenz",
+        "en": "Perception and Presentation Competence"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/deutung",
       "prefLabel": {
-        "en": "Interpretation Competence",
-        "de": "Deutungskompetenz"
+        "de": "Deutungskompetenz",
+        "en": "Interpretation Competence"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/urteil",
       "prefLabel": {
-        "en": "Judgment Competence",
-        "de": "Urteilskompetenz"
+        "de": "Urteilskompetenz",
+        "en": "Judgment Competence"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/dialog",
       "prefLabel": {
-        "en": "Dialogue Competence",
-        "de": "Dialogkompetenz"
+        "de": "Dialogkompetenz",
+        "en": "Dialogue Competence"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/gestaltung",
       "prefLabel": {
-        "en": "Design Competence",
-        "de": "Gestaltungskompetenz"
+        "de": "Gestaltungskompetenz",
+        "en": "Design Competence"
       }
     }
   ],
@@ -49,8 +49,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],
@@ -63,8 +63,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

@@ -2,40 +2,33 @@
   "id": "https://w3id.org/reliedu/location/natur",
   "type": "Concept",
   "prefLabel": {
-    "en": "Nature/Creation",
-    "de": "Natur/Schöpfung"
+    "de": "Natur/Schöpfung",
+    "en": "Nature/Creation"
   },
   "definition": {
     "de": "Natur als Lernort für Schöpfungstheologie."
   },
-  "broader": {
-    "id": "https://w3id.org/reliedu/location/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Learning Locations",
-      "de": "Religionspädagogische Lernorte"
-    }
-  },
-  "related": [
-    {
-      "id": "https://w3id.org/reliedu/content/mensch-welt",
-      "prefLabel": {
-        "en": "Human and World",
-        "de": "Mensch und Welt"
-      }
-    }
-  ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Locations"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/location/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/location/",
+      "title": {
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Locations"
+      }
     }
   ],
   "@context": {

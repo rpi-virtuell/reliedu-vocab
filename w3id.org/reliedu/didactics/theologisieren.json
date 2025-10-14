@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/theologisieren",
   "type": "Concept",
   "prefLabel": {
-    "en": "Doing Theology with Children",
-    "de": "Theologisieren mit Kindern"
+    "de": "Theologisieren mit Kindern",
+    "en": "Doing Theology with Children"
   },
   "altLabel": {
-    "en": [
-      "Children's Theology"
-    ],
     "de": [
       "Kindertheologie"
+    ],
+    "en": [
+      "Children's Theology"
     ]
   },
   "definition": {
@@ -24,23 +24,23 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
+      "de": "Religionsdidaktische Zugänge",
+      "en": "Religious-Didactic Approaches"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/subjektorientierung",
       "prefLabel": {
-        "en": "Student-Centered Approach",
-        "de": "Subjektorientierung"
+        "de": "Subjektorientierung",
+        "en": "Student-Centered Approach"
       }
     },
     {
       "id": "https://w3id.org/reliedu/method/godly-play",
       "prefLabel": {
-        "en": "Godly Play",
-        "de": "Godly Play"
+        "de": "Godly Play",
+        "en": "Godly Play"
       }
     }
   ],
@@ -53,8 +53,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

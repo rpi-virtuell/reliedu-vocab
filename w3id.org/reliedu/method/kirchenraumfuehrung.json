@@ -2,47 +2,38 @@
   "id": "https://w3id.org/reliedu/method/kirchenraumfuehrung",
   "type": "Concept",
   "prefLabel": {
-    "en": "Church Tour",
-    "de": "Kirchenraumführung"
+    "de": "Kirchenraumführung",
+    "en": "Church Tour"
   },
   "definition": {
     "de": "Erschließung von Kirchenräumen durch geführte Erkundung."
   },
-  "broader": {
-    "id": "https://w3id.org/reliedu/method/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Methods",
-      "de": "Religionspädagogische Methoden"
-    }
-  },
-  "related": [
+  "broadMatch": [
     {
-      "id": "https://w3id.org/reliedu/didactics/kirchenraum",
-      "prefLabel": {
-        "en": "Church Pedagogy",
-        "de": "Kirchenraumpädagogik"
-      }
-    },
-    {
-      "id": "https://w3id.org/reliedu/location/kirchenraum",
-      "prefLabel": {
-        "en": "Church Building",
-        "de": "Kirchenraum"
-      }
+      "id": "http://w3id.org/openeduhub/vocabs/new_lrt/477115fd-5042-4174-ac39-7c05f8a24766"
     }
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Unterrichtsmethoden",
+        "en": "Religious-Pedagogical Teaching Methods"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/method/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/method/",
+      "title": {
+        "de": "Religionspädagogische Unterrichtsmethoden",
+        "en": "Religious-Pedagogical Teaching Methods"
+      }
     }
   ],
   "@context": {

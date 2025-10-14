@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/aesthetisch",
   "type": "Concept",
   "prefLabel": {
-    "en": "Aesthetic Learning",
-    "de": "Ästhetisches Lernen"
+    "de": "Ästhetisches Lernen",
+    "en": "Aesthetic Learning"
   },
   "altLabel": {
-    "en": [
-      "Sensory Approaches"
-    ],
     "de": [
       "Sinnliche Zugänge"
+    ],
+    "en": [
+      "Sensory Approaches"
     ]
   },
   "definition": {
@@ -19,37 +19,37 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
+      "de": "Religionsdidaktische Zugänge",
+      "en": "Religious-Didactic Approaches"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/performativ",
       "prefLabel": {
-        "en": "Performative Religious Education",
-        "de": "Performativer Religionsunterricht"
+        "de": "Performativer Religionsunterricht",
+        "en": "Performative Religious Education"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/symbol",
       "prefLabel": {
-        "en": "Symbol Didactics",
-        "de": "Symboldidaktik"
+        "de": "Symboldidaktik",
+        "en": "Symbol Didactics"
       }
     },
     {
       "id": "https://w3id.org/reliedu/didactics/kirchenraum",
       "prefLabel": {
-        "en": "Church Pedagogy",
-        "de": "Kirchenraumpädagogik"
+        "de": "Kirchenraumpädagogik",
+        "en": "Church Pedagogy"
       }
     },
     {
       "id": "https://w3id.org/reliedu/competency/gestaltung",
       "prefLabel": {
-        "en": "Design Competence",
-        "de": "Gestaltungskompetenz"
+        "de": "Gestaltungskompetenz",
+        "en": "Design Competence"
       }
     }
   ],
@@ -62,8 +62,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/method/godly-play",
   "type": "Concept",
   "prefLabel": {
-    "en": "Godly Play",
-    "de": "Godly Play"
+    "de": "Godly Play",
+    "en": "Godly Play"
   },
   "altLabel": {
     "de": [
@@ -13,34 +13,32 @@
   "definition": {
     "de": "Montessori-inspirierte Methode religiöser Bildung."
   },
-  "broader": {
-    "id": "https://w3id.org/reliedu/method/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Methods",
-      "de": "Religionspädagogische Methoden"
-    }
-  },
-  "related": [
+  "broadMatch": [
     {
-      "id": "https://w3id.org/reliedu/didactics/theologisieren",
-      "prefLabel": {
-        "en": "Doing Theology with Children",
-        "de": "Theologisieren mit Kindern"
-      }
+      "id": "http://w3id.org/openeduhub/vocabs/new_lrt/477115fd-5042-4174-ac39-7c05f8a24766"
     }
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Unterrichtsmethoden",
+        "en": "Religious-Pedagogical Teaching Methods"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/method/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/method/",
+      "title": {
+        "de": "Religionspädagogische Unterrichtsmethoden",
+        "en": "Religious-Pedagogical Teaching Methods"
+      }
     }
   ],
   "@context": {

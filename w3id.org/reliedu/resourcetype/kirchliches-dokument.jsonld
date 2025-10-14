@@ -2,26 +2,19 @@
   "id": "https://w3id.org/reliedu/resourcetype/kirchliches-dokument",
   "type": "Concept",
   "prefLabel": {
-    "en": "Church Document",
-    "de": "Kirchliches Dokument"
+    "de": "Kirchliches Dokument",
+    "en": "Church Document"
   },
   "altLabel": {
-    "en": [
-      "Official Statement"
-    ],
     "de": [
       "Verlautbarung"
+    ],
+    "en": [
+      "Official Statement"
     ]
   },
   "definition": {
     "de": "Offizielle Dokumente von Kirchen (Enzykliken, Denkschriften, etc.)."
-  },
-  "broader": {
-    "id": "https://w3id.org/reliedu/resourcetype/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Resource Types",
-      "de": "Religionspädagogische Ressourcentypen"
-    }
   },
   "broadMatch": [
     {
@@ -30,16 +23,25 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/resourcetype/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/resourcetype/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/resourcetype/",
+      "title": {
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
+      }
     }
   ],
   "@context": {

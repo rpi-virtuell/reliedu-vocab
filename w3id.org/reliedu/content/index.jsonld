@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/content/",
   "type": "Concept",
   "prefLabel": {
-    "en": "Content Areas",
-    "de": "Inhaltsbereiche"
+    "de": "Inhaltsbereiche",
+    "en": "Content Areas"
   },
   "definition": {
     "de": "Zentrale Themenfelder des Religionsunterrichts nach \nBildungsstandards und Lehrplänen."
@@ -12,43 +12,43 @@
     {
       "id": "https://w3id.org/reliedu/content/religionen",
       "prefLabel": {
-        "en": "Religions and Worldviews",
-        "de": "Religionen und Weltanschauungen"
+        "de": "Religionen und Weltanschauungen",
+        "en": "Religions and Worldviews"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/bibel",
       "prefLabel": {
-        "en": "Bible",
-        "de": "Bibel"
+        "de": "Bibel",
+        "en": "Bible"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/mensch-welt",
       "prefLabel": {
-        "en": "Human and World",
-        "de": "Mensch und Welt"
+        "de": "Mensch und Welt",
+        "en": "Human and World"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/gott",
       "prefLabel": {
-        "en": "God",
-        "de": "Gott"
+        "de": "Gott",
+        "en": "God"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/jesus-christus",
       "prefLabel": {
-        "en": "Jesus Christ",
-        "de": "Jesus Christus"
+        "de": "Jesus Christus",
+        "en": "Jesus Christ"
       }
     },
     {
       "id": "https://w3id.org/reliedu/content/kirche",
       "prefLabel": {
-        "en": "Church and Churches",
-        "de": "Kirche und Kirchen"
+        "de": "Kirche und Kirchen",
+        "en": "Church and Churches"
       }
     }
   ],
@@ -56,8 +56,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],
@@ -70,8 +70,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

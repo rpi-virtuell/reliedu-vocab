@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/inklusiv",
   "type": "Concept",
   "prefLabel": {
-    "en": "Inclusive Religious Education",
-    "de": "Inklusive Religionspädagogik"
+    "de": "Inklusive Religionspädagogik",
+    "en": "Inclusive Religious Education"
   },
   "altLabel": {
-    "en": [
-      "Inclusive Didactics"
-    ],
     "de": [
       "Inklusionsdidaktik"
+    ],
+    "en": [
+      "Inclusive Didactics"
     ]
   },
   "definition": {
@@ -19,16 +19,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
+      "de": "Religionsdidaktische Zugänge",
+      "en": "Religious-Didactic Approaches"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/diversitaetssensibel",
       "prefLabel": {
-        "en": "Diversity-Sensitive Learning",
-        "de": "Diversitätssensibles Lernen"
+        "de": "Diversitätssensibles Lernen",
+        "en": "Diversity-Sensitive Learning"
       }
     }
   ],
@@ -41,8 +41,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

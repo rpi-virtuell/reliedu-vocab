@@ -2,18 +2,11 @@
   "id": "https://w3id.org/reliedu/location/friedhof",
   "type": "Concept",
   "prefLabel": {
-    "en": "Cemetery",
-    "de": "Friedhof"
+    "de": "Friedhof",
+    "en": "Cemetery"
   },
   "definition": {
     "de": "Friedhöfe als Orte der Auseinandersetzung mit Tod und Trauer."
-  },
-  "broader": {
-    "id": "https://w3id.org/reliedu/location/",
-    "prefLabel": {
-      "en": "Religious-Pedagogical Learning Locations",
-      "de": "Religionspädagogische Lernorte"
-    }
   },
   "broadMatch": [
     {
@@ -22,16 +15,25 @@
   ],
   "inScheme": [
     {
-      "id": "https://w3id.org/reliedu/",
+      "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Locations"
       }
     }
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/reliedu/"
+      "id": "https://w3id.org/reliedu/location/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/location/",
+      "title": {
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Locations"
+      }
     }
   ],
   "@context": {

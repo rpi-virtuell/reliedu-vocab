@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/didactics/symbol",
   "type": "Concept",
   "prefLabel": {
-    "en": "Symbol Didactics",
-    "de": "Symboldidaktik"
+    "de": "Symboldidaktik",
+    "en": "Symbol Didactics"
   },
   "altLabel": {
-    "en": [
-      "Religious Symbols"
-    ],
     "de": [
       "Religiöse Symbole"
+    ],
+    "en": [
+      "Religious Symbols"
     ]
   },
   "definition": {
@@ -19,16 +19,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
+      "de": "Religionsdidaktische Zugänge",
+      "en": "Religious-Didactic Approaches"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/aesthetisch",
       "prefLabel": {
-        "en": "Aesthetic Learning",
-        "de": "Ästhetisches Lernen"
+        "de": "Ästhetisches Lernen",
+        "en": "Aesthetic Learning"
       }
     }
   ],
@@ -41,8 +41,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

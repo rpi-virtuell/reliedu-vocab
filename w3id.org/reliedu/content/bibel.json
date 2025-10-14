@@ -2,15 +2,15 @@
   "id": "https://w3id.org/reliedu/content/bibel",
   "type": "Concept",
   "prefLabel": {
-    "en": "Bible",
-    "de": "Bibel"
+    "de": "Bibel",
+    "en": "Bible"
   },
   "altLabel": {
-    "en": [
-      "Holy Scripture"
-    ],
     "de": [
       "Heilige Schrift"
+    ],
+    "en": [
+      "Holy Scripture"
     ]
   },
   "definition": {
@@ -19,23 +19,23 @@
   "broader": {
     "id": "https://w3id.org/reliedu/content/",
     "prefLabel": {
-      "en": "Content Areas",
-      "de": "Inhaltsbereiche"
+      "de": "Inhaltsbereiche",
+      "en": "Content Areas"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/biblisch",
       "prefLabel": {
-        "en": "Biblical Didactics",
-        "de": "Biblische Didaktik"
+        "de": "Biblische Didaktik",
+        "en": "Biblical Didactics"
       }
     },
     {
       "id": "https://w3id.org/reliedu/resourcetype/bibeltext",
       "prefLabel": {
-        "en": "Biblical Text",
-        "de": "Bibeltext"
+        "de": "Bibeltext",
+        "en": "Biblical Text"
       }
     }
   ],
@@ -43,8 +43,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],

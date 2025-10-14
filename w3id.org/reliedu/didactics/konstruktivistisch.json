@@ -2,8 +2,8 @@
   "id": "https://w3id.org/reliedu/didactics/konstruktivistisch",
   "type": "Concept",
   "prefLabel": {
-    "en": "Constructivist Learning",
-    "de": "Konstruktivistisches Lernen"
+    "de": "Konstruktivistisches Lernen",
+    "en": "Constructivist Learning"
   },
   "definition": {
     "de": "Lernende konstruieren religiöses Wissen aktiv durch Erfahrung und Reflexion."
@@ -11,16 +11,16 @@
   "broader": {
     "id": "https://w3id.org/reliedu/didactics/",
     "prefLabel": {
-      "en": "Religious-Didactic Approaches",
-      "de": "Religionsdidaktische Zugänge"
+      "de": "Religionsdidaktische Zugänge",
+      "en": "Religious-Didactic Approaches"
     }
   },
   "related": [
     {
       "id": "https://w3id.org/reliedu/didactics/subjektorientierung",
       "prefLabel": {
-        "en": "Student-Centered Approach",
-        "de": "Subjektorientierung"
+        "de": "Subjektorientierung",
+        "en": "Student-Centered Approach"
       }
     }
   ],
@@ -28,8 +28,8 @@
     {
       "id": "https://w3id.org/reliedu/",
       "title": {
-        "en": "Religious Education Vocabulary",
-        "de": "Religionspädagogisches Vokabular"
+        "de": "Religionspädagogisches Vokabular",
+        "en": "Religious Education Vocabulary"
       }
     }
   ],
