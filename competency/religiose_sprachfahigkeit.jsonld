@@ -2,16 +2,16 @@
   "id": "https://w3id.org/reliedu/competency/religiose_sprachfahigkeit",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religiöse Sprachfähigkeit",
+    "de": "Religi?se Sprachf?higkeit",
     "en": "Religious Language Competence"
   },
   "definition": {
-    "de": "Fähigkeit zur angemessenen Verwendung religiöser Sprache und Symbolik in verschiedenen Kontexten.",
+    "de": "F?higkeit zur angemessenen Verwendung religi?ser Sprache und Symbolik in verschiedenen Kontexten.",
     "en": "Ability to appropriately use religious language and symbolism in various contexts."
   },
   "scopeNote": {
     "de": [
-      "Umfasst Verstehen und Gebrauch von Metaphern, Symbolen, Gleichnissen und religiösen Fachbegriffen."
+      "Umfasst Verstehen und Gebrauch von Metaphern, Symbolen, Gleichnissen und religi?sen Fachbegriffen."
     ]
   },
   "notation": [
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/competency/",
       "title": {
-        "de": "Religionspädagogische Kompetenzen",
+        "de": "Religionsp?dagogische Kompetenzen",
         "en": "Religious-Pedagogical Competencies"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/competency/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/competency/",
-      "title": {
-        "de": "Religionspädagogische Kompetenzen",
-        "en": "Religious-Pedagogical Competencies"
-      }
     }
   ],
   "@context": {

@@ -6,7 +6,7 @@
     "en": "Pilgrimage Path"
   },
   "definition": {
-    "de": "Spirituelle Wanderung als Form religiöser Bildung und persönlicher Entwicklung.",
+    "de": "Spirituelle Wanderung als Form religi?ser Bildung und pers?nlicher Entwicklung.",
     "en": "Spiritual journey as form of religious education and personal development."
   },
   "scopeNote": {
@@ -21,23 +21,14 @@
     {
       "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Contexts"
+        "de": "Religionsspezifische Lernorte",
+        "en": "Religion-Specific Learning Contexts"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/location/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/location/",
-      "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Contexts"
-      }
     }
   ],
   "@context": {

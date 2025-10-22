@@ -2,16 +2,16 @@
   "id": "https://w3id.org/reliedu/competency/dialogfahigkeit",
   "type": "Concept",
   "prefLabel": {
-    "de": "Dialogfähigkeit",
+    "de": "Dialogf?higkeit",
     "en": "Dialogue Competence"
   },
   "definition": {
-    "de": "Fähigkeit zum respektvollen Austausch über religiöse und weltanschauliche Überzeugungen.",
+    "de": "F?higkeit zum respektvollen Austausch ?ber religi?se und weltanschauliche ?berzeugungen.",
     "en": "Ability for respectful exchange about religious and worldview convictions."
   },
   "scopeNote": {
     "de": [
-      "Umfasst interreligiösen Dialog, Toleranz und konstruktive Meinungsbildung."
+      "Umfasst interreligi?sen Dialog, Toleranz und konstruktive Meinungsbildung."
     ]
   },
   "notation": [
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/competency/",
       "title": {
-        "de": "Religionspädagogische Kompetenzen",
+        "de": "Religionsp?dagogische Kompetenzen",
         "en": "Religious-Pedagogical Competencies"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/competency/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/competency/",
-      "title": {
-        "de": "Religionspädagogische Kompetenzen",
-        "en": "Religious-Pedagogical Competencies"
-      }
     }
   ],
   "@context": {

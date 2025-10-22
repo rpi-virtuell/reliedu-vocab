@@ -11,7 +11,7 @@
   },
   "scopeNote": {
     "de": [
-      "Typisch für Jugendliche 13-15 Jahre in evangelischen Gemeinden."
+      "Typisch f?r Jugendliche 13-15 Jahre in evangelischen Gemeinden."
     ]
   },
   "notation": [
@@ -19,30 +19,21 @@
   ],
   "broadMatch": [
     {
-      "id": "http://w3id.org/openeduhub/vocabs/educationalContext/sekundarstufe_1"
+      "id": "https://w3id.org/openeduhub/vocabs/educationalContext/sekundarstufe_1"
     }
   ],
   "inScheme": [
     {
       "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Contexts"
+        "de": "Religionsspezifische Lernorte",
+        "en": "Religion-Specific Learning Contexts"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/location/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/location/",
-      "title": {
-        "de": "Religionspädagogische Lernorte",
-        "en": "Religious-Pedagogical Learning Contexts"
-      }
     }
   ],
   "@context": {

@@ -2,16 +2,16 @@
   "id": "https://w3id.org/reliedu/competency/ethische_urteilsfahigkeit",
   "type": "Concept",
   "prefLabel": {
-    "de": "Ethische Urteilsfähigkeit",
+    "de": "Ethische Urteilsf?higkeit",
     "en": "Ethical Judgment Competence"
   },
   "definition": {
-    "de": "Fähigkeit zur begründeten ethischen Bewertung auf Basis religiöser und philosophischer Traditionen.",
+    "de": "F?higkeit zur begr?ndeten ethischen Bewertung auf Basis religi?ser und philosophischer Traditionen.",
     "en": "Ability for reasoned ethical evaluation based on religious and philosophical traditions."
   },
   "scopeNote": {
     "de": [
-      "Beinhaltet Dilemma-Diskussion, Werteabwägung und Handlungsorientierung."
+      "Beinhaltet Dilemma-Diskussion, Werteabw?gung und Handlungsorientierung."
     ]
   },
   "notation": [
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/competency/",
       "title": {
-        "de": "Religionspädagogische Kompetenzen",
+        "de": "Religionsp?dagogische Kompetenzen",
         "en": "Religious-Pedagogical Competencies"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/competency/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/competency/",
-      "title": {
-        "de": "Religionspädagogische Kompetenzen",
-        "en": "Religious-Pedagogical Competencies"
-      }
     }
   ],
   "@context": {

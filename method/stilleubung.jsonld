@@ -2,16 +2,16 @@
   "id": "https://w3id.org/reliedu/method/stilleubung",
   "type": "Concept",
   "prefLabel": {
-    "de": "Stilleübung",
+    "de": "Stille?bung",
     "en": "Silence Exercise"
   },
   "definition": {
-    "de": "Methodische Einübung in Stille und Achtsamkeit als spirituelle Praxis.",
+    "de": "Methodische Ein?bung in Stille und Achtsamkeit als spirituelle Praxis.",
     "en": "Methodical practice in silence and mindfulness as spiritual practice."
   },
   "scopeNote": {
     "de": [
-      "Atemübungen, Körperwahrnehmung und kontemplative Techniken."
+      "Atem?bungen, K?rperwahrnehmung und kontemplative Techniken."
     ]
   },
   "notation": [
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionspädagogische Methoden",
+        "de": "Religionsp?dagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/method/",
-      "title": {
-        "de": "Religionspädagogische Methoden",
-        "en": "Religious-Pedagogical Methods"
-      }
     }
   ],
   "@context": {

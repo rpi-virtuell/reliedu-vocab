@@ -6,7 +6,7 @@
     "en": "Devotion"
   },
   "definition": {
-    "de": "Kurze religiöse Feier oder spirituelle Besinnung für verschiedene Anlässe.",
+    "de": "Kurze religi?se Feier oder spirituelle Besinnung f?r verschiedene Anl?sse.",
     "en": "Short religious service or spiritual reflection for various occasions."
   },
   "notation": [
@@ -16,23 +16,14 @@
     {
       "id": "https://w3id.org/reliedu/resourcetype/",
       "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
+        "de": "Religionsspezifische Ressourcentypen",
+        "en": "Religion-Specific Resource Types"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/resourcetype/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/resourcetype/",
-      "title": {
-        "de": "Religionspädagogische Ressourcentypen",
-        "en": "Religious-Pedagogical Resource Types"
-      }
     }
   ],
   "@context": {

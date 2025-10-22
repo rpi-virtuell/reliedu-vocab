@@ -11,7 +11,7 @@
   },
   "scopeNote": {
     "de": [
-      "Umfasst Menschenbild, Würde, Schuld, Vergebung und Berufung."
+      "Umfasst Menschenbild, W?rde, Schuld, Vergebung und Berufung."
     ]
   },
   "notation": [
@@ -21,23 +21,14 @@
     {
       "id": "https://w3id.org/reliedu/content/",
       "title": {
-        "de": "Religionspädagogische Inhaltsbereiche",
-        "en": "Religious-Pedagogical Content Areas"
+        "de": "Theologische Inhaltsbereiche",
+        "en": "Theological Content Areas"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/content/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/content/",
-      "title": {
-        "de": "Religionspädagogische Inhaltsbereiche",
-        "en": "Religious-Pedagogical Content Areas"
-      }
     }
   ],
   "@context": {

@@ -6,7 +6,7 @@
     "en": "Bibliolog"
   },
   "definition": {
-    "de": "Interaktive Methode der Bibelauslegung durch Rolleneinfühlung und Identifikation.",
+    "de": "Interaktive Methode der Bibelauslegung durch Rolleneinf?hlung und Identifikation.",
     "en": "Interactive method of biblical interpretation through role empathy and identification."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionspädagogische Methoden",
+        "de": "Religionsp?dagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/method/",
-      "title": {
-        "de": "Religionspädagogische Methoden",
-        "en": "Religious-Pedagogical Methods"
-      }
     }
   ],
   "@context": {

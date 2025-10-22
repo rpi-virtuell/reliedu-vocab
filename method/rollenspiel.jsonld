@@ -2,11 +2,11 @@
   "id": "https://w3id.org/reliedu/method/rollenspiel",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religiöses Rollenspiel",
+    "de": "Religi?ses Rollenspiel",
     "en": "Religious Role Play"
   },
   "definition": {
-    "de": "Szenische Darstellung religiöser Inhalte und ethischer Dilemmata.",
+    "de": "Szenische Darstellung religi?ser Inhalte und ethischer Dilemmata.",
     "en": "Scenic representation of religious content and ethical dilemmas."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionspädagogische Methoden",
+        "de": "Religionsp?dagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/method/",
-      "title": {
-        "de": "Religionspädagogische Methoden",
-        "en": "Religious-Pedagogical Methods"
-      }
     }
   ],
   "@context": {

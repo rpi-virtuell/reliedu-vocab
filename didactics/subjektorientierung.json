@@ -26,15 +26,6 @@
       "id": "https://w3id.org/reliedu/didactics/"
     }
   ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/didactics/",
-      "title": {
-        "de": "Religionsdidaktische Labels",
-        "en": "Religious-Didactic Labels"
-      }
-    }
-  ],
   "@context": {
     "@version": 1.1,
     "id": "@id",

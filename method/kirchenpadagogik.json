@@ -2,11 +2,11 @@
   "id": "https://w3id.org/reliedu/method/kirchenpadagogik",
   "type": "Concept",
   "prefLabel": {
-    "de": "Kirchenpädagogik",
+    "de": "Kirchenp?dagogik",
     "en": "Church Pedagogy"
   },
   "definition": {
-    "de": "Ganzheitliche Erschließung des Kirchenraums als Lern- und Erfahrungsort.",
+    "de": "Ganzheitliche Erschlie?ung des Kirchenraums als Lern- und Erfahrungsort.",
     "en": "Holistic exploration of church space as a place of learning and experience."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionspädagogische Methoden",
+        "de": "Religionsp?dagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/method/",
-      "title": {
-        "de": "Religionspädagogische Methoden",
-        "en": "Religious-Pedagogical Methods"
-      }
     }
   ],
   "@context": {

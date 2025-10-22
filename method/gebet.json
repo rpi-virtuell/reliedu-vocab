@@ -6,7 +6,7 @@
     "en": "Prayer as Method"
   },
   "definition": {
-    "de": "Gebetsformen als didaktisches Element in religiösen Lernprozessen.",
+    "de": "Gebetsformen als didaktisches Element in religi?sen Lernprozessen.",
     "en": "Prayer forms as didactic element in religious learning processes."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionspädagogische Methoden",
+        "de": "Religionsp?dagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,15 +29,6 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
-    }
-  ],
-  "topConceptOf": [
-    {
-      "id": "https://w3id.org/reliedu/method/",
-      "title": {
-        "de": "Religionspädagogische Methoden",
-        "en": "Religious-Pedagogical Methods"
-      }
     }
   ],
   "@context": {
