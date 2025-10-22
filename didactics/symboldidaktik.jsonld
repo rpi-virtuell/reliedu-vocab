@@ -6,7 +6,7 @@
     "en": "Symbol Didactics"
   },
   "definition": {
-    "de": "Didaktischer Zugang ?ber Symbole als Br?cke zwischen Erfahrung und Glaubensaussagen.",
+    "de": "Didaktischer Zugang über Symbole als Brücke zwischen Erfahrung und Glaubensaussagen.",
     "en": "Didactic approach using symbols as bridges between experience and faith statements."
   },
   "notation": [
@@ -24,6 +24,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

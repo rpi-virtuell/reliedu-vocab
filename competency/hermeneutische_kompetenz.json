@@ -6,12 +6,12 @@
     "en": "Hermeneutical Competence"
   },
   "definition": {
-    "de": "F?higkeit zur sachgem??en Interpretation religi?ser Texte unter Ber?cksichtigung historischer und kultureller Kontexte.",
+    "de": "Fähigkeit zur sachgemäßen Interpretation religiöser Texte unter Berücksichtigung historischer und kultureller Kontexte.",
     "en": "Ability to interpret religious texts appropriately considering historical and cultural contexts."
   },
   "scopeNote": {
     "de": [
-      "Beinhaltet Textverst?ndnis, Kontextualisierung und Transfer in die Gegenwart."
+      "Beinhaltet Textverständnis, Kontextualisierung und Transfer in die Gegenwart."
     ]
   },
   "notation": [
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/competency/",
       "title": {
-        "de": "Religionsp?dagogische Kompetenzen",
+        "de": "Religionspädagogische Kompetenzen",
         "en": "Religious-Pedagogical Competencies"
       }
     }
@@ -29,6 +29,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/competency/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/competency/",
+      "title": {
+        "de": "Religionspädagogische Kompetenzen",
+        "en": "Religious-Pedagogical Competencies"
+      }
     }
   ],
   "@context": {

@@ -6,7 +6,7 @@
     "en": "Gender-Sensitive Religious Didactics"
   },
   "definition": {
-    "de": "Didaktischer Ansatz, der Geschlechteraspekte in der Religionsp?dagogik reflektiert und ber?cksichtigt.",
+    "de": "Didaktischer Ansatz, der Geschlechteraspekte in der Religionspädagogik reflektiert und berücksichtigt.",
     "en": "Didactic approach that reflects on and considers gender aspects in religious education."
   },
   "notation": [
@@ -24,6 +24,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

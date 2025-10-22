@@ -2,11 +2,11 @@
   "id": "https://w3id.org/reliedu/method/musikpadagogik",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religi?se Musikp?dagogik",
+    "de": "Religiöse Musikpädagogik",
     "en": "Religious Music Pedagogy"
   },
   "definition": {
-    "de": "Religi?se Bildung durch Singen, Musizieren und Musikh?ren.",
+    "de": "Religiöse Bildung durch Singen, Musizieren und Musikhören.",
     "en": "Religious education through singing, making music and listening to music."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionsp?dagogische Methoden",
+        "de": "Religionspädagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,6 +29,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/method/",
+      "title": {
+        "de": "Religionspädagogische Methoden",
+        "en": "Religious-Pedagogical Methods"
+      }
     }
   ],
   "@context": {

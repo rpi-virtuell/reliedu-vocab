@@ -11,7 +11,7 @@
   },
   "scopeNote": {
     "de": [
-      "Umfasst Kirchengeschichte, Sakramente, Amt und ?kumene."
+      "Umfasst Kirchengeschichte, Sakramente, Amt und Ökumene."
     ]
   },
   "notation": [
@@ -21,14 +21,23 @@
     {
       "id": "https://w3id.org/reliedu/content/",
       "title": {
-        "de": "Theologische Inhaltsbereiche",
-        "en": "Theological Content Areas"
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/content/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/content/",
+      "title": {
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
+      }
     }
   ],
   "@context": {

@@ -11,7 +11,7 @@
   },
   "scopeNote": {
     "de": [
-      "Regelm??ige Treffen zur gemeinsamen Bibellekt?re und Diskussion."
+      "Regelmäßige Treffen zur gemeinsamen Bibellektüre und Diskussion."
     ]
   },
   "notation": [
@@ -19,21 +19,30 @@
   ],
   "broadMatch": [
     {
-      "id": "https://w3id.org/openeduhub/vocabs/educationalContext/erwachsenenbildung"
+      "id": "http://w3id.org/openeduhub/vocabs/educationalContext/erwachsenenbildung"
     }
   ],
   "inScheme": [
     {
       "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "de": "Religionsspezifische Lernorte",
-        "en": "Religion-Specific Learning Contexts"
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/location/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/location/",
+      "title": {
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
+      }
     }
   ],
   "@context": {

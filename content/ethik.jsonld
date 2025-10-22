@@ -2,11 +2,11 @@
   "id": "https://w3id.org/reliedu/content/ethik",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religi?se Ethik",
+    "de": "Religiöse Ethik",
     "en": "Religious Ethics"
   },
   "definition": {
-    "de": "Moraltheologische und ethische Reflexion auf Basis religi?ser Traditionen.",
+    "de": "Moraltheologische und ethische Reflexion auf Basis religiöser Traditionen.",
     "en": "Moral theological and ethical reflection based on religious traditions."
   },
   "scopeNote": {
@@ -21,14 +21,23 @@
     {
       "id": "https://w3id.org/reliedu/content/",
       "title": {
-        "de": "Theologische Inhaltsbereiche",
-        "en": "Theological Content Areas"
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/content/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/content/",
+      "title": {
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
+      }
     }
   ],
   "@context": {

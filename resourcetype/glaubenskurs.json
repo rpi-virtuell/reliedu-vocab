@@ -16,14 +16,23 @@
     {
       "id": "https://w3id.org/reliedu/resourcetype/",
       "title": {
-        "de": "Religionsspezifische Ressourcentypen",
-        "en": "Religion-Specific Resource Types"
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/resourcetype/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/resourcetype/",
+      "title": {
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
+      }
     }
   ],
   "@context": {

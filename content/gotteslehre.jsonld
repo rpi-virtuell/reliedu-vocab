@@ -6,12 +6,12 @@
     "en": "Doctrine of God"
   },
   "definition": {
-    "de": "Theologische Reflexion ?ber Gott, Gottesbilder und Gotteserfahrungen.",
+    "de": "Theologische Reflexion über Gott, Gottesbilder und Gotteserfahrungen.",
     "en": "Theological reflection on God, images of God and experiences of God."
   },
   "scopeNote": {
     "de": [
-      "Umfasst Theodizee, Trinit?t, Gottesvorstellungen und spirituelle Erfahrungen."
+      "Umfasst Theodizee, Trinität, Gottesvorstellungen und spirituelle Erfahrungen."
     ]
   },
   "notation": [
@@ -21,14 +21,23 @@
     {
       "id": "https://w3id.org/reliedu/content/",
       "title": {
-        "de": "Theologische Inhaltsbereiche",
-        "en": "Theological Content Areas"
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/content/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/content/",
+      "title": {
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
+      }
     }
   ],
   "@context": {

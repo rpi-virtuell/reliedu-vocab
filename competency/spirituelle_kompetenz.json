@@ -6,7 +6,7 @@
     "en": "Spiritual Competence"
   },
   "definition": {
-    "de": "F?higkeit zur Gestaltung und Reflexion spiritueller Erfahrungen und religi?ser Praxis.",
+    "de": "Fähigkeit zur Gestaltung und Reflexion spiritueller Erfahrungen und religiöser Praxis.",
     "en": "Ability to shape and reflect on spiritual experiences and religious practice."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/competency/",
       "title": {
-        "de": "Religionsp?dagogische Kompetenzen",
+        "de": "Religionspädagogische Kompetenzen",
         "en": "Religious-Pedagogical Competencies"
       }
     }
@@ -29,6 +29,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/competency/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/competency/",
+      "title": {
+        "de": "Religionspädagogische Kompetenzen",
+        "en": "Religious-Pedagogical Competencies"
+      }
     }
   ],
   "@context": {

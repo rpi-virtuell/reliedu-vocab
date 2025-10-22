@@ -6,7 +6,7 @@
     "en": "Media Religious Didactics"
   },
   "definition": {
-    "de": "Didaktischer Ansatz zur Integration verschiedener Medien in religi?se Lernprozesse.",
+    "de": "Didaktischer Ansatz zur Integration verschiedener Medien in religiöse Lernprozesse.",
     "en": "Didactic approach for integrating various media into religious learning processes."
   },
   "notation": [
@@ -24,6 +24,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

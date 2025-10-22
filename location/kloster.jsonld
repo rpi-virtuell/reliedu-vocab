@@ -6,7 +6,7 @@
     "en": "Monastery as Learning Place"
   },
   "definition": {
-    "de": "Monastische Gemeinschaft als Ort spiritueller Bildung und religi?ser Erfahrung.",
+    "de": "Monastische Gemeinschaft als Ort spiritueller Bildung und religiöser Erfahrung.",
     "en": "Monastic community as place of spiritual education and religious experience."
   },
   "scopeNote": {
@@ -21,14 +21,23 @@
     {
       "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "de": "Religionsspezifische Lernorte",
-        "en": "Religion-Specific Learning Contexts"
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/location/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/location/",
+      "title": {
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
+      }
     }
   ],
   "@context": {

@@ -2,11 +2,11 @@
   "id": "https://w3id.org/reliedu/method/kunstpadagogik",
   "type": "Concept",
   "prefLabel": {
-    "de": "Religi?se Kunstp?dagogik",
+    "de": "Religiöse Kunstpädagogik",
     "en": "Religious Art Pedagogy"
   },
   "definition": {
-    "de": "Erschlie?ung religi?ser Inhalte durch k?nstlerisch-kreative Gestaltung.",
+    "de": "Erschließung religiöser Inhalte durch künstlerisch-kreative Gestaltung.",
     "en": "Exploration of religious content through artistic-creative design."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionsp?dagogische Methoden",
+        "de": "Religionspädagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,6 +29,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/method/",
+      "title": {
+        "de": "Religionspädagogische Methoden",
+        "en": "Religious-Pedagogical Methods"
+      }
     }
   ],
   "@context": {

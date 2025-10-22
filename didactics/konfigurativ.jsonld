@@ -6,7 +6,7 @@
     "en": "Configurative Religious Didactics"
   },
   "definition": {
-    "de": "Didaktik der Darstellung religi?ser Inhalte in ?sthetischen und kreativen Konfigurationen.",
+    "de": "Didaktik der Darstellung religiöser Inhalte in ästhetischen und kreativen Konfigurationen.",
     "en": "Didactics of presenting religious content in aesthetic and creative configurations."
   },
   "notation": [
@@ -24,6 +24,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

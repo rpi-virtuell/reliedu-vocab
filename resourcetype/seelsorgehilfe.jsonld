@@ -6,7 +6,7 @@
     "en": "Pastoral Care Aid"
   },
   "definition": {
-    "de": "Unterst?tzungsmaterial f?r seelsorgerliche Gespr?che und Begleitung.",
+    "de": "Unterstützungsmaterial für seelsorgerliche Gespräche und Begleitung.",
     "en": "Support material for pastoral conversations and accompaniment."
   },
   "notation": [
@@ -16,14 +16,23 @@
     {
       "id": "https://w3id.org/reliedu/resourcetype/",
       "title": {
-        "de": "Religionsspezifische Ressourcentypen",
-        "en": "Religion-Specific Resource Types"
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/resourcetype/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/resourcetype/",
+      "title": {
+        "de": "Religionspädagogische Ressourcentypen",
+        "en": "Religious-Pedagogical Resource Types"
+      }
     }
   ],
   "@context": {

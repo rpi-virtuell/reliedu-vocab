@@ -6,7 +6,7 @@
     "en": "Correlation Didactics"
   },
   "definition": {
-    "de": "Didaktischer Ansatz zur Verkn?pfung von Lebenserfahrung und Glaubenstradition durch wechselseitige Erschlie?ung.",
+    "de": "Didaktischer Ansatz zur Verknüpfung von Lebenserfahrung und Glaubenstradition durch wechselseitige Erschließung.",
     "en": "Didactic approach linking life experience and faith tradition through mutual interpretation."
   },
   "notation": [
@@ -24,6 +24,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

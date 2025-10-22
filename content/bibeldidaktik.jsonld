@@ -6,12 +6,12 @@
     "en": "Biblical Didactics"
   },
   "definition": {
-    "de": "Didaktische Erschlie?ung biblischer Texte f?r den Bildungsprozess.",
+    "de": "Didaktische Erschließung biblischer Texte für den Bildungsprozess.",
     "en": "Didactic development of biblical texts for the educational process."
   },
   "scopeNote": {
     "de": [
-      "Beinhaltet Hermeneutik, Exegese und altersgem??e Bibelauslegung."
+      "Beinhaltet Hermeneutik, Exegese und altersgemäße Bibelauslegung."
     ]
   },
   "notation": [
@@ -21,14 +21,23 @@
     {
       "id": "https://w3id.org/reliedu/content/",
       "title": {
-        "de": "Theologische Inhaltsbereiche",
-        "en": "Theological Content Areas"
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/content/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/content/",
+      "title": {
+        "de": "Religionspädagogische Inhaltsbereiche",
+        "en": "Religious-Pedagogical Content Areas"
+      }
     }
   ],
   "@context": {

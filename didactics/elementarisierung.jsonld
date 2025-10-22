@@ -6,7 +6,7 @@
     "en": "Elementarization"
   },
   "definition": {
-    "de": "Methode zur Reduktion komplexer theologischer Inhalte auf elementare Strukturen f?r den Bildungsprozess.",
+    "de": "Methode zur Reduktion komplexer theologischer Inhalte auf elementare Strukturen für den Bildungsprozess.",
     "en": "Method for reducing complex theological content to elementary structures for the educational process."
   },
   "notation": [
@@ -24,6 +24,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

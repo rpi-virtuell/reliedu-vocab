@@ -6,7 +6,7 @@
     "en": "Performative Religious Didactics"
   },
   "definition": {
-    "de": "Didaktischer Ansatz, der religi?se Praxis und verk?rpertes Lernen in den Mittelpunkt stellt.",
+    "de": "Didaktischer Ansatz, der religiöse Praxis und verkörpertes Lernen in den Mittelpunkt stellt.",
     "en": "Didactic approach focusing on religious practice and embodied learning."
   },
   "notation": [
@@ -24,6 +24,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/didactics/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/didactics/",
+      "title": {
+        "de": "Religionsdidaktische Labels",
+        "en": "Religious-Didactic Labels"
+      }
     }
   ],
   "@context": {

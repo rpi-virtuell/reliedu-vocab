@@ -6,7 +6,7 @@
     "en": "Meditation"
   },
   "definition": {
-    "de": "?bung der Sammlung und spirituellen Vertiefung als Lernmethode.",
+    "de": "Übung der Sammlung und spirituellen Vertiefung als Lernmethode.",
     "en": "Practice of concentration and spiritual deepening as a learning method."
   },
   "scopeNote": {
@@ -21,7 +21,7 @@
     {
       "id": "https://w3id.org/reliedu/method/",
       "title": {
-        "de": "Religionsp?dagogische Methoden",
+        "de": "Religionspädagogische Methoden",
         "en": "Religious-Pedagogical Methods"
       }
     }
@@ -29,6 +29,15 @@
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/method/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/method/",
+      "title": {
+        "de": "Religionspädagogische Methoden",
+        "en": "Religious-Pedagogical Methods"
+      }
     }
   ],
   "@context": {

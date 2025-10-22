@@ -6,7 +6,7 @@
     "en": "Worship as Learning Context"
   },
   "definition": {
-    "de": "Liturgische Feier als Ort religi?ser Bildung und spiritueller Erfahrung.",
+    "de": "Liturgische Feier als Ort religiöser Bildung und spiritueller Erfahrung.",
     "en": "Liturgical celebration as place of religious education and spiritual experience."
   },
   "scopeNote": {
@@ -21,14 +21,23 @@
     {
       "id": "https://w3id.org/reliedu/location/",
       "title": {
-        "de": "Religionsspezifische Lernorte",
-        "en": "Religion-Specific Learning Contexts"
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
       }
     }
   ],
   "inSchemeAll": [
     {
       "id": "https://w3id.org/reliedu/location/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://w3id.org/reliedu/location/",
+      "title": {
+        "de": "Religionspädagogische Lernorte",
+        "en": "Religious-Pedagogical Learning Contexts"
+      }
     }
   ],
   "@context": {
