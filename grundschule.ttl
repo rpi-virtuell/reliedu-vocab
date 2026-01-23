@@ -1,0 +1,303 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix reliedu: <https://w3id.org/reliedu/vocabs/grundschule/> .
+@prefix oeh-discipline: <http://w3id.org/openeduhub/vocabs/discipline/> .
+
+# =============================================================================
+# CONCEPT SCHEME: Religionsunterricht Grundschule
+# =============================================================================
+
+reliedu:scheme a skos:ConceptScheme ;
+    dct:title "Vokabular für den Religionsunterricht in der Grundschule"@de ,
+              "Vocabulary for Religious Education in Primary School"@en ;
+    dct:description """Kontrolliertes Vokabular für Kompetenzen und Inhaltsbereiche 
+        des evangelischen Religionsunterrichts in der Grundschule. Basierend auf 
+        EKD-Texte 142 (2023) mit Bezügen zu den Kompetenzmodellen nach Hemel, 
+        dem Berliner Modell (KERK), DBK und EKD Sek I."""@de ;
+    dct:creator "reliedu-Projekt" ;
+    dct:issued "2026-01-23"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:source <https://www.ekd.de/ru-Grundschule> ;
+    skos:hasTopConcept reliedu:kompetenzen , reliedu:inhaltsbereiche .
+
+
+# =============================================================================
+# COLLECTIONS: Hauptkategorien
+# =============================================================================
+
+reliedu:kompetenzen a skos:Concept ;
+    skos:prefLabel "Kompetenzen"@de , "Competencies"@en ;
+    skos:definition "Prozessbezogene Kompetenzen religiöser Bildung für die Grundschule."@de ;
+    skos:topConceptOf reliedu:scheme ;
+    skos:narrower reliedu:k1-fragen-suchen ,
+                  reliedu:k2-verstehen-deuten ,
+                  reliedu:k3-konzepte-entwickeln ,
+                  reliedu:k4-perspektiven-umgehen ,
+                  reliedu:k5-kreativ-gestalten ,
+                  reliedu:k6-reflektieren-sprechen ;
+    dct:source "EKD-Texte 142, Abschnitt 3.5"@de .
+
+reliedu:inhaltsbereiche a skos:Concept ;
+    skos:prefLabel "Inhaltsbereiche"@de , "Content Areas"@en ;
+    skos:definition "Domänenspezifische Gegenstandsbereiche religiöser Bildung."@de ;
+    skos:topConceptOf reliedu:scheme ;
+    skos:narrower reliedu:ib-mensch-welt ,
+                  reliedu:ib-bibel ,
+                  reliedu:ib-jesus-christus ,
+                  reliedu:ib-kirche-gemeinde ,
+                  reliedu:ib-andere-religionen ,
+                  reliedu:ib-ethik-handeln ;
+    skos:scopeNote "Synthese aus DBK (2006) und EKD (2011) Gegenstandsbereichen."@de .
+
+
+# =============================================================================
+# KOMPETENZEN nach EKD-Texte 142 (Grundschule 2023)
+# =============================================================================
+
+reliedu:k1-fragen-suchen a skos:Concept ;
+    skos:prefLabel "Fragen stellen und Antworten suchen"@de ,
+                   "Asking Questions and Seeking Answers"@en ;
+    skos:altLabel "Fragende Haltung"@de ;
+    skos:definition """Die Schüler:innen können bedeutsame Fragen stellen und nach 
+        Antworten suchen. Voraussetzung ist, dass Kinder ihre Lebenswelt aufmerksam 
+        wahrnehmen, eigene existenzielle Fragen stellen und dabei auf die religiöse 
+        Dimension des Lebens stoßen."""@de ;
+    skos:broader reliedu:kompetenzen ;
+    skos:inScheme reliedu:scheme ;
+    skos:related reliedu:pk-wahrnehmung ;
+    dct:source "EKD-Texte 142 (2023), S. 52"@de ;
+    skos:scopeNote """Bezug zu Hemel: religiöse Sensibilität; 
+        Bezug zu DBK: wahrnehmen und entdecken, Fragen stellen und bedenken."""@de .
+
+reliedu:k2-verstehen-deuten a skos:Concept ;
+    skos:prefLabel "Verstehen und Deuten"@de ,
+                   "Understanding and Interpreting"@en ;
+    skos:altLabel "Deutungskompetenz"@de ;
+    skos:definition """Die Schüler:innen können religiöse Begriffe und biblisch-christliche 
+        Inhalte verstehen und deuten. Sie können Geschichten (nach-)erzählen, 
+        Erzählzusammenhänge entdecken und eigene Deutungen entwickeln."""@de ;
+    skos:broader reliedu:kompetenzen ;
+    skos:inScheme reliedu:scheme ;
+    skos:related reliedu:pk-deutung ;
+    dct:source "EKD-Texte 142 (2023), S. 52"@de ;
+    skos:scopeNote """Bezug zu Hemel: religiöse Inhaltlichkeit; 
+        Bezug zu Berlin/KERK: religiöse Deutungskompetenz; 
+        Bezug zu DBK: deuten und gestalten."""@de .
+
+reliedu:k3-konzepte-entwickeln a skos:Concept ;
+    skos:prefLabel "Konzepte entwickeln"@de ,
+                   "Developing Concepts"@en ;
+    skos:altLabel "Konzeptentwicklung"@de ;
+    skos:definition """Die Schüler:innen können zu verschiedenen religionspädagogisch 
+        relevanten Domänen eigene Konzepte (weiter-)entwickeln. In kreativer und 
+        mehrperspektivischer Auseinandersetzung entwickeln sie ihre eigenen 
+        domänenspezifischen Konzepte weiter."""@de ;
+    skos:broader reliedu:kompetenzen ;
+    skos:inScheme reliedu:scheme ;
+    skos:related reliedu:pk-urteil ;
+    dct:source "EKD-Texte 142 (2023), S. 52-53"@de ;
+    skos:scopeNote """Bezug zu Berlin/KERK: religionskundliche Kenntnisse als Basis; 
+        Bezug zu Weinert: Problemlösefähigkeit in variablen Situationen."""@de .
+
+reliedu:k4-perspektiven-umgehen a skos:Concept ;
+    skos:prefLabel "Mit Perspektiven umgehen"@de ,
+                   "Dealing with Perspectives"@en ;
+    skos:altLabel "Perspektivenübernahme"@de , "Dialogfähigkeit"@de ;
+    skos:definition """Die Schüler:innen können mit verschiedenen Perspektiven 
+        konstruktiv und wertschätzend umgehen. Sie können sich auf Perspektiven 
+        anderer einlassen, diese aufnehmen und in Beziehung zur eigenen Sichtweise 
+        setzen."""@de ;
+    skos:broader reliedu:kompetenzen ;
+    skos:inScheme reliedu:scheme ;
+    skos:related reliedu:pk-dialog , reliedu:ib-andere-religionen ;
+    dct:source "EKD-Texte 142 (2023), S. 53"@de ;
+    skos:scopeNote """Bezug zu Hemel: religiöse Kommunikation; 
+        Bezug zu EKD Sek I: Dialogfähigkeit; 
+        Bezug zu DBK: unterscheiden und bewerten."""@de .
+
+reliedu:k5-kreativ-gestalten a skos:Concept ;
+    skos:prefLabel "Kreativ gestalten"@de ,
+                   "Creative Expression"@en ;
+    skos:altLabel "Gestaltungskompetenz"@de , "Ausdrucksfähigkeit"@de ;
+    skos:definition """Die Schüler:innen können sich aktiv, kreativ und gestaltend 
+        mit religiösen Fragen und Inhalten auseinandersetzen. Sie können eigenes 
+        Erleben, Gefühle, Gedanken und Erkenntnisse mit unterschiedlichen 
+        kreativ-gestaltenden Methoden ausdrücken."""@de ;
+    skos:broader reliedu:kompetenzen ;
+    skos:inScheme reliedu:scheme ;
+    skos:related reliedu:pk-handlung ;
+    dct:source "EKD-Texte 142 (2023), S. 53"@de ;
+    skos:scopeNote """Bezug zu Hemel: religiöses Ausdrucksverhalten; 
+        Bezug zu Berlin/KERK: religiöse Partizipationskompetenz; 
+        Bezug zu EKD Sek I: Gestaltungs- und Handlungsfähigkeit."""@de .
+
+reliedu:k6-reflektieren-sprechen a skos:Concept ;
+    skos:prefLabel "Reflektieren und Sprechen"@de ,
+                   "Reflecting and Articulating"@en ;
+    skos:altLabel "Metakognition"@de , "Selbstreflexion"@de ;
+    skos:definition """Die Schüler:innen können über ihr Lernen und ihre religiöse 
+        Orientierung nachdenken und sprechen. Sie lernen, Inhalte, Lernprozesse, 
+        begleitende Emotionen und Lernstrategien wahrzunehmen und einzuschätzen."""@de ;
+    skos:broader reliedu:kompetenzen ;
+    skos:inScheme reliedu:scheme ;
+    skos:related reliedu:pk-urteil ;
+    dct:source "EKD-Texte 142 (2023), S. 54"@de ;
+    skos:scopeNote """Bezug zu Hemel: religiös motivierte Lebensgestaltung; 
+        Diese Kompetenz ist spezifisch für die Grundschule und betont die 
+        metakognitive Dimension religiösen Lernens."""@de .
+
+
+# =============================================================================
+# PROZESSBEZOGENE KOMPETENZEN (Synthese aus Kompetenzmodellen)
+# =============================================================================
+# Ergänzende Strukturierung nach Lindner/Simojoki (2014): übergreifende 
+# Teilkompetenzen, die sich in allen Modellen finden.
+
+reliedu:prozesskompetenz a skos:Collection ;
+    skos:prefLabel "Prozessbezogene Kompetenzen"@de ;
+    skos:definition """Übergreifende Teilkompetenzen, die sich modellübergreifend 
+        in den Kompetenzmodellen von Hemel, Berlin/KERK, DBK und EKD finden."""@de ;
+    skos:member reliedu:pk-wahrnehmung ,
+                reliedu:pk-deutung ,
+                reliedu:pk-urteil ,
+                reliedu:pk-dialog ,
+                reliedu:pk-handlung ;
+    dct:source "Lindner/Simojoki (2014), S. 87"@de .
+
+reliedu:pk-wahrnehmung a skos:Concept ;
+    skos:prefLabel "Wahrnehmungskompetenz"@de ,
+                   "Perception Competence"@en ;
+    skos:definition """Fähigkeit, religiöse Phänomene, Symbole und Ausdrucksformen 
+        in der eigenen Lebenswelt und in anderen Kontexten wahrzunehmen."""@de ;
+    skos:inScheme reliedu:scheme ;
+    skos:scopeNote """Hemel: religiöse Sensibilität; 
+        DBK: wahrnehmen und entdecken; 
+        EKD Sek I: Wahrnehmungs- und Darstellungsfähigkeit."""@de .
+
+reliedu:pk-deutung a skos:Concept ;
+    skos:prefLabel "Deutungskompetenz"@de ,
+                   "Interpretation Competence"@en ;
+    skos:definition """Fähigkeit, religiöse Texte, Motive, Symbole und Praktiken 
+        zu verstehen und theologisch zu interpretieren."""@de ;
+    skos:inScheme reliedu:scheme ;
+    skos:scopeNote """Hemel: religiöse Inhaltlichkeit; 
+        Berlin/KERK: religiöse Deutungskompetenz; 
+        DBK: deuten und gestalten; 
+        EKD Sek I: Deutungsfähigkeit."""@de .
+
+reliedu:pk-urteil a skos:Concept ;
+    skos:prefLabel "Urteilskompetenz"@de ,
+                   "Judgement Competence"@en ;
+    skos:definition """Fähigkeit, religiöse und ethische Sachverhalte zu beurteilen, 
+        Positionen zu vergleichen und einen eigenen begründeten Standpunkt 
+        zu entwickeln."""@de ;
+    skos:inScheme reliedu:scheme ;
+    skos:scopeNote """DBK: unterscheiden und bewerten; 
+        EKD Sek I: Urteilsfähigkeit."""@de .
+
+reliedu:pk-dialog a skos:Concept ;
+    skos:prefLabel "Dialogkompetenz"@de ,
+                   "Dialogue Competence"@en ;
+    skos:definition """Fähigkeit, über religiöse Themen zu kommunizieren, mit 
+        Menschen unterschiedlicher Überzeugungen respektvoll zu interagieren 
+        und religiöse Sprachfähigkeit zu zeigen."""@de ;
+    skos:inScheme reliedu:scheme ;
+    skos:scopeNote """Hemel: religiöse Kommunikation; 
+        DBK: sich ausdrücken und einander mitteilen; 
+        EKD Sek I: Dialogfähigkeit."""@de .
+
+reliedu:pk-handlung a skos:Concept ;
+    skos:prefLabel "Handlungs- und Partizipationskompetenz"@de ,
+                   "Action and Participation Competence"@en ;
+    skos:definition """Fähigkeit, an religiösen Praktiken teilzunehmen, eigene 
+        religiöse Ausdrucksformen zu entwickeln und religiös motiviert 
+        zu handeln."""@de ;
+    skos:inScheme reliedu:scheme ;
+    skos:scopeNote """Hemel: religiöses Ausdrucksverhalten, religiös motivierte Lebensgestaltung; 
+        Berlin/KERK: religiöse Partizipationskompetenz; 
+        DBK: Anteil nehmen und Verantwortung übernehmen; 
+        EKD Sek I: Gestaltungs- und Handlungsfähigkeit."""@de ;
+    skos:note """Diese Kompetenz ist im schulischen Kontext nur begrenzt überprüfbar, 
+        da sie die freie Entscheidung des Subjekts voraussetzt (vgl. Lindner/Simojoki 2014, S. 87)."""@de .
+
+
+# =============================================================================
+# INHALTSBEREICHE (Gegenstandsbereiche)
+# =============================================================================
+# Synthese aus DBK (2006) und EKD Sek I (2011)
+
+reliedu:ib-mensch-welt a skos:Concept ;
+    skos:prefLabel "Mensch und Welt"@de ,
+                   "Human Being and World"@en ;
+    skos:definition """Fragen nach dem Menschen, seinem Ursprung, seiner Bestimmung 
+        und seinem Verhältnis zur Welt und Schöpfung."""@de ;
+    skos:broader reliedu:inhaltsbereiche ;
+    skos:inScheme reliedu:scheme ;
+    skos:example "Schöpfung, Menschenbild, Lebenssinn, Verantwortung"@de ;
+    dct:source "DBK (2006), Gegenstandsbereich"@de .
+
+reliedu:ib-bibel a skos:Concept ;
+    skos:prefLabel "Biblische Botschaft"@de ,
+                   "Biblical Message"@en ;
+    skos:definition """Grundformen biblischer Überlieferung, zentrale Texte und 
+        Erzählungen aus Altem und Neuem Testament."""@de ;
+    skos:broader reliedu:inhaltsbereiche ;
+    skos:inScheme reliedu:scheme ;
+    skos:example "Schöpfungserzählungen, Exodus, Gleichnisse Jesu, Wundergeschichten"@de ;
+    dct:source "DBK (2006); EKD (2011): christliche Überlieferung und Lehre"@de .
+
+reliedu:ib-jesus-christus a skos:Concept ;
+    skos:prefLabel "Jesus Christus"@de ,
+                   "Jesus Christ"@en ;
+    skos:definition """Person, Botschaft und Bedeutung Jesu Christi für den 
+        christlichen Glauben."""@de ;
+    skos:broader reliedu:inhaltsbereiche ;
+    skos:inScheme reliedu:scheme ;
+    skos:example "Leben Jesu, Kreuz und Auferstehung, Reich Gottes, Nachfolge"@de ;
+    dct:source "DBK (2006), Gegenstandsbereich"@de .
+
+reliedu:ib-kirche-gemeinde a skos:Concept ;
+    skos:prefLabel "Kirche und Gemeinde"@de ,
+                   "Church and Community"@en ;
+    skos:definition """Formen gelebten Glaubens, kirchliche Praxis, Feste und 
+        Traditionen der christlichen Gemeinschaft."""@de ;
+    skos:broader reliedu:inhaltsbereiche ;
+    skos:inScheme reliedu:scheme ;
+    skos:example "Kirchenjahr, Gottesdienst, Sakramente, Gemeindeleben"@de ;
+    dct:source "DBK (2006); EKD (2011): individuelle und kirchliche Formen der Praxis"@de .
+
+reliedu:ib-andere-religionen a skos:Concept ;
+    skos:prefLabel "Andere Religionen und Weltanschauungen"@de ,
+                   "Other Religions and Worldviews"@en ;
+    skos:definition """Begegnung mit anderen Religionen, insbesondere Judentum und 
+        Islam, sowie mit nicht-religiösen Weltanschauungen."""@de ;
+    skos:broader reliedu:inhaltsbereiche ;
+    skos:inScheme reliedu:scheme ;
+    skos:example "Judentum, Islam, religiöse Feste, interreligiöser Dialog"@de ;
+    dct:source "DBK (2006); EKD (2011)"@de ;
+    skos:scopeNote """Im Grundschulkontext besonders relevant aufgrund der religiösen 
+        Pluralität in der Lebenswelt der Kinder (EKD-Texte 142, S. 52)."""@de .
+
+reliedu:ib-ethik-handeln a skos:Concept ;
+    skos:prefLabel "Ethik und Handeln"@de ,
+                   "Ethics and Action"@en ;
+    skos:definition """Christliche Werte und Normen, ethische Entscheidungssituationen 
+        und verantwortliches Handeln."""@de ;
+    skos:broader reliedu:inhaltsbereiche ;
+    skos:inScheme reliedu:scheme ;
+    skos:example "Nächstenliebe, Gerechtigkeit, Bewahrung der Schöpfung, Frieden"@de ;
+    dct:source "EKD (2011): ethische Entscheidungssituationen"@de .
+
+
+# =============================================================================
+# VERKNÜPFUNGEN ZU EXTERNEN VOKABULAREN
+# =============================================================================
+
+reliedu:scheme skos:related oeh-discipline:520 ;
+    rdfs:seeAlso <http://w3id.org/kim/schulfaecher/s1026> ,
+                 <http://w3id.org/kim/schulfaecher/s1027> .
+
+# Hinweis: oeh-discipline:520 = Religion (OpenEduHub)
+# s1026 = Religionslehre (katholische), s1027 = Religionslehre (evangelische) bei KIM
