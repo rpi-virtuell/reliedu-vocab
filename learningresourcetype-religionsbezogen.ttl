@@ -1,0 +1,842 @@
+@base <https://w3id.org/kim/lrt-religion/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix <https://vocabs.sodix.de/sodix/educational/learningresourcetype/> <https://vocabs.sodix.de/sodix/educational/learningresourcetype/> .
+@prefix <https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/new_lrt/> <https://vocabs.openeduhub.de/w3id.org/openeduhub/vocabs/new_lrt/> .
+@prefix <https://w3id.org/kim/hcrt/> <https://w3id.org/kim/hcrt/> .
+@prefix <https://bokahama.github.io/SCRP-Vocab-LRT/> <https://bokahama.github.io/SCRP-Vocab-LRT/> .
+
+<scheme> a skos:ConceptScheme ;
+    dct:title "Lernressourcentypen für religionsbezogene Bildung"@de ;
+    dct:title "Learning Resource Types for Religious Education"@en ;
+    dct:description "Eine erweiterte und integrierte Werteliste für Typen von Lernressourcen im Kontext religionsbezogener und religionspädagogischer Bildung. Diese Liste vereint Elemente aus dem HCRT (Higher Education), SODIX und SCRP-Vokabularen und erweitert sie um spezifische Konzepte für den religiösen Bildungskontext."@de ;
+    dct:description "An extended and integrated value list for Learning Resource Types in the context of religious and religious-pedagogical education. This list combines elements from HCRT (Higher Education), SODIX and SCRP vocabularies and extends them with specific concepts for religious educational contexts."@en ;
+    dct:creator "Jörg Lohrer"@de ;
+    dct:created "2026-01-29"^^xsd:date ;
+    dct:modified "2026-01-29"^^xsd:date ;
+    dct:issued "2026-01-29"^^xsd:date ;
+    vann:preferredNamespaceUri "https://w3id.org/kim/lrt-religion/" ;
+    vann:preferredNamespacePrefix "lrtreligion" ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    skos:hasTopConcept 
+        <unterrichtsplanung>, 
+        <methode>, 
+        <app>, 
+        <aufgabe_uebung>, 
+        <bild>, 
+        <digitales_lernmittel>, 
+        <interaktion>, 
+        <audio>, 
+        <notation>, 
+        <video>, 
+        <religioeser_quellentext>,
+        <religioeser_praxisbezug>,
+        <sonstiges> .
+
+# ========================================
+# UNTERRICHTSPLANUNG (Top-Level)
+# ========================================
+
+<unterrichtsplanung> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Unterrichtsplanung"@de, "Lesson Planning"@en ;
+    skos:definition "Alle didaktischen und pädagogischen Überlegungen zur Vorbereitung einer Unterrichtsstunde oder Unterrichtseinheit im religionspädagogischen Kontext."@de ;
+    skos:definition "All didactic and pedagogical considerations for preparing a lesson or teaching unit in the context of religious education."@en ;
+    skos:example "Unterrichtsentwurf zum Thema 'Gleichnisse Jesu', Verlaufsplanung einer Einheit zu 'Weltreligionen'"@de ;
+    skos:narrower <unterrichtsbaustein>, <unterrichtsidee>, <lehrplanreferenz>, <handreichung>, <lernkontrolle>, <loesung>, <test>, <selbstevaluation> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/lesson_plan>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/UNTERRICHTSPLANUNG>, <https://bokahama.github.io/SCRP-Vocab-LRT/UNTERRICHTSPLANUNG> ;
+    skos:inScheme <scheme> .
+
+<unterrichtsbaustein> a skos:Concept ;
+    skos:prefLabel "Unterrichtsbaustein"@de, "Teaching Module"@en ;
+    skos:definition "Eine kleinere, eigenständige Einheit im Rahmen eines Lehrplans oder einer Unterrichtsstruktur im Religionsunterricht, die aus didaktischen Hinweisen, Beispielen, Texten, Materialien und/oder Aufgaben besteht."@de ;
+    skos:example "Unterrichtsmodul 'Schöpfungsglaube und Naturwissenschaft', Themenblock 'Propheten im AT'"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/UNTERRICHTSBAUSTEIN>, <https://bokahama.github.io/SCRP-Vocab-LRT/UNTERRICHTSBAUSTEIN> ;
+    skos:inScheme <scheme> .
+
+<unterrichtsidee> a skos:Concept ;
+    skos:prefLabel "Unterrichtsidee"@de, "Teaching Idea"@en ;
+    skos:definition "Eine kreative und innovative Methode oder Aktivität, die Lehrkräfte im Religionsunterricht einsetzen können, um das Lernen zu fördern und zu bereichern."@de ;
+    skos:example "Kreative Gestaltung eines Gebetswürfels, Biblische Geschichten als Standbilder darstellen"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/UNTERRICHTSIDEE> ;
+    skos:inScheme <scheme> .
+
+<lehrplanreferenz> a skos:Concept ;
+    skos:prefLabel "Lehrplanreferenz"@de, "Curriculum Reference"@en ;
+    skos:definition "Dokument oder Ressource mit Bezug auf den Lehrplan für Religionsunterricht, mit detaillierten Informationen über Inhalte, Ziele und Methoden."@de ;
+    skos:example "Lehrplan für katholischen Religionsunterricht Klasse 5-6, Bildungsplan evangelische Religion Sek I"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/LEHRPLANREFERENZ> ;
+    skos:inScheme <scheme> .
+
+<handreichung> a skos:Concept ;
+    skos:prefLabel "Handreichung"@de, "Guidance"@en ;
+    skos:definition "Spezifisch für Lehrkräfte im Religionsunterricht gedachte didaktische Hinweise, wie ein bestimmtes religiöses Thema praktisch umgesetzt werden kann."@de ;
+    skos:example "Handreichung 'Interreligiöses Lernen im Klassenzimmer', Handreichung 'Umgang mit religiöser Vielfalt'"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/HANDREICHUNG>, <https://bokahama.github.io/SCRP-Vocab-LRT/HANDREICHUNG> ;
+    skos:inScheme <scheme> .
+
+<lernkontrolle> a skos:Concept ;
+    skos:prefLabel "Lernkontrolle"@de, "Learning Assessment"@en ;
+    skos:altLabel "Lernstandserhebung"@de ;
+    skos:definition "Verschiedene Methoden zur Überprüfung des Lernfortschritts im Religionsunterricht, formell oder informell, bewertet oder unbewertet."@de ;
+    skos:example "Selbsttest zu 'Die zehn Gebote', Lernstandsanalyse 'Religiöse Symbole'"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/assessment>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/LERNKONTROLLE>, <https://bokahama.github.io/SCRP-Vocab-LRT/LERNKONTROLLE> ;
+    skos:inScheme <scheme> .
+
+<loesung> a skos:Concept ;
+    skos:prefLabel "Lösung"@de, "Solution"@en ;
+    skos:altLabel "Lösungsblatt"@de ;
+    skos:definition "Dokument mit korrekten Antworten oder Lösungsschritten zu Aufgaben im Religionsunterricht."@de ;
+    skos:example "Lösungsblatt zu Bibel-Quiz, Musterlösung zur Textanalyse einer Perikope"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/LOESUNG> ;
+    skos:inScheme <scheme> .
+
+<test> a skos:Concept ;
+    skos:prefLabel "Prüfung"@de, "Examination"@en ;
+    skos:altLabel "Test (bewertet)"@de, "Klassenarbeit"@de ;
+    skos:definition "Bewertete Lernkontrolle im Religionsunterricht, deren Ergebnis in die Benotung einfließt."@de ;
+    skos:example "Klassenarbeit 'Christologie', Test 'Weltreligionen im Vergleich'"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/TEST>, <https://bokahama.github.io/SCRP-Vocab-LRT/TEST> ;
+    skos:inScheme <scheme> .
+
+<selbstevaluation> a skos:Concept ;
+    skos:prefLabel "Selbstevaluation"@de, "Self-Evaluation"@en ;
+    skos:definition "Übung zur Selbstbewertung im Religionsunterricht, bei der Lernende ihre eigenen Leistungen und religiösen Lernprozesse reflektieren."@de ;
+    skos:example "Selbsteinschätzungsbogen 'Meine religiöse Entwicklung', Reflexionsübung zu ethischen Dilemmata"@de ;
+    skos:broader <unterrichtsplanung> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/SELBSTEVALUATION> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# METHODE (Top-Level)
+# ========================================
+
+<methode> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Pädagogische Methode"@de, "Pedagogical Method"@en ;
+    skos:altLabel "Methodische Ansätze"@de ;
+    skos:definition "Verschiedene Lehrmethoden und methodische Konzepte für den Religionsunterricht, die nicht primär medial sind, sondern didaktische Arrangements beschreiben."@de ;
+    skos:example "Biblisches Bibliodrama, Theologisieren mit Kindern"@de ;
+    skos:narrower <barcamp>, <entdeckendes_lernen>, <experiment>, <experte>, <offene_aktivitaet>, <gruppenarbeit>, <lernort>, <fallstudie>, <projekt>, <rollenspiel>, <sole>, <stationenlernen>, <religioeser_dialog>, <meditation_stille> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/METHODE> ;
+    skos:inScheme <scheme> .
+
+<barcamp> a skos:Concept ;
+    skos:prefLabel "Barcamp"@de, "Barcamp"@en ;
+    skos:definition "Offene Tagung mit Workshops im religionspädagogischen Kontext, deren Inhalte von Teilnehmenden selbst entwickelt werden."@de ;
+    skos:example "Religions-EduCamp, Theologisches Barcamp"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/BARCAMP> ;
+    skos:inScheme <scheme> .
+
+<entdeckendes_lernen> a skos:Concept ;
+    skos:prefLabel "Entdeckendes Lernen"@de, "Discovery Learning"@en ;
+    skos:definition "Durch eigene Erkundung werden religiöse Inhalte und spirituelle Erfahrungen entdeckt und gelernt."@de ;
+    skos:example "Kirchenraumpädagogische Erkundung, Entdeckendes Lernen mit religiösen Symbolen"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/ENTDECKENDES>, <https://bokahama.github.io/SCRP-Vocab-LRT/ENTDECKENDES_LERNEN> ;
+    skos:inScheme <scheme> .
+
+<experiment> a skos:Concept ;
+    skos:prefLabel "Experiment"@de, "Experiment"@en ;
+    skos:definition "Wissenschaftlicher Versuch oder erfahrungsbezogenes Experiment im Religionsunterricht."@de ;
+    skos:example "Soziales Experiment zu 'Nächstenliebe', Wahrnehmungsexperiment zu 'Stille und Gebet'"@de ;
+    skos:broader <methode> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/experiment>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/EXPERIMENT>, <https://bokahama.github.io/SCRP-Vocab-LRT/EXPERIMENT> ;
+    skos:inScheme <scheme> .
+
+<experte> a skos:Concept ;
+    skos:prefLabel "Experte/Referent"@de, "Expert/Speaker"@en ;
+    skos:altLabel "Zeitzeugin"@de, "Religionsvertreter"@de ;
+    skos:definition "Personen mit besonderem Wissen oder religiöser Expertise, die im Religionsunterricht als Referent:innen oder Expert:innen eingebunden werden."@de ;
+    skos:example "Rabbinerin als Expertin für jüdisches Leben, Theologieprofessor als Referent, Ordensfrau als Zeitzeugin"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/EXPERTE> ;
+    skos:inScheme <scheme> .
+
+<offene_aktivitaet> a skos:Concept ;
+    skos:prefLabel "Offene Aktivität"@de, "Open Activity"@en ;
+    skos:definition "Freie, nicht eng strukturierte Lernaktivität im Religionsunterricht."@de ;
+    skos:example "Freies Philosophieren über Glaubensfragen, offene Gesprächsrunde"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/OFFENE_AKTIVITAET> ;
+    skos:inScheme <scheme> .
+
+<gruppenarbeit> a skos:Concept ;
+    skos:prefLabel "Gruppenarbeit"@de, "Group Work"@en ;
+    skos:definition "Kooperative Lernmethode, bei der Lernende in Gruppen religiöse Themen erarbeiten."@de ;
+    skos:example "Gruppenarbeit zu verschiedenen Weltreligionen, Team-Projekt 'Schöpfung und Verantwortung'"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/GRUPPENARBEIT> ;
+    skos:inScheme <scheme> .
+
+<lernort> a skos:Concept ;
+    skos:prefLabel "Lernort"@de, "Learning Location"@en ;
+    skos:altLabel "Exkursion"@de, "Außerschulischer Lernort"@de ;
+    skos:definition "Orte außerhalb des Klassenzimmers, die religiöses Lernen durch direkte Erfahrung ermöglichen."@de ;
+    skos:example "Besuch einer Synagoge, Exkursion zum Kloster, Friedhofserkundung"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/LERNORT> ;
+    skos:inScheme <scheme> .
+
+<fallstudie> a skos:Concept ;
+    skos:prefLabel "Fallstudie"@de, "Case Study"@en ;
+    skos:definition "Detaillierte Untersuchung eines spezifischen Falls oder einer Situation im Religionsunterricht."@de ;
+    skos:example "Fallstudie zu ethischen Dilemmata, Analyse eines Konflikts zwischen religiösen Werten"@de ;
+    skos:broader <methode> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/case_study>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/FALLSTUDIE>, <https://bokahama.github.io/SCRP-Vocab-LRT/FALLSTUDIE> ;
+    skos:inScheme <scheme> .
+
+<projekt> a skos:Concept ;
+    skos:prefLabel "Projekt"@de, "Project"@en ;
+    skos:altLabel "Projektarbeit"@de ;
+    skos:definition "Längerfristige, zielorientierte Arbeit zu einem religiösen oder ethischen Thema in Einzel- oder Gruppenarbeit."@de ;
+    skos:example "Projekt 'Religionen in unserer Stadt', Sozialprojekt 'Diakonie erleben'"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/PROJECT>, <https://bokahama.github.io/SCRP-Vocab-LRT/PROJEKT> ;
+    skos:inScheme <scheme> .
+
+<rollenspiel> a skos:Concept ;
+    skos:prefLabel "Rollenspiel"@de, "Role Play"@en ;
+    skos:altLabel "Szenisches Spiel"@de, "Bibliodrama"@de ;
+    skos:definition "Spiel, bei dem Lernende in religiöse oder ethische Rollen schlüpfen und Situationen nachspielen."@de ;
+    skos:example "Rollenspiel 'Streitgespräch der Propheten', Bibliodrama zu Gleichnissen Jesu"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/ROLLENSPIEL>, <https://bokahama.github.io/SCRP-Vocab-LRT/ROLLENSPIEL> ;
+    skos:inScheme <scheme> .
+
+<sole> a skos:Concept ;
+    skos:prefLabel "Selbstorganisiertes Lernen"@de, "Self-Organized Learning"@en ;
+    skos:definition "Lernmethode, bei der Lernende selbstständig ihre religiösen Lernprozesse planen und reflektieren."@de ;
+    skos:example "Selbstgesteuertes Projekt zu 'Meine spirituelle Reise'"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/SOLE> ;
+    skos:inScheme <scheme> .
+
+<stationenlernen> a skos:Concept ;
+    skos:prefLabel "Stationenlernen"@de, "Station Learning"@en ;
+    skos:altLabel "Lernzirkel"@de ;
+    skos:definition "Unterrichtsmethode mit verschiedenen Stationen zu religiösen Themen, die in Kleingruppen bearbeitet werden."@de ;
+    skos:example "Stationenlernen 'Die Sakramente', Lernzirkel 'Weltreligionen kennenlernen'"@de ;
+    skos:broader <methode> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/STATIONENLERNEN> ;
+    skos:inScheme <scheme> .
+
+<religioeser_dialog> a skos:Concept ;
+    skos:prefLabel "Religiöser Dialog"@de, "Religious Dialogue"@en ;
+    skos:altLabel "Interreligiöser Dialog"@de, "Trialog"@de ;
+    skos:definition "Strukturiertes Gespräch zwischen Angehörigen verschiedener religiöser Traditionen oder über religiöse Fragen."@de ;
+    skos:example "Trialog zwischen Judentum, Christentum und Islam, Philosophisches Gespräch über Gottesfrage"@de ;
+    skos:broader <methode> ;
+    skos:inScheme <scheme> .
+
+<meditation_stille> a skos:Concept ;
+    skos:prefLabel "Meditation und Stille"@de, "Meditation and Silence"@en ;
+    skos:altLabel "Stilleübung"@de, "Achtsamkeitsübung"@de ;
+    skos:definition "Übungen der Stille, Meditation oder Achtsamkeit im Religionsunterricht zur Förderung von Spiritualität und Selbstreflexion."@de ;
+    skos:example "Geführte Meditation zu biblischen Texten, Stilleübung vor dem Gebet, Achtsamkeitsübung"@de ;
+    skos:broader <methode> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# APP (Top-Level)
+# ========================================
+
+<app> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "App"@de, "App"@en ;
+    skos:altLabel "Anwendung"@de, "Software"@de ;
+    skos:definition "Softwareprogramm für Computer oder mobile Endgeräte im Kontext religionsbezogener Bildung."@de ;
+    skos:example "Bibel-App, App zum Erlernen religiöser Feste, Gebetszeiten-App"@de ;
+    skos:narrower <lernspiel>, <methodische_app>, <software>, <webtool> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/application>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/APP>, <https://bokahama.github.io/SCRP-Vocab-LRT/APP> ;
+    skos:inScheme <scheme> .
+
+<lernspiel> a skos:Concept ;
+    skos:prefLabel "Lernspiel"@de, "Educational Game"@en ;
+    skos:definition "Spielerisches Lernmaterial zu religiösen Inhalten nach definierten Regeln."@de ;
+    skos:example "Bibel-Quiz-Spiel, Memory mit religiösen Symbolen, Rätsel zu Weltreligionen"@de ;
+    skos:broader <app> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/educational_game>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/LERNSPIEL>, <https://bokahama.github.io/SCRP-Vocab-LRT/LERNSPIEL> ;
+    skos:inScheme <scheme> .
+
+<methodische_app> a skos:Concept ;
+    skos:prefLabel "Lern-APP"@de, "Learning APP"@en ;
+    skos:altLabel "Methodische APP"@de ;
+    skos:definition "Anwendung oder Programm zur Vermittlung religiöser Lerninhalte oder zur Kompetenzentwicklung."@de ;
+    skos:example "App zum systematischen Bibelstudium, Gebets-App mit Anleitungen"@de ;
+    skos:broader <app> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/METHODISCHE_APP> ;
+    skos:inScheme <scheme> .
+
+<software> a skos:Concept ;
+    skos:prefLabel "Desktop-Software"@de, "Desktop Software"@en ;
+    skos:definition "Applikationen für Desktop-Computer im religionspädagogischen Kontext."@de ;
+    skos:example "Bibelsoftware für Textanalyse, Religionspädagogische Planungssoftware"@de ;
+    skos:broader <app> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/SOFTWARE> ;
+    skos:inScheme <scheme> .
+
+<webtool> a skos:Concept ;
+    skos:prefLabel "Webtool"@de, "Webtool"@en ;
+    skos:definition "Browserbasierte Software für religionspädagogische Zwecke."@de ;
+    skos:example "Online-Bibel-Lexikon, Webtool zur Erstellung von Kreuzworträtseln mit religiösen Begriffen"@de ;
+    skos:broader <app> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/WEBTOOL>, <https://bokahama.github.io/SCRP-Vocab-LRT/WEBTOOL> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# AUFGABE UND ÜBUNG (Top-Level)
+# ========================================
+
+<aufgabe_uebung> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Aufgaben und Übungen"@de, "Tasks and Exercises"@en ;
+    skos:altLabel "Arbeitsblätter, Aufgaben und Übungen"@de ;
+    skos:definition "Spezifische Aktivitäten im Religionsunterricht zum Erwerb von Wissen und Kompetenzen."@de ;
+    skos:example "Bibelstellen-Zuordnung, Ethische Fallbeispiele bearbeiten"@de ;
+    skos:narrower <arbeitsblatt>, <lernaufgabe>, <recherche_auftrag>, <uebung> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/AUFGABE_UEBUNG> ;
+    skos:inScheme <scheme> .
+
+<arbeitsblatt> a skos:Concept ;
+    skos:prefLabel "Arbeitsblatt"@de, "Worksheet"@en ;
+    skos:definition "Dokument mit Aufgaben zu religiösen Themen zum Üben und Vertiefen."@de ;
+    skos:example "Arbeitsblatt 'Die Zehn Gebote', Lösungsblatt zu 'Gleichnisse Jesu'"@de ;
+    skos:broader <aufgabe_uebung> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/worksheet>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/ARBEITSBLATT>, <https://bokahama.github.io/SCRP-Vocab-LRT/ARBEITSBLATT> ;
+    skos:inScheme <scheme> .
+
+<lernaufgabe> a skos:Concept ;
+    skos:prefLabel "Lernaufgabe"@de, "Learning Task"@en ;
+    skos:altLabel "Aufgabe"@de ;
+    skos:definition "Spezifische Aufgabe zur Erreichung religiöser oder ethischer Lernziele."@de ;
+    skos:example "Aufgabe 'Vergleiche Schöpfungsmythen', Recherche 'Religiöse Feste im Jahreskreis'"@de ;
+    skos:broader <aufgabe_uebung> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/LERNAUFGABE> ;
+    skos:inScheme <scheme> .
+
+<recherche_auftrag> a skos:Concept ;
+    skos:prefLabel "Recherche-Auftrag"@de, "Research Assignment"@en ;
+    skos:definition "Aufgabe zur eigenständigen Recherche zu religiösen Themen."@de ;
+    skos:example "Recherche 'Heilige Schriften der Weltreligionen', WebQuest zu 'Martin Luther'"@de ;
+    skos:broader <aufgabe_uebung> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/questionnaire> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/RECHERCHE_AUFTRAG> ;
+    skos:inScheme <scheme> .
+
+<uebung> a skos:Concept ;
+    skos:prefLabel "Übung"@de, "Exercise"@en ;
+    skos:definition "Methodisch wiederholtes Handeln zur Festigung religiösen Wissens und religiöser Kompetenzen."@de ;
+    skos:example "Übung zum Auswendiglernen von Gebeten, Wiederholungsübungen zu biblischen Personen"@de ;
+    skos:broader <aufgabe_uebung> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/drill_and_practice>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/UBUNG>, <https://bokahama.github.io/SCRP-Vocab-LRT/UEBUNG> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# BILD (Top-Level)
+# ========================================
+
+<bild> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Bild"@de, "Image"@en ;
+    skos:definition "Alle Arten von unbewegten Bildern oder grafischen Darstellungen im religionspädagogischen Kontext."@de ;
+    skos:example "Ikone, Kirchenfenster (Foto), Infografik zu Weltreligionen, Karte der Missionsreisen des Paulus"@de ;
+    skos:narrower <infografik>, <karte>, <religioeser_kunstart> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/image>, <https://w3id.org/kim/hcrt/diagram>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/BILD>, <https://bokahama.github.io/SCRP-Vocab-LRT/BILD> ;
+    skos:inScheme <scheme> .
+
+<infografik> a skos:Concept ;
+    skos:prefLabel "Infografik"@de, "Infographic"@en ;
+    skos:definition "Grafische Aufbereitung komplexer religiöser Zusammenhänge und Daten."@de ;
+    skos:example "Infografik 'Aufbau der katholischen Kirche', Visualisierung 'Die fünf Säulen des Islam'"@de ;
+    skos:broader <bild> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/INFOGRAFIK>, <https://bokahama.github.io/SCRP-Vocab-LRT/INFOGRAFIK> ;
+    skos:inScheme <scheme> .
+
+<karte> a skos:Concept ;
+    skos:prefLabel "Karte"@de, "Map"@en ;
+    skos:altLabel "Landkarte"@de, "Bibelkarte"@de ;
+    skos:definition "Kartografische Darstellung religiös relevanter geografischer Informationen."@de ;
+    skos:example "Karte zur Ausbreitung des Christentums, Palästina zur Zeit Jesu, Pilgerwege nach Jerusalem"@de ;
+    skos:broader <bild> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/map>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/KARTE>, <https://bokahama.github.io/SCRP-Vocab-LRT/KARTE> ;
+    skos:inScheme <scheme> .
+
+<religioeser_kunstart> a skos:Concept ;
+    skos:prefLabel "Religiöse Kunst"@de, "Religious Art"@en ;
+    skos:altLabel "Sakrale Kunst"@de, "Ikone"@de, "Kirchliche Kunst"@de ;
+    skos:definition "Kunstwerke mit religiösem Inhalt oder sakraler Bedeutung, die im Religionsunterricht verwendet werden."@de ;
+    skos:example "Ikonenmalerei, Kreuzwegstationen, Altarbilder, Buddhistische Mandala-Kunst"@de ;
+    skos:broader <bild> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# DIGITALES LERNMITTEL (Top-Level)
+# ========================================
+
+<digitales_lernmittel> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Digitales Lernmittel"@de, "Digital Learning Resource"@en ;
+    skos:altLabel "E-Lernmittel"@de ;
+    skos:definition "Digitale Lernmittel zur Unterstützung des Lernprozesses im Religionsunterricht, multimedial und interaktiv."@de ;
+    skos:example "Interaktives E-Book zur Kirchengeschichte, Online-Lernplattform zu Ethik"@de ;
+    skos:narrower <lehrbuch>, <lernportal>, <ebook> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/DIGITALES_LERNMITTEL> ;
+    skos:inScheme <scheme> .
+
+<lehrbuch> a skos:Concept ;
+    skos:prefLabel "Digitales Schulbuch"@de, "Textbook"@en ;
+    skos:altLabel "Lehrbuch"@de, "Religionsbuch"@de ;
+    skos:definition "Didaktisch aufbereitetes (digitales) Schulbuch für den Religionsunterricht, curricular gebunden."@de ;
+    skos:example "Digitales Religionsbuch Klasse 7, Interaktives Lehrbuch Evangelische Religion"@de ;
+    skos:broader <digitales_lernmittel> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/textbook>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/LEHRBUCH>, <https://bokahama.github.io/SCRP-Vocab-LRT/LEHRBUCH> ;
+    skos:inScheme <scheme> .
+
+<lernportal> a skos:Concept ;
+    skos:prefLabel "Lernportal"@de, "Learning Portal"@en ;
+    skos:altLabel "Religions-Portal"@de ;
+    skos:definition "Online-Plattform mit digitalen Lernressourcen für religiöse Bildung."@de ;
+    skos:example "Bibel-Lernportal, Portal für interreligiöses Lernen"@de ;
+    skos:broader <digitales_lernmittel> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/portal> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/LERNPORTAL> ;
+    skos:inScheme <scheme> .
+
+<ebook> a skos:Concept ;
+    skos:prefLabel "E-Book"@de, "E-book"@en ;
+    skos:definition "Elektronisches Buch zu religiösen Themen, oft mit interaktiven Inhalten."@de ;
+    skos:example "Interaktives E-Book 'Leben Jesu', E-Book 'Weltreligionen verstehen'"@de ;
+    skos:broader <digitales_lernmittel> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/EBOOK>, <https://bokahama.github.io/SCRP-Vocab-LRT/EBOOK> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# INTERAKTION (Top-Level)
+# ========================================
+
+<interaktion> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Interaktives Medium"@de, "Interactive Medium"@en ;
+    skos:altLabel "Interaktives Lernmedium"@de ;
+    skos:definition "Digitales Lernmedium, das aktive Interaktion mit religiösen Inhalten ermöglicht."@de ;
+    skos:example "Interaktive Bibelgeschichte, Quiz zu Weltreligionen, Virtuelles Kloster"@de ;
+    skos:narrower <simulation>, <virtual> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/INTERAKTION> ;
+    skos:inScheme <scheme> .
+
+<simulation> a skos:Concept ;
+    skos:prefLabel "Simulation"@de, "Simulation"@en ;
+    skos:altLabel "Animation"@de ;
+    skos:definition "Interaktive Nachbildung religiöser Prozesse, Orte oder Situationen."@de ;
+    skos:example "Simulation eines Pilgerpfads, Animation zur Entstehung der Bibel"@de ;
+    skos:broader <interaktion> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/simulation>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/SIMULATION>, <https://bokahama.github.io/SCRP-Vocab-LRT/SIMULATION> ;
+    skos:inScheme <scheme> .
+
+<virtual> a skos:Concept ;
+    skos:prefLabel "Virtual Reality & Augmented Reality"@de, "Virtual Reality & Augmented Reality"@en ;
+    skos:altLabel "VR"@de, "AR"@de ;
+    skos:definition "VR- und AR-Medien für religiöse Bildung, optimiert für VR-Brillen und ähnliche Geräte."@de ;
+    skos:example "360° Rundgang durch die Hagia Sophia, VR-Erlebnis 'Weihnachtsgeschichte', AR-App für Kirchenraumpädagogik"@de ;
+    skos:broader <interaktion> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/VIRTUAL>, <https://bokahama.github.io/SCRP-Vocab-LRT/VIRTUAL> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# AUDIO (Top-Level)
+# ========================================
+
+<audio> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Audio / Podcast"@de, "Audio / Podcast"@en ;
+    skos:altLabel "Tonaufnahme"@de, "Hörbuch"@de ;
+    skos:definition "Audioinhalte für religiöse Bildung: Musik, Sprachaufnahmen, Hörspiele, Podcasts."@de ;
+    skos:example "Podcast über Weltreligionen, Aufnahme eines Gebets, Religiöses Hörspiel, Kirchenmusik"@de ;
+    skos:narrower <radio>, <religioeser_gesang> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/audio>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/AUDIO>, <https://bokahama.github.io/SCRP-Vocab-LRT/AUDIO> ;
+    skos:inScheme <scheme> .
+
+<radio> a skos:Concept ;
+    skos:prefLabel "Podcast"@de, "Podcast"@en ;
+    skos:altLabel "Radiosendung"@de, "Hörsendung"@de ;
+    skos:definition "Serie von digitalen Audio-Episoden zu religiösen Themen."@de ;
+    skos:example "Theologischer Podcast, Interview-Podcast mit Religionsvertreter:innen"@de ;
+    skos:broader <audio> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/RADIO> ;
+    skos:inScheme <scheme> .
+
+<religioeser_gesang> a skos:Concept ;
+    skos:prefLabel "Religiöser Gesang"@de, "Religious Chant"@en ;
+    skos:altLabel "Sakraler Gesang"@de, "Kirchenmusik"@de, "Liturgischer Gesang"@de ;
+    skos:definition "Gesang mit religiösem oder liturgischem Charakter aus verschiedenen religiösen Traditionen."@de ;
+    skos:example "Gregorianischer Choral, Gospel-Musik, Psalmengesang, Islamische Rezitation (Quran)"@de ;
+    skos:broader <audio> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# NOTATION (Top-Level)
+# ========================================
+
+<notation> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Text und Notation"@de, "Text and Notation"@en ;
+    skos:altLabel "Schriftstück"@de, "Textdokument"@de ;
+    skos:definition "Alle Formen schriftlicher Darstellungen für religiöse Bildung, inklusive Notationen wie Musiknoten."@de ;
+    skos:example "Theologischer Artikel, Gebetstext, Kirchenlied mit Noten"@de ;
+    skos:narrower <anleitung>, <broschuere>, <flyer>, <handbuch>, <merkblatt>, <musiknoten>, <poster>, <rezept>, <skript>, <text>, <tafelbild>, <wortliste> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/NOTATION> ;
+    skos:inScheme <scheme> .
+
+<anleitung> a skos:Concept ;
+    skos:prefLabel "Anleitung"@de, "Instruction Manual"@en ;
+    skos:altLabel "Leitfaden"@de ;
+    skos:definition "Schritt-für-Schritt-Erklärung für religiöse Praktiken oder Aktivitäten."@de ;
+    skos:example "Anleitung zum Rosenkranzgebet, Leitfaden für Meditationsübungen"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/ANLEITUNG>, <https://bokahama.github.io/SCRP-Vocab-LRT/ANLEITUNG> ;
+    skos:inScheme <scheme> .
+
+<broschuere> a skos:Concept ;
+    skos:prefLabel "Broschüre"@de, "Brochure"@en ;
+    skos:definition "Mehrseitige textliche Zusammenfassung zu einem religiösen Thema."@de ;
+    skos:example "Informationsbroschüre 'Erstkommunion', Broschüre über interreligiösen Dialog"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/BROSCHUERE>, <https://bokahama.github.io/SCRP-Vocab-LRT/BROSCHUERE> ;
+    skos:inScheme <scheme> .
+
+<flyer> a skos:Concept ;
+    skos:prefLabel "Flyer"@de, "Flyer"@en ;
+    skos:definition "Kurze, stichpunktartige Informationen zu religiösen Themen auf einem Blatt."@de ;
+    skos:example "Info-Flyer zur Firmung, Faltblatt 'Kirchenjahr kompakt'"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/FLYER>, <https://bokahama.github.io/SCRP-Vocab-LRT/FLYER> ;
+    skos:inScheme <scheme> .
+
+<handbuch> a skos:Concept ;
+    skos:prefLabel "Handbuch"@de, "Guide"@en ;
+    skos:definition "Umfangreiche, strukturierte Handreichung zu religiösen oder religionspädagogischen Themen."@de ;
+    skos:example "Handbuch für Religionslehrkräfte, Methodenhandbuch Bibelarbeit"@de ;
+    skos:broader <notation> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/index> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/HANDBUCH>, <https://bokahama.github.io/SCRP-Vocab-LRT/HANDBUCH> ;
+    skos:inScheme <scheme> .
+
+<merkblatt> a skos:Concept ;
+    skos:prefLabel "Merkblatt"@de, "Leaflet"@en ;
+    skos:altLabel "Zusammenfassung"@de ;
+    skos:definition "Kurze, strukturierte Zusammenfassung der wichtigsten Fakten zu einem religiösen Thema."@de ;
+    skos:example "Merkblatt 'Die Sakramente', Zusammenfassung 'Gleichnisse Jesu'"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/MERKBLATT>, <https://bokahama.github.io/SCRP-Vocab-LRT/MERKBLATT> ;
+    skos:inScheme <scheme> .
+
+<musiknoten> a skos:Concept ;
+    skos:prefLabel "Musiknoten"@de, "Sheet Music"@en ;
+    skos:definition "Verschriftlichung von religiösen Musikstücken oder Kirchenliedern."@de ;
+    skos:example "Noten zu 'Großer Gott wir loben dich', Psalmvertonung, Weihnachtslieder mit Noten"@de ;
+    skos:broader <notation> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/sheet_music>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/MUSIKNOTEN>, <https://bokahama.github.io/SCRP-Vocab-LRT/MUSIKNOTEN> ;
+    skos:inScheme <scheme> .
+
+<poster> a skos:Concept ;
+    skos:prefLabel "Poster"@de, "Poster"@en ;
+    skos:altLabel "Plakat"@de ;
+    skos:definition "Großformatiger, gestalteter Bogen zu religiösen Inhalten zum Aufhängen."@de ;
+    skos:example "Lernplakat 'Die Zehn Gebote', Poster 'Weltreligionen im Überblick'"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/POSTER>, <https://bokahama.github.io/SCRP-Vocab-LRT/POSTER> ;
+    skos:inScheme <scheme> .
+
+<rezept> a skos:Concept ;
+    skos:prefLabel "Rezept"@de, "Recipe"@en ;
+    skos:definition "Anleitung zur Zubereitung religiös bedeutsamer Speisen."@de ;
+    skos:example "Rezept für Challah (jüdisches Brot), Anleitung für Osterbrot"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/REZEPT>, <https://bokahama.github.io/SCRP-Vocab-LRT/REZEPT> ;
+    skos:inScheme <scheme> .
+
+<skript> a skos:Concept ;
+    skos:prefLabel "Skript"@de, "Script"@en ;
+    skos:altLabel "Mitschrift"@de, "Vorlesungsskript"@de ;
+    skos:definition "Schriftliche Aufzeichnung von Vorträgen oder Vorlesungen zu religiösen Themen."@de ;
+    skos:example "Theologisches Vorlesungsskript, Mitschrift eines Vortrags über Kirchengeschichte"@de ;
+    skos:broader <notation> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/script> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/SKRIPT> ;
+    skos:inScheme <scheme> .
+
+<text> a skos:Concept ;
+    skos:prefLabel "Text"@de, "Text"@en ;
+    skos:definition "Ressource, die hauptsächlich aus Texteinheiten zu religiösen Themen besteht."@de ;
+    skos:example "Theologischer Artikel, Psalm, Zeitungsartikel über Religion, Wikipedia-Artikel 'Reformation'"@de ;
+    skos:broader <notation> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/text>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/TEXT>, <https://bokahama.github.io/SCRP-Vocab-LRT/TEXT> ;
+    skos:inScheme <scheme> .
+
+<tafelbild> a skos:Concept ;
+    skos:prefLabel "Tafelbild"@de, "Blackboard Image"@en ;
+    skos:altLabel "Ergebnissicherung"@de ;
+    skos:definition "Visuelle Darstellung religiöser Lerninhalte zur Dokumentation und Nachbereitung."@de ;
+    skos:example "Tafelbild zum Aufbau einer Parabel, Strukturbild 'Religionen im Vergleich'"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/TAFELBILD> ;
+    skos:inScheme <scheme> .
+
+<wortliste> a skos:Concept ;
+    skos:prefLabel "Wortliste"@de, "Word List"@en ;
+    skos:altLabel "Vokabelliste"@de, "Begriffsliste"@de ;
+    skos:definition "Sammlung von religiösen Begriffen oder Fachvokabular."@de ;
+    skos:example "Liste theologischer Fachbegriffe, Glossar religiöser Symbole"@de ;
+    skos:broader <notation> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/WORTLISTE> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# VIDEO (Top-Level)
+# ========================================
+
+<video> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Video"@de, "Video"@en ;
+    skos:altLabel "Film"@de, "Videoclip"@de ;
+    skos:definition "Audiovisuelles Medium mit bewegten Bildern zu religiösen Themen."@de ;
+    skos:example "Dokumentarfilm über Weltreligionen, Video zur Passion Christi, Erklärvideo 'Was ist Pfingsten?'"@de ;
+    skos:narrower <erklaervideo>, <lernvideo>, <medienpaket>, <audiovisuelles> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/video>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/VIDEO>, <https://bokahama.github.io/SCRP-Vocab-LRT/VIDEO> ;
+    skos:inScheme <scheme> .
+
+<erklaervideo> a skos:Concept ;
+    skos:prefLabel "Erklärvideo"@de, "Tutorial"@en ;
+    skos:altLabel "Tutorial"@de ;
+    skos:definition "Audiovisuelles Medium mit Schritt-für-Schritt-Erklärungen zu religiösen Themen."@de ;
+    skos:example "Erklärvideo 'Die Entstehung der Bibel', Tutorial 'Wie betet man den Rosenkranz?'"@de ;
+    skos:broader <video> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/ERKLAERVIDEO> ;
+    skos:inScheme <scheme> .
+
+<lernvideo> a skos:Concept ;
+    skos:prefLabel "Lern- und Übungsvideo"@de, "Learning Video"@en ;
+    skos:definition "Audiovisuelles Medium speziell zum Lernen und Üben religiöser Inhalte."@de ;
+    skos:example "Video zum Üben hebräischer Gebete, Lernvideo 'Aufbau der Messe'"@de ;
+    skos:broader <video> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/LERNVIDEO> ;
+    skos:inScheme <scheme> .
+
+<medienpaket> a skos:Concept ;
+    skos:prefLabel "Medienpaket"@de, "Media Package"@en ;
+    skos:altLabel "Mediensammlung"@de ;
+    skos:definition "Zusammenhängende Sammlung verschiedener Medien zu einem religiösen Thema."@de ;
+    skos:example "Medienpaket 'Martin Luther und die Reformation', DVD mit Begleitmaterial zu 'Weltreligionen'"@de ;
+    skos:broader <video> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/MEDIENPAKET> ;
+    skos:inScheme <scheme> .
+
+<audiovisuelles> a skos:Concept ;
+    skos:prefLabel "Audiovisuelles Medium"@de, "Audiovisual Medium"@en ;
+    skos:altLabel "Physisches Medium"@de ;
+    skos:definition "Bild- und Tondokument auf einem physischen Datenträger mit religiösen Inhalten."@de ;
+    skos:definition "Physical medium containing audio and video with religious content."@en ;
+    skos:example "DVD 'Die Bibel', Blu-ray 'Weltreligionen', CD-ROM mit Kirchengeschichte"@de ;
+    skos:broader <video> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/AUDIOVISUELLES> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# RELIGIÖSER QUELLENTEXT (Top-Level - NEUE KATEGORIE)
+# ========================================
+
+<religioeser_quellentext> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Religiöser Quellentext"@de, "Religious Source Text"@en ;
+    skos:altLabel "Heilige Schrift"@de, "Primärquelle"@de ;
+    skos:definition "Primäre religiöse Texte und Quellen aus verschiedenen religiösen Traditionen, die als Grundlage für religiöse Bildung dienen."@de ;
+    skos:definition "Primary religious texts and sources from various religious traditions that serve as a foundation for religious education."@en ;
+    skos:example "Bibeltext, Koran-Sure, Tora-Abschnitt, Bhagavad Gita"@de ;
+    skos:narrower <bibel>, <koran>, <tora>, <andere_heilige_schrift>, <theologischer_text>, <kirchendokument> ;
+    skos:inScheme <scheme> .
+
+<bibel> a skos:Concept ;
+    skos:prefLabel "Bibeltext"@de, "Biblical Text"@en ;
+    skos:altLabel "Bibelstelle"@de, "Perikope"@de ;
+    skos:definition "Texte aus der christlichen Bibel (Altes und Neues Testament)."@de ;
+    skos:example "Matthäusevangelium Kapitel 5, Psalm 23, Genesis 1-2 (Schöpfungserzählung)"@de ;
+    skos:broader <religioeser_quellentext> ;
+    skos:inScheme <scheme> .
+
+<koran> a skos:Concept ;
+    skos:prefLabel "Korantext"@de, "Quranic Text"@en ;
+    skos:altLabel "Koran-Sure"@de, "Qur'an"@de ;
+    skos:definition "Texte aus dem Koran, der heiligen Schrift des Islam."@de ;
+    skos:example "Sure Al-Fatiha, Verse aus Sure Al-Baqara"@de ;
+    skos:broader <religioeser_quellentext> ;
+    skos:inScheme <scheme> .
+
+<tora> a skos:Concept ;
+    skos:prefLabel "Tora-Text"@de, "Torah Text"@en ;
+    skos:altLabel "Tanach"@de, "Hebräische Bibel"@de ;
+    skos:definition "Texte aus der Tora oder dem Tanach, der heiligen Schrift des Judentums."@de ;
+    skos:example "Bereschit (Genesis), Dekalog (Zehn Gebote)"@de ;
+    skos:broader <religioeser_quellentext> ;
+    skos:inScheme <scheme> .
+
+<andere_heilige_schrift> a skos:Concept ;
+    skos:prefLabel "Andere Heilige Schrift"@de, "Other Sacred Scripture"@en ;
+    skos:definition "Heilige Schriften aus anderen religiösen Traditionen."@de ;
+    skos:example "Bhagavad Gita (Hinduismus), Tripitaka (Buddhismus), Guru Granth Sahib (Sikhismus)"@de ;
+    skos:broader <religioeser_quellentext> ;
+    skos:inScheme <scheme> .
+
+<theologischer_text> a skos:Concept ;
+    skos:prefLabel "Theologischer Text"@de, "Theological Text"@en ;
+    skos:altLabel "Theologische Schrift"@de ;
+    skos:definition "Theologische oder religionsphilosophische Texte und Abhandlungen."@de ;
+    skos:example "Augustinus 'Confessiones', Thomas von Aquin 'Summa Theologica', Barmer Theologische Erklärung"@de ;
+    skos:broader <religioeser_quellentext> ;
+    skos:inScheme <scheme> .
+
+<kirchendokument> a skos:Concept ;
+    skos:prefLabel "Kirchendokument"@de, "Church Document"@en ;
+    skos:altLabel "Kirchliches Lehrschreiben"@de, "Konzilstext"@de ;
+    skos:definition "Offizielle Dokumente kirchlicher oder religiöser Autoritäten."@de ;
+    skos:example "Enzyklika 'Laudato Si', Texte des Zweiten Vatikanischen Konzils, Luthers 95 Thesen"@de ;
+    skos:broader <religioeser_quellentext> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# RELIGIÖSER PRAXISBEZUG (Top-Level - NEUE KATEGORIE)
+# ========================================
+
+<religioeser_praxisbezug> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Religiöser Praxisbezug"@de, "Religious Practice"@en ;
+    skos:altLabel "Religiöse Praxis"@de, "Liturgie"@de ;
+    skos:definition "Materialien und Ressourcen, die religiöse Praxis, Rituale, Liturgie und spirituelle Übungen dokumentieren oder anleiten."@de ;
+    skos:definition "Materials and resources that document or guide religious practice, rituals, liturgy and spiritual exercises."@en ;
+    skos:example "Gottesdienstablauf, Gebetsanleitung, Beschreibung eines religiösen Festes"@de ;
+    skos:narrower <gottesdienst>, <gebet>, <religioeser_brauch>, <sakrament>, <religioeser_festtag> ;
+    skos:inScheme <scheme> .
+
+<gottesdienst> a skos:Concept ;
+    skos:prefLabel "Gottesdienst"@de, "Worship Service"@en ;
+    skos:altLabel "Liturgie"@de, "Messe"@de ;
+    skos:definition "Materialien zur Gestaltung, Durchführung oder Erklärung von Gottesdiensten und liturgischen Feiern."@de ;
+    skos:example "Ablauf einer Eucharistiefeier, Gestaltung eines Schulgottesdienstes, Struktur des Freitagsgebets (Salat al-Jumu'ah)"@de ;
+    skos:broader <religioeser_praxisbezug> ;
+    skos:inScheme <scheme> .
+
+<gebet> a skos:Concept ;
+    skos:prefLabel "Gebet"@de, "Prayer"@en ;
+    skos:altLabel "Gebetstext"@de ;
+    skos:definition "Gebete, Gebetsanleitungen oder Materialien zum Thema Gebet aus verschiedenen Traditionen."@de ;
+    skos:example "Vaterunser, Rosenkranzgebet, Schma Israel, Islamisches Pflichtgebet (Salat)"@de ;
+    skos:broader <religioeser_praxisbezug> ;
+    skos:inScheme <scheme> .
+
+<religioeser_brauch> a skos:Concept ;
+    skos:prefLabel "Religiöser Brauch"@de, "Religious Custom"@en ;
+    skos:altLabel "Ritual"@de, "Tradition"@de ;
+    skos:definition "Beschreibung oder Anleitung zu religiösen Bräuchen, Ritualen und Traditionen."@de ;
+    skos:example "Beschreibung einer Taufe, Anleitung zu Pessach-Seder, Erklärung des Ramadan"@de ;
+    skos:broader <religioeser_praxisbezug> ;
+    skos:inScheme <scheme> .
+
+<sakrament> a skos:Concept ;
+    skos:prefLabel "Sakrament"@de, "Sacrament"@en ;
+    skos:definition "Materialien zu den Sakramenten der christlichen Kirchen."@de ;
+    skos:example "Erklärung der Taufe, Ablauf der Firmung, Bedeutung der Eucharistie"@de ;
+    skos:broader <religioeser_praxisbezug> ;
+    skos:inScheme <scheme> .
+
+<religioeser_festtag> a skos:Concept ;
+    skos:prefLabel "Religiöser Festtag"@de, "Religious Festival"@en ;
+    skos:altLabel "Kirchenjahr"@de, "Religiöses Fest"@de ;
+    skos:definition "Materialien zu religiösen Festen und Festzeiten im Jahreskreis verschiedener Religionen."@de ;
+    skos:example "Weihnachten, Ostern, Pfingsten, Chanukka, Ramadan und Eid al-Fitr, Diwali"@de ;
+    skos:broader <religioeser_praxisbezug> ;
+    skos:inScheme <scheme> .
+
+# ========================================
+# SONSTIGES (Top-Level)
+# ========================================
+
+<sonstiges> a skos:Concept ;
+    skos:topConceptOf <scheme> ;
+    skos:prefLabel "Diverse Medien und Formate"@de, "Other"@en ;
+    skos:definition "Residualkategorie für religiöse Lernressourcen, die keinem anderen Typ zugeordnet werden können."@de ;
+    skos:example "Gemischte Materialsammlung, nicht eindeutig kategorisierbare Ressource"@de ;
+    skos:narrower <fragebogen>, <kurs>, <modell>, <praesentation>, <daten>, <webseite>, <glossar> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/other>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/SONSTIGES>, <https://bokahama.github.io/SCRP-Vocab-LRT/SONSTIGES> ;
+    skos:inScheme <scheme> .
+
+<fragebogen> a skos:Concept ;
+    skos:prefLabel "Fragebogen"@de, "Questionnaire"@en ;
+    skos:altLabel "Umfrage"@de ;
+    skos:definition "Instrument zur Datenerhebung oder Reflexion im Religionsunterricht."@de ;
+    skos:example "Fragebogen zur religiösen Sozialisation, Umfrage zu ethischen Einstellungen"@de ;
+    skos:broader <sonstiges> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/questionnaire> ;
+    skos:exactMatch <https://bokahama.github.io/SCRP-Vocab-LRT/FRAGEBOGEN> ;
+    skos:inScheme <scheme> .
+
+<kurs> a skos:Concept ;
+    skos:prefLabel "Kurs"@de, "Course"@en ;
+    skos:definition "Mehrere Unterrichtseinheiten zu einem religiösen Thema über einen bestimmten Zeitraum."@de ;
+    skos:example "Online-Kurs 'Weltreligionen', Glaubenskurs für Erwachsene"@de ;
+    skos:broader <sonstiges> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/course>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/KURS>, <https://bokahama.github.io/SCRP-Vocab-LRT/KURS> ;
+    skos:inScheme <scheme> .
+
+<modell> a skos:Concept ;
+    skos:prefLabel "Modell"@de, "Model"@en ;
+    skos:definition "Modell zur Veranschaulichung religiöser Strukturen oder Gebäude."@de ;
+    skos:example "3D-Modell des Jerusalemer Tempels, Modell einer Synagoge"@de ;
+    skos:broader <sonstiges> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/MODELL>, <https://bokahama.github.io/SCRP-Vocab-LRT/MODELL> ;
+    skos:inScheme <scheme> .
+
+<praesentation> a skos:Concept ;
+    skos:prefLabel "Präsentation"@de, "Presentation"@en ;
+    skos:definition "Visualisierendes Material zur Unterstützung eines Vortrags im Religionsunterricht."@de ;
+    skos:example "PowerPoint-Präsentation 'Islam in Deutschland', Folien zu 'Leben und Wirken Martin Luthers'"@de ;
+    skos:broader <sonstiges> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/slide>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/PRESENTATION>, <https://bokahama.github.io/SCRP-Vocab-LRT/PRAESENTATION> ;
+    skos:inScheme <scheme> .
+
+<daten> a skos:Concept ;
+    skos:prefLabel "Tabelle / Daten"@de, "Data"@en ;
+    skos:definition "Empirische Daten, Statistiken oder Tabellen zu religiösen Themen."@de ;
+    skos:example "Statistik zur Religionszugehörigkeit, Tabelle religiöser Feiertage, Erhebung zu religiöser Praxis"@de ;
+    skos:broader <sonstiges> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/data>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/DATEN>, <https://bokahama.github.io/SCRP-Vocab-LRT/DATEN> ;
+    skos:inScheme <scheme> .
+
+<webseite> a skos:Concept ;
+    skos:prefLabel "Webseite"@de, "Website"@en ;
+    skos:altLabel "Internetseite"@de ;
+    skos:definition "Webdokument mit religiösen Inhalten, aufrufbar per URL."@de ;
+    skos:example "Webseite mit Materialien für Religionsunterricht, Wiki zu Kirchengeschichte, Blog über interreligiösen Dialog"@de ;
+    skos:broader <sonstiges> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/web_page>, <https://vocabs.sodix.de/sodix/educational/learningresourcetype/WEBSEITE>, <https://bokahama.github.io/SCRP-Vocab-LRT/WEBSEITE> ;
+    skos:inScheme <scheme> .
+
+<glossar> a skos:Concept ;
+    skos:prefLabel "Glossar"@de, "Glossary"@en ;
+    skos:altLabel "Nachschlagewerk"@de, "Lexikon"@de ;
+    skos:definition "Alphabetisch oder thematisch sortierte Liste religiöser Begriffe mit Erklärungen."@de ;
+    skos:example "Theologisches Fachglossar, Lexikon religiöser Symbole, Begriffslexikon Weltreligionen"@de ;
+    skos:broader <sonstiges> ;
+    skos:relatedMatch <https://w3id.org/kim/hcrt/index> ;
+    skos:exactMatch <https://vocabs.sodix.de/sodix/educational/learningresourcetype/GLOSSAR>, <https://bokahama.github.io/SCRP-Vocab-LRT/GLOSSAR> ;
+    skos:inScheme <scheme> .

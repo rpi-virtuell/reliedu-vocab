@@ -1,0 +1,499 @@
+@prefix lrt: <https://vocabs.sodix.de/sodix/educational/learningresourcetype/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# ====================================================================================================
+# TYP DER LERNRESSOURCE - CONCEPT SCHEME
+# ====================================================================================================
+# Zweck: Wertelliste für Typen von Lernressourcen (SODIX Content Hub)
+# Verwendung: Klassifikation von Lernmaterialien
+# ====================================================================================================
+
+<https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> a skos:ConceptScheme ;
+    dct:title "Typ der Lernressource"@de, 
+              "Learning Resource Type"@en ;
+    dct:description "Eine Wertelliste für Typen von Lernressourcen, wie er im SODIX content hub zum Einsatz kommt. Geordnete Liste, der vorherrschende Typ zuerst."@de ;
+    dct:description "A value list for Learning Resource Type, as used in the SODIX content hub. Ordered list, the most dominant type first."@en ;
+    
+    vann:preferredNamespacePrefix "lrt" ;
+    vann:preferredNamespaceUri "https://vocabs.sodix.de/sodix/educational/learningresourcetype/" ;
+    
+    skos:hasTopConcept lrt:ANLEITUNG,
+                       lrt:APP,
+                       lrt:ARBEITSBLATT,
+                       lrt:AUDIO,
+                       lrt:AUDIOVISUELLES,
+                       lrt:BILD,
+                       lrt:BROSCHUERE,
+                       lrt:DATEN,
+                       lrt:EBOOK,
+                       lrt:ENTDECKENDES,
+                       lrt:EXPERIMENT,
+                       lrt:FALLSTUDIE,
+                       lrt:FLYER,
+                       lrt:GLOSSAR,
+                       lrt:HANDBUCH,
+                       lrt:HANDREICHUNG,
+                       lrt:INFOGRAFIK,
+                       lrt:INTERAKTION,
+                       lrt:KARTE,
+                       lrt:KURS,
+                       lrt:LEHRBUCH,
+                       lrt:LERNKONTROLLE,
+                       lrt:LERNSPIEL,
+                       lrt:MERKBLATT,
+                       lrt:MODELL,
+                       lrt:MUSIKNOTEN,
+                       lrt:OFFENE,
+                       lrt:POSTER,
+                       lrt:PRESENTATION,
+                       lrt:PROJECT,
+                       lrt:QUELLE,
+                       lrt:RADIO,
+                       lrt:RECHERCHE,
+                       lrt:REZEPT,
+                       lrt:ROLLENSPIEL,
+                       lrt:SIMULATION,
+                       lrt:SOFTWARE,
+                       lrt:SONSTIGES,
+                       lrt:TEST,
+                       lrt:TEXT,
+                       lrt:UBUNG,
+                       lrt:UNTERRICHTSBAUSTEIN,
+                       lrt:UNTERRICHTSPLANUNG,
+                       lrt:VERANSCHAULICHUNG,
+                       lrt:VIDEO,
+                       lrt:WEBSEITE,
+                       lrt:WEBTOOL,
+                       lrt:VIRTUAL .
+
+
+# ====================================================================================================
+# LERNRESSOURCENTYPEN
+# ====================================================================================================
+
+lrt:ANLEITUNG a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Anleitung"@de, "Instruction manual"@en ;
+    skos:altLabel "Leitfaden"@de ;
+    skos:definition "Eine Anleitung oder Leitfaden kann entweder eine schriftliche Erklärung dafür sein, wie etwas zu benutzen oder herzustellen ist, oder auch eine Anleitung durch eine Person. Oft sind Inhalte dieser Anleitungen Schritt für Schritt erklärt. Ein Leitfaden ist eine knapp und übersichtlich formulierte Handlungsanweisung. Er bietet eine Orientierung, wenn es darum geht, sich in einer Situation zurechtzufinden oder bestimmte Handlungen (bspw. Interview oder Gespräch) richtig und effektiv auszuführen."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Leitfaden für die Durchführung von Zeitzeugengesprächen mit Hinweisen und Fragestellungen, Bauanleitung, Bastelanleitung"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:APP a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "App"@de, "App"@en ;
+    skos:altLabel "Anwendung"@de, "Software"@de ;
+    skos:altLabel "application"@en, "software"@en ;
+    skos:definition "Eine App (Abkürzung für „Application Software") ist eine Anwendungssoftware oder ein Computerprogramm, welches unterschiedliche Funktionen erfüllen kann. Sie hat dabei keine systemtechnische Funktionalität, das heißt das System kann auch ohne dieses Programm ordnungsgemäß arbeiten. Mit einer App können Sie das Endgerät an Ihre Bedürfnisse anpassen. Eine App muss man herunterladen und installieren, um sie verwenden zu können."@de ;
+    skos:definition "An app (short for application software) is an application or computer program that can provide all kinds of functionality. It is not relevant to the functioning of the computer system itself, but provides additional functionality that caters for a specific user's needs. An app needs to be downloaded an installed in order to use it."@en ;
+    skos:example "App zum Üben der Uhrzeit, App für einen Diagrammgenerator"@de ;
+    skos:example "App to practise to read the time; App to generate diagrams"@en .
+
+lrt:ARBEITSBLATT a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Arbeitsblatt"@de, "Worksheet"@en ;
+    skos:definition "Ein Dokument, auf dem Aufgaben enthalten sind, mit den neu Erlerntes geübt werden kann. Auch zugehörige Lösungsblatter."@de ;
+    skos:definition "A document that contains excersises, with which one can practise newly aquired knowledge. Also associated solutionsheets."@en ;
+    skos:example "Arbeitsblatt, Lösungsblatt, Übung, Aufgabenblatt"@de ;
+    skos:example "Worksheet, solutionsheet, excercise, task sheet"@en .
+
+lrt:AUDIO a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Audio"@de, "Audio"@en ;
+    skos:altLabel "Tonaufnahme"@de ;
+    skos:altLabel "audio recording"@en ;
+    skos:definition "Eine Tonaufnahme zum Anhören."@de ;
+    skos:definition "An audio recording to listen to."@en ;
+    skos:example "Musikstück, Radioarchive, aufgenommene Stimmen und Töne etc."@de ;
+    skos:example "English translation pending."@en .
+
+lrt:AUDIOVISUELLES a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Audiovisuelles Medium"@de, "Audiovisual medium"@en ;
+    skos:definition "Ein Bild- und Tondokument auf einem physischen Datenträger."@de ;
+    skos:definition "Physical medium containing audio and video."@en ;
+    skos:example "DVD, Blu-ray Disc"@de ;
+    skos:example "DVD, Blu-ray Disc"@en .
+
+lrt:BILD a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Bild"@de, "Image"@en ;
+    skos:definition "Alle Arten von unbewegten Bildern oder grafischen Darstellungen."@de ;
+    skos:definition "All kinds of still images or graphical representations."@en ;
+    skos:example "Foto, Grafiken, Illustration, Artefakt eines Gemäldes, Schema, Diagramm etc."@de ;
+    skos:example "English translation pending."@en .
+
+lrt:BROSCHUERE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Broschüre"@de, "Brochure"@en ;
+    skos:definition "Eine mehrseitige textliche Zusammenfassung, die, ausführlicher als beim Flyer, Auskünfte zu einem Thema gibt und die Leser und Leserinnen informiert."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Broschüre, Sicherheitshinweise, Sachinformationen"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:DATEN a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Daten"@de, "Data"@en ;
+    skos:definition "Empirische Daten, Fakten und Erhebungen, Rohdaten."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Geschichtsdaten, Erhebungen, Fakten, Werte, Statistiken, Steckbriefe"@de .
+
+lrt:EBOOK a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "E-Book"@de, "E-book"@en ;
+    skos:definition "E-Book steht für ein elektronisches Buch und bezeichnet Werke in elektronischer Buchform, die auf E-Book-Readern oder mit spezieller Software auf PCs, Tabletcomputern oder Smartphones gelesen werden können. Interaktive Inhalte sorgen beispielsweise dafür, dass Schülerinnen und Schüler Aufgaben direkt im Buch bearbeiten und gemeinsam an Projekten arbeiten können. Auch die Resonanz der Lehrperson kann hierbei eingebunden werden."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Interaktives Lehrbuch, Interaktives Übungsbuch"@de .
+
+lrt:ENTDECKENDES a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Entdeckendes Lernen"@de, "Discovery Learning"@en ;
+    skos:definition "Durch virtuelle und reale Handlungen werden neue Dinge entdeckt und gelernt. Der Entdeckergeist und die Neugier werden geweckt und das Lernen ist hierbei der positive Nebeneffekt."@de ;
+    skos:definition "Discovery learning is a technique of inquiry-based learning and is considered a constructivist based approach to education. It is also referred to as problem-based learning, experiential learning and 21st century learning."@en ;
+    skos:example "Spielerische Lernaufträge in der Natur oder in digitalen Räumen, in denen durch Klicken auf Symbole neue Dinge und Fakten entdeckt werden"@de .
+
+lrt:EXPERIMENT a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Experiment"@de, "Experiment"@en ;
+    skos:definition "Wissenschaftlicher Versuch mit einer klaren Methodik, bei der Handlungen und Prozeduren erprobt werden, um anhand von Messungen oder Beobachtungen eine Hypothese zu überprüfen oder bereits Bekanntes zu belegen oder darzustellen."@de ;
+    skos:definition "English translation pending"@en ;
+    skos:example "Video eines Experiments, das im Chemieunterricht nachgestellt wird etc."@de .
+
+lrt:FALLSTUDIE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Fallstudie"@de, "Case Study"@en ;
+    skos:definition "Untersuchung einer bestimmten Situation, einer Person oder eines Themas."@de ;
+    skos:definition "A case study is an in-depth, detailed examination of a particular case (or cases) within a real-world context."@en ;
+    skos:example "Präsentation zum pädagogischen Einsatz von Tablets an schweizerischen Primarschulen, Analyse der Konfliktsituation in einem Unternehmen etc."@de .
+
+lrt:FLYER a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Flyer"@de, "Flyer"@en ;
+    skos:definition "Eine stichpunktartige Kurzzusammenfassung, die die wichtigsten Eckpunkte zu einem Thema gibt und die Leser und Leserinnen informiert. Einen Flyer ist ein einziges Blatt, meist A4, oft gefaltet."@de ;
+    skos:example "Info-Flyer, Werbe-Flyer, Faltblatt"@de .
+
+lrt:GLOSSAR a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Glossar"@de, "Glossary"@en ;
+    skos:altLabel "Nachschlagewerk"@de ;
+    skos:altLabel "Reference book"@en ;
+    skos:definition "Alphabetisch oder thematisch sortierte Liste von Wörtern mit beigefügten Bedeutungserklärungen oder Übersetzungen."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Begriffsverzeichnis, Fachglossar der holzverarbeitenden Berufe, Wörterbuch, Enzyklopädie"@de .
+
+lrt:HANDBUCH a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Handbuch"@de, "Guide"@en ;
+    skos:definition "Ein Handbuch ist eine umfangreiche, strukturierte Textform, in den Vorschläge und Vorgehensweisen unterbreitet werden, mit Situationen oder Personen umzugehen. Hierbei liefert es Methoden zur Umsetzung, die man immer wieder nachschlagen kann."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Handbuch, Verhaltenstipps, Methodenvorschläge"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:HANDREICHUNG a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Handreichung"@de, "Guidance"@en ;
+    skos:definition "Spezifisch für Lehrkräfte gedachte didaktische Hinweise, wie ein bestimmtes Thema praktisch umgesetzt werden kann. Eine Handreichung kann auch Lernsituationen und Arbeitsblätter enthalten."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Handreichung zur Integration digitaler Schlüsselkompetenzen in die Berufliche Bildung, Handreichung Sprachsensibler Unterricht an Berufsschulen"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:INFOGRAFIK a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Infografik"@de, "Infographic"@en ;
+    skos:definition "Eine Grafik, die komplexe Zusammenhänge und umfangreiches Datenmaterial anschaulich aufbereitet. Infografiken helfen dem Rezipienten, die Daten einfach und schnell zu erfassen, zu verstehen und zu interpretieren."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Übersicht zum Kreislauf von Pfandflaschen, Erklär-Grafik zur Lebensmittelkennzeichnung: Was steht auf dem Etikett?"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:INTERAKTION a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Interaktion"@de, "Interaction"@en ;
+    skos:definition "Eine Interaktion ist das Interagieren mit einem Programm. Es ist eine Wechselbeziehung zwischen Programm und Anwender, in der eine Reaktion auf eine Aktion folgt. "@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Drag-and-Drop-Rätsel, Zuordnungen, interaktive Rechenaufgaben, H5P"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:KARTE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Karte"@de, "Map"@en ;
+    skos:definition "Darstellung von raumbezogenen Gegenständen, Sachverhalten oder Prozessen, die maßstäblich generalisiert und mithilfe eines Zeichensystems grafisch gezeigt werden."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Geografische Karte zur Alpenkette, Karte zu Bayern mit den Regierungsbezirken"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:KURS a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Kurs"@de, "Course"@en ;
+    skos:definition "Ein Kurs besteht aus mehreren Unterrichtseinheiten und beschäftigt sich mit einem Thema über einen gewissen Zeitraum. "@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Studienkurs, Wahlkurs, Onlinekurs, Sprachkurs"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:LEHRBUCH a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Lehrbuch"@de, "Textbook"@en ;
+    skos:definition "Sachbuch, das für das Studium oder den Unterricht didaktisch aufbereitete Lehrstoffe und Materialien anbietet."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Lehrbuch, Unterrichtsbuch"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:LERNKONTROLLE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Lernkontrolle"@de, "Learning assesment"@en ;
+    skos:altLabel "Prüfung"@de ;
+    skos:altLabel "Examination"@en, "Test"@en ;
+    skos:definition "Unbewertete Abfrage des Wissenstands. Richtig/Falsch wird erhoben aber nicht in einer Bewertung zusammengefasst. (Was ist an Lehrinhalt angekommen und damit eher eine Rückmeldung an die Lehrkraft.)"@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Selbsttest, Lernstandsanalyse"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:LERNSPIEL a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Lernspiel"@de, "Educational Game"@en ;
+    skos:definition "Lernmaterial, bei welchem der spielerische Umgang nach definierten Regeln im Vordergrund steht und die Lernenden Fähigkeiten entwickeln, Kapazitäten aufbauen oder ein Ziel erreichen."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Vokabel-Lernspiele, Lernspiel, welches die Reflexe trainiert, Quiz, Rätsel, Memory"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:MERKBLATT a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Merkblatt"@de, "Leaflet"@en ;
+    skos:definition "Ein Merkblatt ist meist recht kurz gehalten und fasst die wichtigsten Fakten und Erkenntnisse einer Unterrichtseinheit noch einmal strukturiert zusammen."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Hefteintrag, Regelwerk, Regeln, Zusammenfassung"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:MODELL a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Modell"@de, "Model"@en ;
+    skos:definition "Ein Modell dient zur Veranschaulichung von Strukturen und Aufbauten."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Klimamodell, Anschauungsmodelle in den Naturwissenschaften, 3D-Modell eines Auges, das man bewegen und dadurch von allen Seiten anschauen kann"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:MUSIKNOTEN a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Musiknoten"@de, "Sheet music"@en ;
+    skos:definition "Jede Verschriftlichung von Musikstücken oder ganze Transkriptionen von musikalischen Werken."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Weihnachtslieder inkl. Liedtext und Noten, ausdruckbare Noten eines Stückes zur Musiklehre"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:OFFENE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Offene Aktivität"@de, "Open Activity"@en ;
+    skos:definition "Noch definieren?"@de ;
+    skos:definition "Deprecated, use alternatives."@en .
+
+lrt:POSTER a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Poster"@de, "Poster"@en ;
+    skos:altLabel "Plakat"@de ;
+    skos:definition "Ein Plakat oder Poster ist ein großer, mit Text und Bild gestalteter Bogen, der aufgehängt werden kann, um eine Botschaft zu übermitteln."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Werbung, Aufruf, Lernplakat"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:PRESENTATION a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Präsentation"@de, "Presentation"@en ;
+    skos:definition "Visualisierendes Material zur Unterstützung oder Begleitung eines Vortrags."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Vortragsfolien (Powerpoint), Handouts, digitale Tafelbilder (Sankoré-Datei für ein digitales Whiteboard)"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:PROJECT a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Projekt"@de, "Project"@en ;
+    skos:definition "Zielgerichtetes, zeitlich definiertes Vorhaben in Einzel- oder Gruppenarbeit, das in ein konkretes Ergebnis mündet."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Umsetzung eines Fotoromans, Erstellen einer Klassenwebsite"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:QUELLE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Primärmaterial/Quelle"@de, "reference"@en ;
+    skos:definition "Noch definieren?"@de ;
+    skos:definition "English translation pending."@en .
+
+lrt:RADIO a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Radio/TV"@de, "Radio/TV"@en ;
+    skos:definition "Noch definieren?"@de ;
+    skos:definition "English translation pending."@en .
+
+lrt:RECHERCHE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Recherche-Auftrag"@de, "Research Assignment"@en ;
+    skos:definition "Nicht mehr verwendet, siehe -> Arbeitsblatt."@de ;
+    skos:definition "English translation pending."@en .
+
+lrt:REZEPT a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Rezept"@de, "Receipe"@en ;
+    skos:definition "Anleitung zur Zubereitung eines Nahrungsmittels oder Genussmittels."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Kochrezept, Backrezept"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:ROLLENSPIEL a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Rollenspiel"@de, "Role Play"@en ;
+    skos:altLabel "Planspiel"@de ;
+    skos:definition "Ein Spiel, bei welchem Lernende in einer fiktiven Situation oder in einem fiktiven Kontext in eine Rolle schlüpfen und Handeln simulieren."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Spiel rund um Berufe, Selbsterfahrungsspiel zu den Lebensbedingungen von Flüchtlingen, Börsenplanspiel"@de .
+
+lrt:SIMULATION a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Simulation/Animation"@de, "Simulation/Animation"@en ;
+    skos:definition "Bewegte Nachbildung von realen Szenarien zum Zwecke der Ausbildung oder der Analyse von Systemen. Bei der Simulation besteht zusätzlich eine interaktive Komponente."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Darstellung der Bewegung eines Motors, Simulationsprogramm für die Entwicklung von Finanzkurven, Videospiel zum Lenken eines Zuges, Flugsimulator."@de ;
+    skos:example "English translation pending."@en .
+
+lrt:SOFTWARE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Software"@de, "Software"@en ;
+    skos:definition "Noch definieren?"@de ;
+    skos:definition "English translation pending."@en .
+
+lrt:SONSTIGES a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Sonstiges"@de, "Other"@en ;
+    skos:definition "Datensätze, die keinem anderen Lernressourcentyp zugeordnet werden konnten."@de ;
+    skos:definition "Records that could not be allocated to any other learning resource type."@en .
+
+lrt:TEST a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Prüfung"@de, "Translation pending"@en ;
+    skos:definition "Eine Prüfung fragt Wissen ab und setzt bestimmte Hürden, die darüber entscheiden, ob eine Prüfung erfolgreich abgelegt ist. Diese bewertete Leistung fliesst als Jahresfortgangsnote in ein Zeugnis ein oder führt zur Erlangung eines Bildungsabschlusses."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Test zur Leseflüssigkeit, Vergleichsarbeiten, Jahrgangsstufentest, Abituraufgaben für das Fach Englisch aus dem Jahr 2018, Prüfungsaufgaben zum ersten Bildungsabschluss, Prüfungsaufgaben zum mittleren Schulabschluss"@de .
+
+lrt:TEXT a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Text"@de, "Text"@en ;
+    skos:definition "Eine Ressource, die sich hauptsächlich aus Texteinheiten zusammensetzt oder hauptsächlich textbasierte Informationen enthält."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Gedicht, Liedtext, Zeitungsartikel, Romanauszüge, Liste, Wikipedia-Artikel"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:UBUNG a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Übung"@de, "Excersise"@en ;
+    skos:definition "Üben ist ein methodisch wiederholtes Handeln, das darauf zielt, Können zu bewahren, zu erwerben oder zu steigern."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Selbstkorrigierende Konjugationsübungen, Mathematikübungen, Stimmaufwärmungsübungen, Volleyballaufschlagübungen"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:UNTERRICHTSBAUSTEIN a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Unterrichtsbaustein"@de, "Teaching Module"@en ;
+    skos:definition "Eine kleinere, eigenständige Einheit im Rahmen eines Lehrplans oder einer Unterrichtsstruktur, die aus didaktischen Hinweisen, Beispielen, Texten, Materialien, Hinweisen und/oder Aufgaben besteht."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Unterrichtsmodul, Themenblock, Unterrichtseinheit"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:UNTERRICHTSPLANUNG a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Unterrichtsplanung"@de, "Lesson Planning"@en ;
+    skos:definition "In der Unterrichtsplanung sind alle didaktischen und pädagogischen Überlegungen zur Vorbereitung einer Unterrichtsstunde oder Unterrichtseinheit enthalten. "@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Unterrichtsidee, Checkliste"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:VERANSCHAULICHUNG a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Veranschaulichung"@de, "Demonstration"@en ;
+    skos:definition "Definition?"@de ;
+    skos:definition "English translation pending."@en .
+
+lrt:VIDEO a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Video"@de, "Video"@en ;
+    skos:definition "In elektronischer Form kodierte optische Sequenz aus wechselnden Einzelbildern, mit oder ohne Ton."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Der Film King Kong (1933), Tierreportage auf der Seite von National Geographic, Ausschnitt eines Videoclips, eine Videodokumentation"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:WEBSEITE a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Webseite"@de, "Website"@en ;
+    skos:definition "Ein Dokument als Bestandteil einer Website im World Wide Web, das mittels eindeutiger Adresse (URL) aufgerufen werden kann."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Webseite mit pädagogischen Anleitungen, Wiki, Blog"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:WEBTOOL a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Webtool"@de, "Webtool"@en ;
+    skos:definition "Ein Webtool ist Software, die nicht als App auf einem mobilen Gerät oder als Programm auf einem Desktop-Rechner installiert wird, sondern über das Internet im Browser aufgerufen und dort genutzt wird."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "Quiz-Ersteller, QR-Code-Generator, PDF-Konverter, Zeichenprogramm"@de ;
+    skos:example "English translation pending."@en .
+
+lrt:VIRTUAL a skos:Concept ;
+    skos:inScheme <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:topConceptOf <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype> ;
+    skos:prefLabel "Virtual Reality & Augmented Reality"@de, "Virtual Reality & Augmented Reality"@en ;
+    skos:altLabel "VR"@de, "AR"@de ;
+    skos:altLabel "VR"@en, "AR"@en ;
+    skos:definition "VR und AR sind Medien, die sich auf VR-Brillen und ähnlichen Geräten abspielen lassen, bzw. für diese optimiert sind. Sie können zum Download auf die Brille angeboten werden, oder als Web-App zur Verfügung stehen. Technisch kommen neben Webseiten v.a. MP4 und APK infrage."@de ;
+    skos:definition "English translation pending."@en ;
+    skos:example "360° Videos, 360° Webanwendungen, 360° Fotos, 3D-Objekte (interaktiv), virtuelle Führungen"@de ;
+    skos:example "English translation pending."@en .
